@@ -24409,13 +24409,16 @@
           "description": "内容类名"
         },
         "mountOnEnter": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "卡片是否只有在点开的时候加载？"
         },
         "unmountOnExit": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "卡片隐藏的时候是否销毁卡片内容"
         },
         "toolbar": {
-          "$ref": "#/definitions/ActionSchema"
+          "$ref": "#/definitions/ActionSchema",
+          "description": "可以在右侧配置点其他功能按钮。"
         },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
@@ -33810,13 +33813,16 @@
           "description": "内容类名"
         },
         "mountOnEnter": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "卡片是否只有在点开的时候加载？"
         },
         "unmountOnExit": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "卡片隐藏的时候是否销毁卡片内容"
         },
         "toolbar": {
-          "$ref": "#/definitions/ActionSchema"
+          "$ref": "#/definitions/ActionSchema",
+          "description": "可以在右侧配置点其他功能按钮。"
         }
       },
       "required": [
