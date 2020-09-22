@@ -2917,6 +2917,10 @@
               "type": "boolean",
               "description": "是否立即保存"
             },
+            "resetOnFailed": {
+              "type": "boolean",
+              "description": "接口保存失败后，是否重置组件编辑状态"
+            },
             "mode": {
               "type": "string",
               "const": "inline",
@@ -2930,6 +2934,10 @@
             "saveImmediately": {
               "type": "boolean",
               "description": "是否立即保存"
+            },
+            "resetOnFailed": {
+              "type": "boolean",
+              "description": "接口保存失败后，是否重置组件编辑状态"
             },
             "mode": {
               "type": "string",
