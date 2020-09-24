@@ -32639,6 +32639,14 @@
         "levelExpand": {
           "type": "number",
           "description": "默认展开的级别"
+        },
+        "hideRoot": {
+          "type": "boolean",
+          "description": "是否隐藏根节点"
+        },
+        "source": {
+          "type": "string",
+          "description": "支持从数据链取值"
         }
       },
       "required": [
@@ -35102,7 +35110,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43193,7 +43201,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -43518,7 +43526,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -43843,7 +43851,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44168,7 +44176,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -44493,7 +44501,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -44818,7 +44826,7 @@
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|rowClassName|cellClassName)$": {}
           }
         },
         {
