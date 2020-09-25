@@ -30438,7 +30438,8 @@
                       "statistics",
                       "switch-per-page",
                       "load-more",
-                      "filter-toggler"
+                      "filter-toggler",
+                      "export-csv"
                     ]
                   }
                 },
@@ -30533,7 +30534,8 @@
                       "statistics",
                       "switch-per-page",
                       "load-more",
-                      "filter-toggler"
+                      "filter-toggler",
+                      "export-csv"
                     ]
                   }
                 },
@@ -30911,7 +30913,8 @@
                       "statistics",
                       "switch-per-page",
                       "load-more",
-                      "filter-toggler"
+                      "filter-toggler",
+                      "export-csv"
                     ]
                   }
                 },
@@ -31006,7 +31009,8 @@
                       "statistics",
                       "switch-per-page",
                       "load-more",
-                      "filter-toggler"
+                      "filter-toggler",
+                      "export-csv"
                     ]
                   }
                 },
@@ -31563,7 +31567,8 @@
                       "statistics",
                       "switch-per-page",
                       "load-more",
-                      "filter-toggler"
+                      "filter-toggler",
+                      "export-csv"
                     ]
                   }
                 },
@@ -31658,7 +31663,8 @@
                       "statistics",
                       "switch-per-page",
                       "load-more",
-                      "filter-toggler"
+                      "filter-toggler",
+                      "export-csv"
                     ]
                   }
                 },
