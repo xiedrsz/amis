@@ -728,7 +728,7 @@
           "description": "配置 ajax 发送地址"
         },
         "feedback": {
-          "$ref": "#/definitions/DialogSchema"
+          "$ref": "#/definitions/DialogSchemaBase"
         },
         "reload": {
           "$ref": "#/definitions/SchemaReload"
@@ -871,41 +871,9 @@
     "SchemaTokenizeableString": {
       "type": "string"
     },
-    "DialogSchema": {
+    "DialogSchemaBase": {
       "type": "object",
       "properties": {
-        "className": {
-          "$ref": "#/definitions/SchemaClassName",
-          "description": "容器 css 类名"
-        },
-        "$ref": {
-          "type": "string",
-          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
-        },
-        "disabled": {
-          "type": "boolean",
-          "description": "是否禁用"
-        },
-        "disabledOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否禁用表达式"
-        },
-        "hidden": {
-          "type": "boolean",
-          "description": "是否隐藏"
-        },
-        "hiddenOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否隐藏表达式"
-        },
-        "visible": {
-          "type": "boolean",
-          "description": "是否显示"
-        },
-        "visibleOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否显示表达式"
-        },
         "actions": {
           "type": "array",
           "items": {
@@ -964,10 +932,41 @@
         "showErrorMsg": {
           "type": "boolean",
           "description": "是否显示错误信息"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
         }
       },
-      "additionalProperties": false,
-      "description": "Dialog 弹框渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+      "additionalProperties": false
     },
     "SchemaName": {
       "type": "string",
@@ -1441,7 +1440,7 @@
           "description": "指定为打开弹窗"
         },
         "dialog": {
-          "$ref": "#/definitions/DialogSchema"
+          "$ref": "#/definitions/DialogSchemaBase"
         },
         "nextCondition": {
           "$ref": "#/definitions/SchemaExpression",
@@ -1607,7 +1606,7 @@
           "description": "指定为打开弹窗，抽出式弹窗"
         },
         "drawer": {
-          "$ref": "#/definitions/DrawerSchema",
+          "$ref": "#/definitions/DrawerSchemaBase",
           "description": "弹窗内容"
         },
         "nextCondition": {
@@ -1628,41 +1627,9 @@
       ],
       "additionalProperties": false
     },
-    "DrawerSchema": {
+    "DrawerSchemaBase": {
       "type": "object",
       "properties": {
-        "className": {
-          "$ref": "#/definitions/SchemaClassName",
-          "description": "容器 css 类名"
-        },
-        "$ref": {
-          "type": "string",
-          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
-        },
-        "disabled": {
-          "type": "boolean",
-          "description": "是否禁用"
-        },
-        "disabledOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否禁用表达式"
-        },
-        "hidden": {
-          "type": "boolean",
-          "description": "是否隐藏"
-        },
-        "hiddenOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否隐藏表达式"
-        },
-        "visible": {
-          "type": "boolean",
-          "description": "是否显示"
-        },
-        "visibleOn": {
-          "$ref": "#/definitions/SchemaExpression",
-          "description": "是否显示表达式"
-        },
         "actions": {
           "type": "array",
           "items": {
@@ -1733,10 +1700,41 @@
         "closeOnOutside": {
           "type": "boolean",
           "description": "点击外部的时候是否关闭弹框。"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
         }
       },
-      "additionalProperties": false,
-      "description": "Drawer 抽出式弹框。\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+      "additionalProperties": false
     },
     "CopyActionSchema": {
       "type": "object",
@@ -3990,7 +3988,7 @@
               "description": "配置 ajax 发送地址"
             },
             "feedback": {
-              "$ref": "#/definitions/DialogSchema"
+              "$ref": "#/definitions/DialogSchemaBase"
             },
             "reload": {
               "$ref": "#/definitions/SchemaReload"
@@ -5148,7 +5146,7 @@
               "description": "指定为打开弹窗"
             },
             "dialog": {
-              "$ref": "#/definitions/DialogSchema"
+              "$ref": "#/definitions/DialogSchemaBase"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -5540,7 +5538,7 @@
               "description": "指定为打开弹窗，抽出式弹窗"
             },
             "drawer": {
-              "$ref": "#/definitions/DrawerSchema",
+              "$ref": "#/definitions/DrawerSchemaBase",
               "description": "弹窗内容"
             },
             "nextCondition": {
@@ -26249,7 +26247,7 @@
                   "description": "配置 ajax 发送地址"
                 },
                 "feedback": {
-                  "$ref": "#/definitions/DialogSchema"
+                  "$ref": "#/definitions/DialogSchemaBase"
                 },
                 "reload": {
                   "$ref": "#/definitions/SchemaReload"
@@ -26741,7 +26739,7 @@
                   "description": "指定为打开弹窗"
                 },
                 "dialog": {
-                  "$ref": "#/definitions/DialogSchema"
+                  "$ref": "#/definitions/DialogSchemaBase"
                 },
                 "nextCondition": {
                   "$ref": "#/definitions/SchemaExpression",
@@ -26911,7 +26909,7 @@
                   "description": "指定为打开弹窗，抽出式弹窗"
                 },
                 "drawer": {
-                  "$ref": "#/definitions/DrawerSchema",
+                  "$ref": "#/definitions/DrawerSchemaBase",
                   "description": "弹窗内容"
                 },
                 "nextCondition": {
@@ -35640,7 +35638,7 @@
               "description": "配置 ajax 发送地址"
             },
             "feedback": {
-              "$ref": "#/definitions/DialogSchema"
+              "$ref": "#/definitions/DialogSchemaBase"
             },
             "reload": {
               "$ref": "#/definitions/SchemaReload"
@@ -36807,7 +36805,7 @@
               "description": "指定为打开弹窗"
             },
             "dialog": {
-              "$ref": "#/definitions/DialogSchema"
+              "$ref": "#/definitions/DialogSchemaBase"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -37202,7 +37200,7 @@
               "description": "指定为打开弹窗，抽出式弹窗"
             },
             "drawer": {
-              "$ref": "#/definitions/DrawerSchema",
+              "$ref": "#/definitions/DrawerSchemaBase",
               "description": "弹窗内容"
             },
             "nextCondition": {
@@ -39523,7 +39521,7 @@
               "description": "配置 ajax 发送地址"
             },
             "feedback": {
-              "$ref": "#/definitions/DialogSchema"
+              "$ref": "#/definitions/DialogSchemaBase"
             },
             "reload": {
               "$ref": "#/definitions/SchemaReload"
@@ -40690,7 +40688,7 @@
               "description": "指定为打开弹窗"
             },
             "dialog": {
-              "$ref": "#/definitions/DialogSchema"
+              "$ref": "#/definitions/DialogSchemaBase"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -41085,7 +41083,7 @@
               "description": "指定为打开弹窗，抽出式弹窗"
             },
             "drawer": {
-              "$ref": "#/definitions/DrawerSchema",
+              "$ref": "#/definitions/DrawerSchemaBase",
               "description": "弹窗内容"
             },
             "nextCondition": {
