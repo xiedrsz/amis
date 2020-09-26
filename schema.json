@@ -30426,24 +30426,15 @@
                     "description": "是否显示表达式"
                   },
                   "type": {
-                    "type": "string",
-                    "enum": [
-                      "columns-toggler",
-                      "drag-toggler",
-                      "pagination",
-                      "bulkActions",
-                      "bulk-actions",
-                      "statistics",
-                      "switch-per-page",
-                      "load-more",
-                      "filter-toggler",
-                      "export-csv"
-                    ]
+                    "$ref": "#/definitions/CRUDBultinToolbarType"
                   }
                 },
                 "required": [
                   "type"
                 ]
+              },
+              {
+                "$ref": "#/definitions/CRUDBultinToolbarType"
               }
             ]
           },
@@ -30522,24 +30513,15 @@
                     "description": "是否显示表达式"
                   },
                   "type": {
-                    "type": "string",
-                    "enum": [
-                      "columns-toggler",
-                      "drag-toggler",
-                      "pagination",
-                      "bulkActions",
-                      "bulk-actions",
-                      "statistics",
-                      "switch-per-page",
-                      "load-more",
-                      "filter-toggler",
-                      "export-csv"
-                    ]
+                    "$ref": "#/definitions/CRUDBultinToolbarType"
                   }
                 },
                 "required": [
                   "type"
                 ]
+              },
+              {
+                "$ref": "#/definitions/CRUDBultinToolbarType"
               }
             ]
           },
@@ -30627,6 +30609,21 @@
       "required": [
         "mode",
         "type"
+      ]
+    },
+    "CRUDBultinToolbarType": {
+      "type": "string",
+      "enum": [
+        "columns-toggler",
+        "drag-toggler",
+        "pagination",
+        "bulkActions",
+        "bulk-actions",
+        "statistics",
+        "switch-per-page",
+        "load-more",
+        "filter-toggler",
+        "export-csv"
       ]
     },
     "CRUDListSchema": {
@@ -30901,24 +30898,15 @@
                     "description": "是否显示表达式"
                   },
                   "type": {
-                    "type": "string",
-                    "enum": [
-                      "columns-toggler",
-                      "drag-toggler",
-                      "pagination",
-                      "bulkActions",
-                      "bulk-actions",
-                      "statistics",
-                      "switch-per-page",
-                      "load-more",
-                      "filter-toggler",
-                      "export-csv"
-                    ]
+                    "$ref": "#/definitions/CRUDBultinToolbarType"
                   }
                 },
                 "required": [
                   "type"
                 ]
+              },
+              {
+                "$ref": "#/definitions/CRUDBultinToolbarType"
               }
             ]
           },
@@ -30997,24 +30985,15 @@
                     "description": "是否显示表达式"
                   },
                   "type": {
-                    "type": "string",
-                    "enum": [
-                      "columns-toggler",
-                      "drag-toggler",
-                      "pagination",
-                      "bulkActions",
-                      "bulk-actions",
-                      "statistics",
-                      "switch-per-page",
-                      "load-more",
-                      "filter-toggler",
-                      "export-csv"
-                    ]
+                    "$ref": "#/definitions/CRUDBultinToolbarType"
                   }
                 },
                 "required": [
                   "type"
                 ]
+              },
+              {
+                "$ref": "#/definitions/CRUDBultinToolbarType"
               }
             ]
           },
@@ -31555,24 +31534,15 @@
                     "description": "是否显示表达式"
                   },
                   "type": {
-                    "type": "string",
-                    "enum": [
-                      "columns-toggler",
-                      "drag-toggler",
-                      "pagination",
-                      "bulkActions",
-                      "bulk-actions",
-                      "statistics",
-                      "switch-per-page",
-                      "load-more",
-                      "filter-toggler",
-                      "export-csv"
-                    ]
+                    "$ref": "#/definitions/CRUDBultinToolbarType"
                   }
                 },
                 "required": [
                   "type"
                 ]
+              },
+              {
+                "$ref": "#/definitions/CRUDBultinToolbarType"
               }
             ]
           },
@@ -31651,24 +31621,15 @@
                     "description": "是否显示表达式"
                   },
                   "type": {
-                    "type": "string",
-                    "enum": [
-                      "columns-toggler",
-                      "drag-toggler",
-                      "pagination",
-                      "bulkActions",
-                      "bulk-actions",
-                      "statistics",
-                      "switch-per-page",
-                      "load-more",
-                      "filter-toggler",
-                      "export-csv"
-                    ]
+                    "$ref": "#/definitions/CRUDBultinToolbarType"
                   }
                 },
                 "required": [
                   "type"
                 ]
+              },
+              {
+                "$ref": "#/definitions/CRUDBultinToolbarType"
               }
             ]
           },
