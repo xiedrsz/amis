@@ -305,7 +305,13 @@
           "$ref": "#/definitions/DateSchema"
         },
         {
+          "$ref": "#/definitions/DialogSchema"
+        },
+        {
           "$ref": "#/definitions/DividerSchema"
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema"
         },
         {
           "$ref": "#/definitions/DropdownButtonSchema"
@@ -31792,6 +31798,228 @@
       "additionalProperties": false,
       "description": "Date 展示渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/date"
     },
+    "DialogSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "dialog"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ActionSchema"
+          },
+          "description": "默认不用填写，自动会创建确认和取消按钮。"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容区域"
+        },
+        "bodyClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "配置 Body 容器 className"
+        },
+        "closeOnEsc": {
+          "type": "boolean",
+          "description": "是否支持按 ESC 关闭 Dialog"
+        },
+        "name": {
+          "$ref": "#/definitions/SchemaName"
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+            "full"
+          ],
+          "description": "Dialog 大小"
+        },
+        "title": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "请通过配置 title 设置标题"
+        },
+        "header": {
+          "$ref": "#/definitions/SchemaCollection"
+        },
+        "headerClassName": {
+          "$ref": "#/definitions/SchemaClassName"
+        },
+        "footer": {
+          "$ref": "#/definitions/SchemaCollection"
+        },
+        "confirm": {
+          "type": "boolean",
+          "description": "影响自动生成的按钮，如果自己配置了按钮这个配置无效。"
+        },
+        "showCloseButton": {
+          "type": "boolean",
+          "description": "是否显示关闭按钮"
+        },
+        "showErrorMsg": {
+          "type": "boolean",
+          "description": "是否显示错误信息"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Dialog 弹框渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+    },
+    "DrawerSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "drawer"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ActionSchema"
+          },
+          "description": "默认不用填写，自动会创建确认和取消按钮。"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容区域"
+        },
+        "bodyClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "配置 Body 容器 className"
+        },
+        "closeOnEsc": {
+          "type": "boolean",
+          "description": "是否支持按 ESC 关闭 Dialog"
+        },
+        "name": {
+          "$ref": "#/definitions/SchemaName"
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "full"
+          ],
+          "description": "Dialog 大小"
+        },
+        "title": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "请通过配置 title 设置标题"
+        },
+        "position": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right",
+            "top",
+            "bottom"
+          ],
+          "description": "从什么位置弹出"
+        },
+        "header": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "头部"
+        },
+        "footer": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "底部"
+        },
+        "confirm": {
+          "type": "boolean",
+          "description": "影响自动生成的按钮，如果自己配置了按钮这个配置无效。"
+        },
+        "resizable": {
+          "type": "boolean",
+          "description": "是否可以拖动弹窗大小"
+        },
+        "overlay": {
+          "type": "boolean",
+          "description": "是否显示蒙层"
+        },
+        "closeOnOutside": {
+          "type": "boolean",
+          "description": "点击外部的时候是否关闭弹框。"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Drawer 抽出式弹框。\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+    },
     "DropdownButtonSchema": {
       "type": "object",
       "properties": {
@@ -35009,10 +35237,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43100,10 +43342,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|tpl|text|popOver|quickEdit|copyable|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|tpl|text|popOver|quickEdit|copyable|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -43425,10 +43681,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -43750,10 +44020,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44075,10 +44359,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -44400,10 +44698,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|columnClassName|width|height|style)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|columnClassName|width|height|style)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -44725,10 +45037,24 @@
           }
         },
         {
+          "$ref": "#/definitions/DialogSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/DrawerSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|rowClassName|cellClassName)$": {}
           }
         },
         {
