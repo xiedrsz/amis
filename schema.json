@@ -582,7 +582,8 @@
         {
           "$ref": "#/definitions/VanillaAction"
         }
-      ]
+      ],
+      "description": "按钮动作渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/action"
     },
     "AjaxActionSchema": {
       "type": "object",
@@ -1446,7 +1447,8 @@
           "description": "指定为打开弹窗"
         },
         "dialog": {
-          "$ref": "#/definitions/DialogSchemaBase"
+          "$ref": "#/definitions/DialogSchemaBase",
+          "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
         },
         "nextCondition": {
           "$ref": "#/definitions/SchemaExpression",
@@ -1613,7 +1615,7 @@
         },
         "drawer": {
           "$ref": "#/definitions/DrawerSchemaBase",
-          "description": "弹窗内容"
+          "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
         },
         "nextCondition": {
           "$ref": "#/definitions/SchemaExpression",
@@ -5152,7 +5154,8 @@
               "description": "指定为打开弹窗"
             },
             "dialog": {
-              "$ref": "#/definitions/DialogSchemaBase"
+              "$ref": "#/definitions/DialogSchemaBase",
+              "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -5545,7 +5548,7 @@
             },
             "drawer": {
               "$ref": "#/definitions/DrawerSchemaBase",
-              "description": "弹窗内容"
+              "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -23793,14 +23796,7 @@
         "columns": {
           "type": "array",
           "items": {
-            "anyOf": [
-              {
-                "$ref": "#/definitions/TableColumn"
-              },
-              {
-                "$ref": "#/definitions/TableColumnObject"
-              }
-            ]
+            "$ref": "#/definitions/TableColumn"
           },
           "description": "表格的列信息"
         },
@@ -24225,9 +24221,19 @@
       "additionalProperties": false
     },
     "TableColumn": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/TableColumnWithType"
+        },
+        {
+          "$ref": "#/definitions/TableColumnObject"
+        }
+      ]
+    },
+    "TableColumnWithType": {
       "allOf": [
         {
-          "$ref": "#/definitions/SchemaObjectTableColumn",
+          "$ref": "#/definitions/SchemaObjectTableColumnWithType",
           "patternProperties": {
             "^(label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
@@ -26745,7 +26751,8 @@
                   "description": "指定为打开弹窗"
                 },
                 "dialog": {
-                  "$ref": "#/definitions/DialogSchemaBase"
+                  "$ref": "#/definitions/DialogSchemaBase",
+                  "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
                 },
                 "nextCondition": {
                   "$ref": "#/definitions/SchemaExpression",
@@ -26916,7 +26923,7 @@
                 },
                 "drawer": {
                   "$ref": "#/definitions/DrawerSchemaBase",
-                  "description": "弹窗内容"
+                  "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
                 },
                 "nextCondition": {
                   "$ref": "#/definitions/SchemaExpression",
@@ -31255,14 +31262,7 @@
         "columns": {
           "type": "array",
           "items": {
-            "anyOf": [
-              {
-                "$ref": "#/definitions/TableColumn"
-              },
-              {
-                "$ref": "#/definitions/TableColumnObject"
-              }
-            ]
+            "$ref": "#/definitions/TableColumn"
           },
           "description": "表格的列信息"
         },
@@ -33861,14 +33861,7 @@
         "columns": {
           "type": "array",
           "items": {
-            "anyOf": [
-              {
-                "$ref": "#/definitions/TableColumn"
-              },
-              {
-                "$ref": "#/definitions/TableColumnObject"
-              }
-            ]
+            "$ref": "#/definitions/TableColumn"
           },
           "description": "表格的列信息"
         },
@@ -37008,7 +37001,8 @@
               "description": "指定为打开弹窗"
             },
             "dialog": {
-              "$ref": "#/definitions/DialogSchemaBase"
+              "$ref": "#/definitions/DialogSchemaBase",
+              "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -37404,7 +37398,7 @@
             },
             "drawer": {
               "$ref": "#/definitions/DrawerSchemaBase",
-              "description": "弹窗内容"
+              "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -40891,7 +40885,8 @@
               "description": "指定为打开弹窗"
             },
             "dialog": {
-              "$ref": "#/definitions/DialogSchemaBase"
+              "$ref": "#/definitions/DialogSchemaBase",
+              "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -41287,7 +41282,7 @@
             },
             "drawer": {
               "$ref": "#/definitions/DrawerSchemaBase",
-              "description": "弹窗内容"
+              "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -43567,7 +43562,7 @@
         }
       ]
     },
-    "SchemaObjectTableColumn": {
+    "SchemaObjectTableColumnWithType": {
       "anyOf": [
         {
           "$ref": "#/definitions/PageSchema",
