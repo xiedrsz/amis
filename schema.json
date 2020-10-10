@@ -11205,6 +11205,10 @@
           "const": "container",
           "description": "表单项类型"
         },
+        "bodyClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "body 类名"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -11236,14 +11240,6 @@
         "visibleOn": {
           "$ref": "#/definitions/SchemaExpression",
           "description": "是否显示表达式"
-        },
-        "body": {
-          "$ref": "#/definitions/SchemaCollection",
-          "description": "内容"
-        },
-        "bodyClassName": {
-          "$ref": "#/definitions/SchemaClassName",
-          "description": "body 类名"
         },
         "size": {
           "type": "string",
@@ -11498,6 +11494,9 @@
         "value": {
           "description": "默认值，切记只能是静态值，不支持取变量，跟数据关联是通过设置 name 属性来实现的。"
         },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection"
+        },
         "controls": {
           "type": "array",
           "items": {
@@ -11509,7 +11508,6 @@
         "fieldSet": {}
       },
       "required": [
-        "body",
         "type"
       ],
       "additionalProperties": false,
@@ -39034,7 +39032,7 @@
           "$ref": "#/definitions/ContainerControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|tabs|fieldSet|unique|columnClassName)$": {}
+            "^(type|bodyClassName|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|body|controls|tabs|fieldSet|unique|columnClassName)$": {}
           }
         },
         {
@@ -42918,7 +42916,7 @@
           "$ref": "#/definitions/ContainerControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|tabs|fieldSet|columnClassName|columnRatio)$": {}
+            "^(type|bodyClassName|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|body|controls|tabs|fieldSet|columnClassName|columnRatio)$": {}
           }
         },
         {
