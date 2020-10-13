@@ -24724,87 +24724,7 @@
         "tabs": {
           "type": "array",
           "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "controls": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/definitions/FormControlSchema"
-                },
-                "description": "表单项集合"
-              },
-              "tabs": {},
-              "fieldSet": {},
-              "className": {
-                "$ref": "#/definitions/SchemaClassName",
-                "description": "容器 css 类名"
-              },
-              "$ref": {
-                "type": "string",
-                "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
-              },
-              "disabled": {
-                "type": "boolean",
-                "description": "是否禁用"
-              },
-              "disabledOn": {
-                "$ref": "#/definitions/SchemaExpression",
-                "description": "是否禁用表达式"
-              },
-              "hidden": {
-                "type": "boolean",
-                "description": "是否隐藏"
-              },
-              "hiddenOn": {
-                "$ref": "#/definitions/SchemaExpression",
-                "description": "是否隐藏表达式"
-              },
-              "visible": {
-                "type": "boolean",
-                "description": "是否显示"
-              },
-              "visibleOn": {
-                "$ref": "#/definitions/SchemaExpression",
-                "description": "是否显示表达式"
-              },
-              "title": {
-                "type": "string",
-                "description": "Tab 标题"
-              },
-              "tab": {
-                "$ref": "#/definitions/SchemaCollection",
-                "description": "内容"
-              },
-              "body": {
-                "$ref": "#/definitions/SchemaCollection",
-                "description": "内容"
-              },
-              "badge": {
-                "type": "number",
-                "description": "徽标"
-              },
-              "hash": {
-                "type": "string",
-                "description": "设置以后将跟url的hash对应"
-              },
-              "icon": {
-                "$ref": "#/definitions/SchemaIcon",
-                "description": "按钮图标"
-              },
-              "reload": {
-                "type": "boolean",
-                "description": "设置以后内容每次都会重新渲染"
-              },
-              "mountOnEnter": {
-                "type": "boolean",
-                "description": "点开时才加载卡片内容"
-              },
-              "unmountOnExit": {
-                "type": "boolean",
-                "description": "卡片隐藏就销毁卡片节点。"
-              }
-            }
+            "$ref": "#/definitions/TabControlSchema"
           }
         }
       },
@@ -24814,6 +24734,89 @@
       ],
       "additionalProperties": false,
       "description": "Tabs\n文档：https://baidu.gitee.io/amis/docs/components/form/tabs"
+    },
+    "TabControlSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "controls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FormControlSchema"
+          },
+          "description": "表单项集合"
+        },
+        "tabs": {},
+        "fieldSet": {},
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "title": {
+          "type": "string",
+          "description": "Tab 标题"
+        },
+        "tab": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容"
+        },
+        "badge": {
+          "type": "number",
+          "description": "徽标"
+        },
+        "hash": {
+          "type": "string",
+          "description": "设置以后将跟url的hash对应"
+        },
+        "icon": {
+          "$ref": "#/definitions/SchemaIcon",
+          "description": "按钮图标"
+        },
+        "reload": {
+          "type": "boolean",
+          "description": "设置以后内容每次都会重新渲染"
+        },
+        "mountOnEnter": {
+          "type": "boolean",
+          "description": "点开时才加载卡片内容"
+        },
+        "unmountOnExit": {
+          "type": "boolean",
+          "description": "卡片隐藏就销毁卡片节点。"
+        }
+      }
     },
     "TabsTransferControlSchema": {
       "type": "object",
