@@ -32630,10 +32630,6 @@
           "$ref": "#/definitions/SchemaUrlPath",
           "description": "默认图片地址"
         },
-        "description": {
-          "$ref": "#/definitions/SchemaTpl",
-          "description": "图片描述"
-        },
         "title": {
           "$ref": "#/definitions/SchemaTpl",
           "description": "图片标题"
@@ -32710,7 +32706,7 @@
         },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
-          "description": "容器 css 类名"
+          "description": "外层 CSS 类名"
         },
         "$ref": {
           "type": "string",
@@ -32780,16 +32776,24 @@
           "type": "string"
         },
         "src": {
-          "type": "string"
+          "type": "string",
+          "description": "图片地址，如果配置了 name，这个属性不用配置。"
         },
         "originalSrc": {
-          "type": "string"
+          "type": "string",
+          "description": "大图地址，不设置用 src"
         },
         "enlargeAble": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "是否启动放大功能。"
         },
         "showDimensions": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "是否显示尺寸。"
+        },
+        "listClassName": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "列表 CSS 类名"
         }
       },
       "required": [
@@ -35308,14 +35312,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43415,14 +43419,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations)$": {}
           }
         },
         {
@@ -43754,14 +43758,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44093,14 +44097,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44432,14 +44436,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -44771,14 +44775,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|columnClassName|width|height|style)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45110,14 +45114,14 @@
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|description|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|rowClassName|cellClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|rowClassName|cellClassName)$": {}
           }
         },
         {
