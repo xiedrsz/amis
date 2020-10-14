@@ -15682,22 +15682,26 @@
               "tabs": {},
               "fieldSet": {},
               "columnClassName": {
-                "type": "string"
+                "type": "string",
+                "description": "列上 CSS 类名"
               },
               "width": {
                 "type": [
                   "number",
                   "string"
-                ]
+                ],
+                "description": "宽度"
               },
               "height": {
                 "type": [
                   "number",
                   "string"
-                ]
+                ],
+                "description": "高度"
               },
               "style": {
-                "type": "object"
+                "type": "object",
+                "description": "其他样式"
               }
             }
           }
@@ -32426,22 +32430,26 @@
           "additionalProperties": true,
           "properties": {
             "columnClassName": {
-              "type": "string"
+              "type": "string",
+              "description": "列上 CSS 类名"
             },
             "width": {
               "type": [
                 "number",
                 "string"
-              ]
+              ],
+              "description": "宽度"
             },
             "height": {
               "type": [
                 "number",
                 "string"
-              ]
+              ],
+              "description": "高度"
             },
             "style": {
-              "type": "object"
+              "type": "object",
+              "description": "其他样式"
             }
           }
         }
