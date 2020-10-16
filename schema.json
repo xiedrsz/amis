@@ -31215,10 +31215,7 @@
               "$ref": "#/definitions/SchemaCopyable",
               "description": "配置点击复制功能"
             }
-          },
-          "required": [
-            "label"
-          ]
+          }
         }
       ]
     },
@@ -31250,9 +31247,6 @@
           "description": "配置点击复制功能"
         }
       },
-      "required": [
-        "label"
-      ],
       "additionalProperties": false,
       "description": "不指定类型默认就是文本"
     },
