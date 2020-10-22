@@ -143,6 +143,9 @@
         {
           "type": "object",
           "properties": {
+            "label": {
+              "type": "string"
+            },
             "icon": {
               "$ref": "#/definitions/SchemaIcon"
             },
@@ -507,6 +510,9 @@
         "visibleOn": {
           "$ref": "#/definitions/SchemaExpression",
           "description": "是否显示表达式"
+        },
+        "label": {
+          "type": "string"
         },
         "icon": {
           "$ref": "#/definitions/SchemaIcon"
@@ -35468,7 +35474,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43589,7 +43595,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|tpl|text|popOver|quickEdit|copyable|size|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -43928,7 +43934,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44267,7 +44273,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44606,7 +44612,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -44945,7 +44951,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45284,7 +45290,7 @@
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|trigger|title|content|placement|rootClose|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|trigger|title|content|placement|rootClose|rowClassName|cellClassName)$": {}
           }
         },
         {
