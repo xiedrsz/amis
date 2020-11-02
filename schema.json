@@ -10636,7 +10636,7 @@
               "value",
               "field",
               "func",
-              "raw"
+              "formula"
             ]
           }
         },
@@ -10730,7 +10730,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -10785,7 +10785,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -10840,7 +10840,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -10897,7 +10897,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -10954,7 +10954,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -11012,7 +11012,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -11068,7 +11068,7 @@
                   "value",
                   "field",
                   "func",
-                  "raw"
+                  "formula"
                 ]
               }
             },
@@ -11131,7 +11131,7 @@
               "value",
               "field",
               "func",
-              "raw"
+              "formula"
             ]
           }
         },
@@ -11179,7 +11179,7 @@
               "value",
               "field",
               "func",
-              "raw"
+              "formula"
             ]
           }
         }
@@ -30139,6 +30139,10 @@
         "replaceChartOption": {
           "type": "boolean",
           "description": "默认配置时追加的，如果更新配置想完全替换配置请配置为 true."
+        },
+        "unMountOnHidden": {
+          "type": "boolean",
+          "description": "不可见的时候隐藏"
         }
       },
       "required": [
@@ -35559,7 +35563,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43680,7 +43684,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44019,7 +44023,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44358,7 +44362,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44697,7 +44701,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45036,7 +45040,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|columnClassName)$": {}
           }
         },
         {
@@ -45375,7 +45379,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|rowClassName|cellClassName)$": {}
           }
         },
         {
