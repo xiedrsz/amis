@@ -819,6 +819,10 @@
           "type": "object",
           "description": "用来控制携带数据. 当key 为 `&` 值为 `$$` 时, 将所有原始数据打平设置到 data 中. 当值为 $$ 将所有原始数据赋值到对应的 key 中. 当值为 $ 打头时, 将变量值设置到 key 中."
         },
+        "attachDataToQuery": {
+          "type": "boolean",
+          "description": "如果 method 为 get 的接口，设置了 data 信息。\n默认 data 会自动附带在 query 里面发送给后端。\n\n如果想通过 body 发送给后端，那么请把这个配置成 false。\n\n但是，浏览器还不支持啊，设置了只是摆设。"
+        },
         "dataType": {
           "type": "string",
           "enum": [
