@@ -374,6 +374,9 @@
           "$ref": "#/definitions/QRCodeSchema"
         },
         {
+          "$ref": "#/definitions/SearchBoxSchema"
+        },
+        {
           "$ref": "#/definitions/ServiceSchema"
         },
         {
@@ -32460,10 +32463,6 @@
           ],
           "description": "按钮级别，样式"
         },
-        "tooltip": {
-          "$ref": "#/definitions/SchemaTooltip",
-          "description": "按钮提示文字，hover 时显示"
-        },
         "closeOnOutside": {
           "type": "boolean",
           "description": "点击外部是否关闭"
@@ -33952,6 +33951,65 @@
       ],
       "additionalProperties": false,
       "description": "二维码展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/qrcode"
+    },
+    "SearchBoxSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "search-box",
+          "description": "指定为搜索框。\n\n文档：https://baidu.gitee.io/amis/docs/components/search-box"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "name": {
+          "type": "string",
+          "description": "关键字名字。"
+        },
+        "mini": {
+          "type": "boolean",
+          "description": "是否为 Mini 样式。"
+        },
+        "searchImediately": {
+          "type": "boolean",
+          "description": "是否立马搜索。"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "搜索框渲染器"
     },
     "ServiceSchema": {
       "type": "object",
@@ -35626,7 +35684,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -35746,6 +35804,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43747,7 +43812,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|tpl|text|popOver|quickEdit|copyable|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|tpl|text|popOver|quickEdit|copyable|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -43867,6 +43932,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44086,7 +44158,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44206,6 +44278,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44425,7 +44504,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44545,6 +44624,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44764,7 +44850,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -44884,6 +44970,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45103,7 +45196,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45223,6 +45316,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|columnClassName|width|height|style)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45442,7 +45542,7 @@
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|tooltip|closeOnOutside|closeOnClick|size|align|iconOnly|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|rowClassName|cellClassName)$": {}
           }
         },
         {
@@ -45562,6 +45662,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SearchBoxSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|rowClassName|cellClassName)$": {}
           }
         },
         {
