@@ -5594,7 +5594,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/each.md": {
-      "url": "/amis/docs/components/each_cbca146.js",
+      "url": "/amis/docs/components/each_9d55dcb.js",
       "type": "js"
     },
     "docs/components/grid.md": {
