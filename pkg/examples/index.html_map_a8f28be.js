@@ -5238,7 +5238,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/start/getting-started.md": {
-      "url": "/amis/docs/start/getting-started_2761906.js",
+      "url": "/amis/docs/start/getting-started_cb3060e.js",
       "type": "js"
     },
     "docs/start/custom.md": {
@@ -5558,7 +5558,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/chart.md": {
-      "url": "/amis/docs/components/chart_968ad52.js",
+      "url": "/amis/docs/components/chart_b46709c.js",
       "type": "js"
     },
     "docs/components/collapse.md": {
