@@ -5502,7 +5502,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/time.md": {
-      "url": "/amis/docs/components/form/time_cd3a30b.js",
+      "url": "/amis/docs/components/form/time_89bd0a8.js",
       "type": "js"
     },
     "docs/components/form/transfer.md": {
@@ -5522,7 +5522,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/crud.md": {
-      "url": "/amis/docs/components/crud_0808c22.js",
+      "url": "/amis/docs/components/crud_d4704dd.js",
       "type": "js"
     },
     "docs/components/action.md": {
@@ -5578,7 +5578,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/dialog.md": {
-      "url": "/amis/docs/components/dialog_6448199.js",
+      "url": "/amis/docs/components/dialog_a1ad149.js",
       "type": "js"
     },
     "docs/components/divider.md": {
