@@ -5558,7 +5558,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/chart.md": {
-      "url": "/amis/docs/components/chart_b46709c.js",
+      "url": "/amis/docs/components/chart_c9bb606.js",
       "type": "js"
     },
     "docs/components/collapse.md": {
