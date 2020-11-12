@@ -5286,7 +5286,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/types/api.md": {
-      "url": "/amis/docs/types/api_4b17f70.js",
+      "url": "/amis/docs/types/api_40af299.js",
       "type": "js"
     },
     "docs/types/definitions.md": {
