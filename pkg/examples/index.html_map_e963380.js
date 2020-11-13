@@ -5386,7 +5386,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/file.md": {
-      "url": "/amis/docs/components/form/file_bdcf7fa.js",
+      "url": "/amis/docs/components/form/file_aa65d7c.js",
       "type": "js"
     },
     "docs/components/form/formula.md": {
@@ -5410,7 +5410,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/image.md": {
-      "url": "/amis/docs/components/form/image_fc03f34.js",
+      "url": "/amis/docs/components/form/image_246a4d7.js",
       "type": "js"
     },
     "docs/components/form/input-group.md": {
