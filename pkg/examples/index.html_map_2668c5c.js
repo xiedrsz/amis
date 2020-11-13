@@ -5502,7 +5502,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/time.md": {
-      "url": "/amis/docs/components/form/time_89bd0a8.js",
+      "url": "/amis/docs/components/form/time_cd3a30b.js",
       "type": "js"
     },
     "docs/components/form/transfer.md": {
