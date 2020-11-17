@@ -24573,6 +24573,10 @@
         "needConfirm": {
           "type": "boolean",
           "description": "是否为确认的编辑模式。"
+        },
+        "canAccessSuperData": {
+          "type": "boolean",
+          "description": "是否可以访问父级数据，正常 combo 已经关联到数组成员，是不能访问父级数据的。"
         }
       },
       "required": [
@@ -39715,7 +39719,7 @@
           "$ref": "#/definitions/TableControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|unique|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|canAccessSuperData|unique|columnClassName)$": {}
           }
         },
         {
@@ -43606,7 +43610,7 @@
           "$ref": "#/definitions/TableControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|columnClassName|columnRatio)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|canAccessSuperData|columnClassName|columnRatio)$": {}
           }
         },
         {

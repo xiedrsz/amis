@@ -5290,7 +5290,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/types/definitions.md": {
-      "url": "/amis/docs/types/definitions_570d029.js",
+      "url": "/amis/docs/types/definitions_1a363ce.js",
       "type": "js"
     },
     "docs/components/component.md": {
@@ -5350,7 +5350,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/combo.md": {
-      "url": "/amis/docs/components/form/combo_c16efe6.js",
+      "url": "/amis/docs/components/form/combo_6c6592c.js",
       "type": "js"
     },
     "docs/components/form/date.md": {
@@ -5486,7 +5486,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/table.md": {
-      "url": "/amis/docs/components/form/table_68ae913.js",
+      "url": "/amis/docs/components/form/table_c544e3b.js",
       "type": "js"
     },
     "docs/components/form/tag.md": {
