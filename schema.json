@@ -31007,7 +31007,8 @@
         "switch-per-page",
         "load-more",
         "filter-toggler",
-        "export-csv"
+        "export-csv",
+        "export-excel"
       ]
     },
     "CRUDListSchema": {
