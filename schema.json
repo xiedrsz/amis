@@ -13875,6 +13875,14 @@
     "FieldSetControlSchema": {
       "type": "object",
       "properties": {
+        "titlePosition": {
+          "type": "string",
+          "enum": [
+            "top",
+            "bottom"
+          ],
+          "description": "标题展示位置"
+        },
         "bodyClassName": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "配置 Body 容器 className"
@@ -13894,6 +13902,10 @@
         "title": {
           "$ref": "#/definitions/SchemaTpl",
           "description": "标题"
+        },
+        "collapseTitle": {
+          "$ref": "#/definitions/SchemaTpl",
+          "description": "收起的标题"
         },
         "size": {
           "type": "string",
@@ -14201,6 +14213,7 @@
         }
       },
       "required": [
+        "titlePosition",
         "type"
       ],
       "additionalProperties": false,
@@ -30249,6 +30262,14 @@
           "$ref": "#/definitions/SchemaExpression",
           "description": "是否显示表达式"
         },
+        "titlePosition": {
+          "type": "string",
+          "enum": [
+            "top",
+            "bottom"
+          ],
+          "description": "标题展示位置"
+        },
         "body": {
           "$ref": "#/definitions/SchemaCollection",
           "description": "内容区域"
@@ -30273,6 +30294,10 @@
           "$ref": "#/definitions/SchemaTpl",
           "description": "标题"
         },
+        "collapseTitle": {
+          "$ref": "#/definitions/SchemaTpl",
+          "description": "收起的标题"
+        },
         "size": {
           "type": "string",
           "enum": [
@@ -30287,6 +30312,7 @@
       },
       "required": [
         "body",
+        "titlePosition",
         "type"
       ],
       "additionalProperties": false,
@@ -35637,7 +35663,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -39532,7 +39558,7 @@
           "$ref": "#/definitions/FieldSetControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(bodyClassName|collapsable|collapsed|headingClassName|title|size|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|unique|columnClassName)$": {}
+            "^(titlePosition|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|unique|columnClassName)$": {}
           }
         },
         {
@@ -43423,7 +43449,7 @@
           "$ref": "#/definitions/FieldSetControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(bodyClassName|collapsable|collapsed|headingClassName|title|size|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|columnClassName|columnRatio)$": {}
+            "^(titlePosition|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -43765,7 +43791,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|tpl|text|popOver|quickEdit|copyable|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|tpl|text|popOver|quickEdit|copyable|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44111,7 +44137,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44457,7 +44483,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44803,7 +44829,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45149,7 +45175,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45495,7 +45521,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|collapsable|collapsed|headingClassName|title|size|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|rowClassName|cellClassName)$": {}
           }
         },
         {

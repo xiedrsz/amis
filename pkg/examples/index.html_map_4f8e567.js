@@ -5386,7 +5386,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/fieldset.md": {
-      "url": "/amis/docs/components/form/fieldset_4c2f548.js",
+      "url": "/amis/docs/components/form/fieldset_c0ec356.js",
       "type": "js"
     },
     "docs/components/form/file.md": {
@@ -5518,7 +5518,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/tree.md": {
-      "url": "/amis/docs/components/form/tree_5d83cb3.js",
+      "url": "/amis/docs/components/form/tree_e60e9e4.js",
       "type": "js"
     },
     "docs/components/form/treeselect.md": {
