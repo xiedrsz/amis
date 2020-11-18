@@ -5242,7 +5242,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/start/getting-started.md": {
-      "url": "/amis/docs/start/getting-started_bd84186.js",
+      "url": "/amis/docs/start/getting-started_f983962.js",
       "type": "js"
     },
     "docs/start/custom.md": {
@@ -5712,7 +5712,7 @@ amis.require.resourceMap({
   },
   "pkg": {
     "p8": {
-      "url": "/amis/pkg/rest_f7e81f0.js",
+      "url": "/amis/pkg/rest_d63d9a8.js",
       "type": "js"
     },
     "p4": {
