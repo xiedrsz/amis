@@ -5390,7 +5390,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/file.md": {
-      "url": "/amis/docs/components/form/file_aa65d7c.js",
+      "url": "/amis/docs/components/form/file_bc58de7.js",
       "type": "js"
     },
     "docs/components/form/formula.md": {
