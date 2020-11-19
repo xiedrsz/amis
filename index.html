@@ -12,15 +12,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />          
     <link rel="stylesheet" href="/amis/pkg/style_1835d29.css" />
     <link rel="stylesheet" href="/amis/pkg/npm_c91a575.css" />
-    <link rel="stylesheet" title="default" href="/amis/scss/themes/default_b8fdd9e.css" />
+    <link rel="stylesheet" title="default" href="/amis/scss/themes/default_b034a98.css" />
     <link
       rel="stylesheet"
       title="cxd"
-      disabled href="/amis/scss/themes/cxd_e05de16.css" />
+      disabled href="/amis/scss/themes/cxd_c03514e.css" />
     <link
       rel="stylesheet"
       title="dark"
-      disabled href="/amis/scss/themes/dark_76d6f14.css" />
+      disabled href="/amis/scss/themes/dark_39810d7.css" />
     <style>
       .app-wrapper {
         position: relative;
@@ -32,59 +32,27 @@
 
   <body>
     <div id="root" class="app-wrapper"></div>  
-<script src="/amis/pkg/npm_332f335.js"></script>
-<script type="text/javascript" src="/amis/pkg/examples/index.html_map_3696169.js"></script>
-<script type="text/javascript" src="/amis/pkg/app_1fac70b.js"></script>
+<script src="/amis/pkg/npm_9e09bfc.js"></script>
+<script type="text/javascript" src="/amis/pkg/examples/index.html_map_036edb9.js"></script>
+<script type="text/javascript" src="/amis/pkg/app_a3323bb.js"></script>
 <script type="text/javascript" src="/amis/pkg/rich-text_5b6e508.js"></script>
-<script type="text/javascript" src="/amis/pkg/rest_f55e76b.js"></script>
+<script type="text/javascript" src="/amis/pkg/rest_0338ad1.js"></script>
 <script type="text/javascript">
-      if (location.hash === '#mobileView') {
-        // TODO: 本来应该使用 mobile.html 的，但 gh-pages 编译时 themes 下的 scss hash 不一致导致出错，所以先和 index.html 放一起
-        const themes = [
-          {
-            label: '默认主题',
-            value: 'default'
-          },
-          {
-            label: '百度云舍',
-            value: 'cxd'
-          },
-          {
-            label: 'Dark',
-            value: 'dark'
-          }
-        ];
-        const theme = themes[localStorage.getItem('themeIndex') || 0];
-        // mobile 下先禁掉所有外链避免影响
-        document.querySelectorAll('link').forEach(item => {
-          item.disabled = true;
-        });
-        document.querySelector(`link[title=${theme.value}]`).disabled = false;
-        if (theme.value === 'dark') {
-          document.querySelector('body').classList.add('dark');
-        }
+      var _hmt = _hmt || [];
 
-        amis.require(['e7fadaf'], function (app) {
-          app.bootstrap(document.getElementById('root'), {});
-        });
-      } else {
-        var _hmt = _hmt || [];
+      // 百度统计
+      (function () {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?1f80f2c9dbe21dc3af239cf9eee90f1f';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
 
-        // 百度统计
-        (function () {
-          var hm = document.createElement('script');
-          hm.src =
-            'https://hm.baidu.com/hm.js?1f80f2c9dbe21dc3af239cf9eee90f1f';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-
-        /* @require examples/index.jsx 标记为同步依赖，提前加载 */
-        amis.require(['ca626e1'], function (app) {
-          var initialState = {};
-          app.bootstrap(document.getElementById('root'), initialState);
-        });
-      }
+      /* @require examples/index.jsx 标记为同步依赖，提前加载 */
+      amis.require(['ca626e1'], function (app) {
+        var initialState = {};
+        app.bootstrap(document.getElementById('root'), initialState);
+      });
     </script>
 </body>
 </html>

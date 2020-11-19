@@ -11,15 +11,15 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />      
     <link rel="stylesheet" type="text/css" href="/amis/pkg/npm_c91a575.css" />
-    <link rel="stylesheet" title="default" href="/amis/scss/themes/default_a2dad20.css" />
+    <link rel="stylesheet" title="default" href="/amis/scss/themes/default_b034a98.css" />
     <link
       rel="stylesheet"
       title="cxd"
-      disabled href="/amis/scss/themes/cxd_5a3a3b0.css" />
+      disabled href="/amis/scss/themes/cxd_c03514e.css" />
     <link
       rel="stylesheet"
       title="dark"
-      disabled href="/amis/scss/themes/dark_00ee9df.css" />
+      disabled href="/amis/scss/themes/dark_39810d7.css" />
     <style>
       .app-wrapper {
         position: relative;
@@ -31,40 +31,35 @@
 
   <body>
     <div id="root" class="app-wrapper"></div>  
-<script src="/amis/pkg/npm_332f335.js"></script>
-<script type="text/javascript" src="/amis/pkg/examples/mobile.html_map_4116f47.js"></script>
+<script src="/amis/pkg/npm_9e09bfc.js"></script>
+<script type="text/javascript" src="/amis/pkg/examples/mobile.html_map_0d28a67.js"></script>
 <script type="text/javascript">
       const themes = [
         {
           label: '默认主题',
-          ns: 'a-',
           value: 'default'
         },
-
         {
           label: '百度云舍',
-          ns: 'cxd-',
           value: 'cxd'
         },
         {
           label: 'Dark',
-          ns: 'dark-',
           value: 'dark'
         }
       ];
       const theme = themes[localStorage.getItem('themeIndex') || 0];
-      if (theme.value !== 'default') {
-        document.querySelectorAll('link[title]').forEach(item => {
-          item.disabled = true;
-        });
-        document.querySelector(`link[title=${theme.value}]`).disabled = false;
-        if (theme.value === 'dark') {
-          document.querySelector('body').classList.add('dark');
-        }
+      // mobile 下先禁掉所有外链避免影响
+      document.querySelectorAll('link').forEach(item => {
+        item.disabled = true;
+      });
+      document.querySelector(`link[title=${theme.value}]`).disabled = false;
+      if (theme.value === 'dark') {
+        document.querySelector('body').classList.add('dark');
       }
+
       amis.require(['e7fadaf'], function (app) {
-        var initialState = {};
-        app.bootstrap(document.getElementById('root'), initialState);
+        app.bootstrap(document.getElementById('root'), {});
       });
     </script>
 </body>
