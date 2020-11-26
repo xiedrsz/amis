@@ -5529,6 +5529,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/components/crud_e969608.js",
       "type": "js"
     },
+    "docs/components/table.md": {
+      "url": "/amis/docs/components/table_3cc384a.js",
+      "type": "js"
+    },
     "docs/components/action.md": {
       "url": "/amis/docs/components/action_9cad237.js",
       "type": "js"
@@ -5679,10 +5683,6 @@ amis.require.resourceMap({
     },
     "docs/components/switch.md": {
       "url": "/amis/docs/components/switch_abda78d.js",
-      "type": "js"
-    },
-    "docs/components/table.md": {
-      "url": "/amis/docs/components/table_685f034.js",
       "type": "js"
     },
     "docs/components/tabs.md": {
