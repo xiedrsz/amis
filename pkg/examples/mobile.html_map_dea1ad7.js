@@ -576,10 +576,14 @@ amis.require.resourceMap({
       "type": "js",
       "pkg": "p7"
     },
+    "e07c21a": {
+      "type": "js",
+      "pkg": "p7"
+    },
     "716c289": {
       "type": "js",
       "deps": [
-        "448f42f"
+        "e07c21a"
       ],
       "pkg": "p7"
     },
@@ -735,7 +739,7 @@ amis.require.resourceMap({
         "4ad5d54",
         "bc87d08",
         "9a80175",
-        "448f42f"
+        "e07c21a"
       ],
       "pkg": "p7"
     },
@@ -744,7 +748,7 @@ amis.require.resourceMap({
       "deps": [
         "7820b08",
         "956950c",
-        "448f42f"
+        "e07c21a"
       ],
       "pkg": "p7"
     },
@@ -787,7 +791,8 @@ amis.require.resourceMap({
         "4fbfbc8",
         "4e9b495",
         "4550477",
-        "4ad5d54"
+        "4ad5d54",
+        "e07c21a"
       ],
       "pkg": "p7"
     },
@@ -8631,11 +8636,11 @@ amis.require.resourceMap({
   },
   "pkg": {
     "p8": {
-      "url": "/amis/pkg/rest_07feab3.js",
+      "url": "/amis/pkg/rest_2a33f60.js",
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_35ddfda.js",
+      "url": "/amis/pkg/app_264abfe.js",
       "type": "js"
     },
     "p1": {

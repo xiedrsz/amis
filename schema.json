@@ -232,7 +232,7 @@
     },
     "SchemaTpl": {
       "type": "string",
-      "description": "支持两种语法，但是不能混着用。分别是：\n\n1. `${xxx}` 或者 `${xxx|upperCase}`\n2. `<%= data.xxx %>`\n\n\n更多文档：https://baidu.gitee.io/amis/docs/concepts/template"
+      "description": "支持两种语法，但是不能混着用。分别是：\n\n1. `${xxx}` 或者 `${xxx|upperCase}` 2. `<%= data.xxx %>`\n\n\n更多文档：https://baidu.gitee.io/amis/docs/concepts/template"
     },
     "SchemaCollection": {
       "anyOf": [
@@ -598,7 +598,7 @@
           "$ref": "#/definitions/VanillaAction"
         }
       ],
-      "description": "按钮动作渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/action"
+      "description": "按钮动作渲染器。 文档：https://baidu.gitee.io/amis/docs/components/action"
     },
     "AjaxActionSchema": {
       "type": "object",
@@ -824,7 +824,7 @@
         },
         "attachDataToQuery": {
           "type": "boolean",
-          "description": "如果 method 为 get 的接口，设置了 data 信息。\n默认 data 会自动附带在 query 里面发送给后端。\n\n如果想通过 body 发送给后端，那么请把这个配置成 false。\n\n但是，浏览器还不支持啊，设置了只是摆设。"
+          "description": "如果 method 为 get 的接口，设置了 data 信息。 默认 data 会自动附带在 query 里面发送给后端。\n\n如果想通过 body 发送给后端，那么请把这个配置成 false。\n\n但是，浏览器还不支持啊，设置了只是摆设。"
         },
         "dataType": {
           "type": "string",
@@ -1467,7 +1467,7 @@
         },
         "dialog": {
           "$ref": "#/definitions/DialogSchemaBase",
-          "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+          "description": "弹框详情 文档：https://baidu.gitee.io/amis/docs/components/dialog"
         },
         "nextCondition": {
           "$ref": "#/definitions/SchemaExpression",
@@ -1634,7 +1634,7 @@
         },
         "drawer": {
           "$ref": "#/definitions/DrawerSchemaBase",
-          "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+          "description": "抽出式弹框详情 文档：https://baidu.gitee.io/amis/docs/components/drawer"
         },
         "nextCondition": {
           "$ref": "#/definitions/SchemaExpression",
@@ -2444,7 +2444,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Alert 提示渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/alert"
+      "description": "Alert 提示渲染器。 文档：https://baidu.gitee.io/amis/docs/components/alert"
     },
     "AudioSchema": {
       "type": "object",
@@ -2528,7 +2528,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Audio 音频渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/audio"
+      "description": "Audio 音频渲染器。 文档：https://baidu.gitee.io/amis/docs/components/audio"
     },
     "ButtonGroupSchema": {
       "type": "object",
@@ -2615,7 +2615,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Button Group 渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/button-group"
+      "description": "Button Group 渲染器。 文档：https://baidu.gitee.io/amis/docs/components/button-group"
     },
     "ButtonToolbarSchema": {
       "type": "object",
@@ -2669,7 +2669,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Button Toolar 渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/button-toolbar"
+      "description": "Button Toolar 渲染器。 文档：https://baidu.gitee.io/amis/docs/components/button-toolbar"
     },
     "CardSchema": {
       "type": "object",
@@ -2803,7 +2803,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Card 卡片渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/card"
+      "description": "Card 卡片渲染器。 文档：https://baidu.gitee.io/amis/docs/components/card"
     },
     "CardBodyField": {
       "allOf": [
@@ -3356,7 +3356,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -3599,7 +3599,7 @@
         "items"
       ],
       "additionalProperties": false,
-      "description": "Array 数组输入框。 combo 的别名。\n文档：https://baidu.gitee.io/amis/docs/components/form/array"
+      "description": "Array 数组输入框。 combo 的别名。 文档：https://baidu.gitee.io/amis/docs/components/form/array"
     },
     "FormSchemaHorizontal": {
       "type": "object",
@@ -3730,7 +3730,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -4122,7 +4122,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -4509,7 +4509,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -4892,7 +4892,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -5177,7 +5177,7 @@
             },
             "dialog": {
               "$ref": "#/definitions/DialogSchemaBase",
-              "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+              "description": "弹框详情 文档：https://baidu.gitee.io/amis/docs/components/dialog"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -5285,7 +5285,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -5570,7 +5570,7 @@
             },
             "drawer": {
               "$ref": "#/definitions/DrawerSchemaBase",
-              "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+              "description": "抽出式弹框详情 文档：https://baidu.gitee.io/amis/docs/components/drawer"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -5678,7 +5678,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -6061,7 +6061,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -6438,7 +6438,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -6823,7 +6823,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -7110,7 +7110,7 @@
           ]
         }
       ],
-      "description": "按钮控件。\n文档：https://baidu.gitee.io/amis/docs/components/form/button"
+      "description": "按钮控件。 文档：https://baidu.gitee.io/amis/docs/components/form/button"
     },
     "ButtonGroupControlSchema": {
       "type": "object",
@@ -7160,7 +7160,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -7282,7 +7282,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -7559,7 +7559,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "按钮组控件。\n文档：https://baidu.gitee.io/amis/docs/components/form/button-group"
+      "description": "按钮组控件。 文档：https://baidu.gitee.io/amis/docs/components/form/button-group"
     },
     "Option": {
       "type": "object",
@@ -7715,7 +7715,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -7927,7 +7927,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "按钮工具栏控件。\n文档：https://baidu.gitee.io/amis/docs/components/form/button-toolbar"
+      "description": "按钮工具栏控件。 文档：https://baidu.gitee.io/amis/docs/components/form/button-toolbar"
     },
     "ChainedSelectControlSchema": {
       "type": "object",
@@ -8022,7 +8022,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -8267,7 +8267,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -8347,7 +8347,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "级联选择框\n文档：https://baidu.gitee.io/amis/docs/components/form/chained-select"
+      "description": "级联选择框 文档：https://baidu.gitee.io/amis/docs/components/form/chained-select"
     },
     "CheckboxControlSchema": {
       "type": "object",
@@ -8442,7 +8442,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -8657,7 +8657,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Checkbox 勾选框。\n文档：https://baidu.gitee.io/amis/docs/components/form/checkbox"
+      "description": "Checkbox 勾选框。 文档：https://baidu.gitee.io/amis/docs/components/form/checkbox"
     },
     "CheckboxesControlSchema": {
       "type": "object",
@@ -8752,7 +8752,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -8997,7 +8997,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -9089,7 +9089,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "复选框\n文档：https://baidu.gitee.io/amis/docs/components/form/checkboxes"
+      "description": "复选框 文档：https://baidu.gitee.io/amis/docs/components/form/checkboxes"
     },
     "CityControlSchema": {
       "type": "object",
@@ -9184,7 +9184,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -9407,13 +9407,17 @@
         "allowStreet": {
           "type": "boolean",
           "description": "允许选择街道？"
+        },
+        "searchable": {
+          "type": "boolean",
+          "description": "是否显示搜索框"
         }
       },
       "required": [
         "type"
       ],
       "additionalProperties": false,
-      "description": "City 城市选择框。\n文档：https://baidu.gitee.io/amis/docs/components/form/city"
+      "description": "City 城市选择框。 文档：https://baidu.gitee.io/amis/docs/components/form/city"
     },
     "ColorControlSchema": {
       "type": "object",
@@ -9508,7 +9512,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -9740,7 +9744,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Color 颜色选择框\n文档：https://baidu.gitee.io/amis/docs/components/form/color"
+      "description": "Color 颜色选择框 文档：https://baidu.gitee.io/amis/docs/components/form/color"
     },
     "ComboControlSchema": {
       "type": "object",
@@ -9835,7 +9839,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -10192,7 +10196,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Combo 组合输入框类型\n文档：https://baidu.gitee.io/amis/docs/components/form/combo"
+      "description": "Combo 组合输入框类型 文档：https://baidu.gitee.io/amis/docs/components/form/combo"
     },
     "ComboCondition": {
       "type": "object",
@@ -10338,7 +10342,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -10556,7 +10560,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "条件组合控件\n文档：https://baidu.gitee.io/amis/docs/components/form/condition-builder"
+      "description": "条件组合控件 文档：https://baidu.gitee.io/amis/docs/components/form/condition-builder"
     },
     "Funcs": {
       "type": "array",
@@ -11316,7 +11320,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -11533,7 +11537,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "容器空间\n文档：https://baidu.gitee.io/amis/docs/components/form/contaier"
+      "description": "容器空间 文档：https://baidu.gitee.io/amis/docs/components/form/contaier"
     },
     "DateControlSchema": {
       "type": "object",
@@ -11628,7 +11632,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -11865,7 +11869,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Date日期选择控件\n文档：https://baidu.gitee.io/amis/docs/components/form/date"
+      "description": "Date日期选择控件 文档：https://baidu.gitee.io/amis/docs/components/form/date"
     },
     "DateTimeControlSchema": {
       "type": "object",
@@ -11960,7 +11964,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -12200,7 +12204,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Datetime日期时间选择控件\n文档：https://baidu.gitee.io/amis/docs/components/form/datetime"
+      "description": "Datetime日期时间选择控件 文档：https://baidu.gitee.io/amis/docs/components/form/datetime"
     },
     "TimeControlSchema": {
       "type": "object",
@@ -12295,7 +12299,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -12527,7 +12531,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Time 时间选择控件\n文档：https://baidu.gitee.io/amis/docs/components/form/time"
+      "description": "Time 时间选择控件 文档：https://baidu.gitee.io/amis/docs/components/form/time"
     },
     "MonthControlSchema": {
       "type": "object",
@@ -12622,7 +12626,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -12847,7 +12851,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Month 月份选择控件\n文档：https://baidu.gitee.io/amis/docs/components/form/Month"
+      "description": "Month 月份选择控件 文档：https://baidu.gitee.io/amis/docs/components/form/Month"
     },
     "DateRangeControlSchema": {
       "type": "object",
@@ -12942,7 +12946,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -13175,7 +13179,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "DateRange 日期范围控件\n文档：https://baidu.gitee.io/amis/docs/components/form/date-range"
+      "description": "DateRange 日期范围控件 文档：https://baidu.gitee.io/amis/docs/components/form/date-range"
     },
     "DiffControlSchema": {
       "type": "object",
@@ -13270,7 +13274,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -13486,7 +13490,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Diff 编辑器\n文档：https://baidu.gitee.io/amis/docs/components/form/diff"
+      "description": "Diff 编辑器 文档：https://baidu.gitee.io/amis/docs/components/form/diff"
     },
     "EditorControlSchema": {
       "type": "object",
@@ -13578,7 +13582,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -13870,7 +13874,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Editor 代码编辑器\n文档：https://baidu.gitee.io/amis/docs/components/form/editor"
+      "description": "Editor 代码编辑器 文档：https://baidu.gitee.io/amis/docs/components/form/editor"
     },
     "FieldSetControlSchema": {
       "type": "object",
@@ -14000,7 +14004,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -14217,7 +14221,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "FieldSet 表单项集合\n文档：https://baidu.gitee.io/amis/docs/components/form/fieldset"
+      "description": "FieldSet 表单项集合 文档：https://baidu.gitee.io/amis/docs/components/form/fieldset"
     },
     "FileControlSchema": {
       "type": "object",
@@ -14312,7 +14316,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -14518,7 +14522,7 @@
         },
         "accept": {
           "type": "string",
-          "description": "默认只支持纯文本，要支持其他类型，请配置此属性。建议直接填写文件后缀\n如：.txt,.csv\n\n多个类型用逗号隔开。"
+          "description": "默认只支持纯文本，要支持其他类型，请配置此属性。建议直接填写文件后缀 如：.txt,.csv\n\n多个类型用逗号隔开。"
         },
         "asBase64": {
           "type": "boolean",
@@ -14547,7 +14551,7 @@
         },
         "downloadUrl": {
           "type": "string",
-          "description": "默认显示文件路径的时候会支持直接下载，\n可以支持加前缀如：`http://xx.dom/filename=` ，\n如果不希望这样，可以把当前配置项设置为 `false`。"
+          "description": "默认显示文件路径的时候会支持直接下载， 可以支持加前缀如：`http://xx.dom/filename=` ， 如果不希望这样，可以把当前配置项设置为 `false`。"
         },
         "fileField": {
           "type": "string",
@@ -14603,7 +14607,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "1. 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，\n否则，整个选项对象都会作为该表单项的值提交。\n2. 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，\n否则直接将以数组的形式提交值。"
+          "description": "1. 单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交， 否则，整个选项对象都会作为该表单项的值提交。 2. 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来， 否则直接将以数组的形式提交值。"
         },
         "extractValue": {
           "type": "boolean",
@@ -14657,7 +14661,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "File 文件上传控件\n文档：https://baidu.gitee.io/amis/docs/components/form/file"
+      "description": "File 文件上传控件 文档：https://baidu.gitee.io/amis/docs/components/form/file"
     },
     "FormulaControlSchema": {
       "type": "object",
@@ -14752,7 +14756,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -14977,7 +14981,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "公式功能控件。\n文档：https://baidu.gitee.io/amis/docs/components/form/formula"
+      "description": "公式功能控件。 文档：https://baidu.gitee.io/amis/docs/components/form/formula"
     },
     "GridControlSchema": {
       "type": "object",
@@ -15072,7 +15076,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -15384,7 +15388,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Grid 格子布局\n文档：https://baidu.gitee.io/amis/docs/components/form/grid"
+      "description": "Grid 格子布局 文档：https://baidu.gitee.io/amis/docs/components/form/grid"
     },
     "GroupControlSchema": {
       "type": "object",
@@ -15479,7 +15483,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -15718,7 +15722,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Group 表单集合渲染器，能让多个表单在一行显示\n文档：https://baidu.gitee.io/amis/docs/components/form/group"
+      "description": "Group 表单集合渲染器，能让多个表单在一行显示 文档：https://baidu.gitee.io/amis/docs/components/form/group"
     },
     "GroupSubControl": {
       "allOf": [
@@ -15837,7 +15841,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -16083,7 +16087,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "HBox 水平布局控件。\n文档：https://baidu.gitee.io/amis/docs/components/form/hbox"
+      "description": "HBox 水平布局控件。 文档：https://baidu.gitee.io/amis/docs/components/form/hbox"
     },
     "HiddenControlSchema": {
       "type": "object",
@@ -16178,7 +16182,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -16383,7 +16387,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Hidden 隐藏域。功能性组件\n文档：https://baidu.gitee.io/amis/docs/components/form/hidden"
+      "description": "Hidden 隐藏域。功能性组件 文档：https://baidu.gitee.io/amis/docs/components/form/hidden"
     },
     "IconPickerControlSchema": {
       "type": "object",
@@ -16478,7 +16482,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -16683,7 +16687,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "图标选择器\n文档：https://baidu.gitee.io/amis/docs/components/form/icon-picker"
+      "description": "图标选择器 文档：https://baidu.gitee.io/amis/docs/components/form/icon-picker"
     },
     "ImageControlSchema": {
       "type": "object",
@@ -16778,7 +16782,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -16988,7 +16992,7 @@
         },
         "accept": {
           "type": "string",
-          "description": "配置接收的图片类型\n\n建议直接填写文件后缀\n如：.txt,.csv\n\n多个类型用逗号隔开。"
+          "description": "配置接收的图片类型\n\n建议直接填写文件后缀 如：.txt,.csv\n\n多个类型用逗号隔开。"
         },
         "allowInput": {
           "type": "boolean",
@@ -17122,7 +17126,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -17166,7 +17170,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Image 图片上传控件\n文档：https://baidu.gitee.io/amis/docs/components/form/image"
+      "description": "Image 图片上传控件 文档：https://baidu.gitee.io/amis/docs/components/form/image"
     },
     "InputGroupControlSchema": {
       "type": "object",
@@ -17261,7 +17265,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -17474,7 +17478,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "InputGroup\n文档：https://baidu.gitee.io/amis/docs/components/form/input-group"
+      "description": "InputGroup 文档：https://baidu.gitee.io/amis/docs/components/form/input-group"
     },
     "ListControlSchema": {
       "type": "object",
@@ -17569,7 +17573,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -17814,7 +17818,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -17906,7 +17910,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "List 复选框\n文档：https://baidu.gitee.io/amis/docs/components/form/list"
+      "description": "List 复选框 文档：https://baidu.gitee.io/amis/docs/components/form/list"
     },
     "LocationControlSchema": {
       "type": "object",
@@ -18001,7 +18005,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -18219,7 +18223,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Location 选点组件\n文档：https://baidu.gitee.io/amis/docs/components/form/location"
+      "description": "Location 选点组件 文档：https://baidu.gitee.io/amis/docs/components/form/location"
     },
     "MatrixControlSchema": {
       "type": "object",
@@ -18314,7 +18318,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -18563,7 +18567,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Matrix 选择控件。适合做权限勾选。\n文档：https://baidu.gitee.io/amis/docs/components/form/matrix"
+      "description": "Matrix 选择控件。适合做权限勾选。 文档：https://baidu.gitee.io/amis/docs/components/form/matrix"
     },
     "NestedSelectControlSchema": {
       "type": "object",
@@ -18658,7 +18662,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -18903,7 +18907,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -18983,7 +18987,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Nested Select\n文档：https://baidu.gitee.io/amis/docs/components/form/nested-select"
+      "description": "Nested Select 文档：https://baidu.gitee.io/amis/docs/components/form/nested-select"
     },
     "NumberControlSchema": {
       "type": "object",
@@ -19078,7 +19082,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -19299,7 +19303,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "数字输入框\n文档：https://baidu.gitee.io/amis/docs/components/form/number"
+      "description": "数字输入框 文档：https://baidu.gitee.io/amis/docs/components/form/number"
     },
     "PanelControlSchema": {
       "type": "object",
@@ -19445,7 +19449,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -19659,7 +19663,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "容器空间\n文档：https://baidu.gitee.io/amis/docs/components/form/contaier"
+      "description": "容器空间 文档：https://baidu.gitee.io/amis/docs/components/form/contaier"
     },
     "PickerControlSchema": {
       "type": "object",
@@ -19754,7 +19758,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -19999,7 +20003,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -20080,7 +20084,7 @@
         },
         "labelField": {
           "type": "string",
-          "description": "建议用 labelTpl\n选中一个字段名用来作为值的描述文字"
+          "description": "建议用 labelTpl 选中一个字段名用来作为值的描述文字"
         },
         "valueField": {
           "type": "string",
@@ -20106,7 +20110,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Picker\n文档：https://baidu.gitee.io/amis/docs/components/form/picker"
+      "description": "Picker 文档：https://baidu.gitee.io/amis/docs/components/form/picker"
     },
     "RadiosControlSchema": {
       "type": "object",
@@ -20201,7 +20205,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -20446,7 +20450,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -20530,7 +20534,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Radio 单选框。\n文档：https://baidu.gitee.io/amis/docs/components/form/radios"
+      "description": "Radio 单选框。 文档：https://baidu.gitee.io/amis/docs/components/form/radios"
     },
     "RangeControlSchema": {
       "type": "object",
@@ -20625,7 +20629,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -20846,7 +20850,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Range\n文档：https://baidu.gitee.io/amis/docs/components/form/range"
+      "description": "Range 文档：https://baidu.gitee.io/amis/docs/components/form/range"
     },
     "RatingControlSchema": {
       "type": "object",
@@ -20941,7 +20945,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -21154,7 +21158,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Rating\n文档：https://baidu.gitee.io/amis/docs/components/form/rating"
+      "description": "Rating 文档：https://baidu.gitee.io/amis/docs/components/form/rating"
     },
     "RichTextControlSchema": {
       "type": "object",
@@ -21249,7 +21253,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -21468,7 +21472,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "RichText\n文档：https://baidu.gitee.io/amis/docs/components/form/rich-text"
+      "description": "RichText 文档：https://baidu.gitee.io/amis/docs/components/form/rich-text"
     },
     "RepeatControlSchema": {
       "type": "object",
@@ -21563,7 +21567,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -21771,7 +21775,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Repeat\n文档：https://baidu.gitee.io/amis/docs/components/form/repeat"
+      "description": "Repeat 文档：https://baidu.gitee.io/amis/docs/components/form/repeat"
     },
     "SelectControlSchema": {
       "type": "object",
@@ -21869,7 +21873,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -22114,7 +22118,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -22191,7 +22195,7 @@
         },
         "autoComplete": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "自动完成 API，当输入部分文字的时候，会将这些文字通过 ${term} 可以取到，发送给接口。\n接口可以返回匹配到的选项，帮助用户输入。"
+          "description": "自动完成 API，当输入部分文字的时候，会将这些文字通过 ${term} 可以取到，发送给接口。 接口可以返回匹配到的选项，帮助用户输入。"
         },
         "searchable": {
           "type": "boolean",
@@ -22202,7 +22206,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Select 下拉选择框。\n文档：https://baidu.gitee.io/amis/docs/components/form/select"
+      "description": "Select 下拉选择框。 文档：https://baidu.gitee.io/amis/docs/components/form/select"
     },
     "ServiceControlSchema": {
       "type": "object",
@@ -22343,7 +22347,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -22557,7 +22561,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Sevice\n文档：https://baidu.gitee.io/amis/docs/components/form/sevice"
+      "description": "Sevice 文档：https://baidu.gitee.io/amis/docs/components/form/sevice"
     },
     "SchemaMessage": {
       "type": "object",
@@ -22675,7 +22679,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -22939,7 +22943,7 @@
             },
             "initAsyncApi": {
               "$ref": "#/definitions/SchemaApi",
-              "description": "Form 用来获取初始数据的 api,与initApi不同的是，会一直轮训请求该接口，直到返回 finished 属性为 true 才 结束。"
+              "description": "Form 用来获取初始数据的 api,与initApi不同的是，会一直轮询请求该接口，直到返回 finished 属性为 true 才 结束。"
             },
             "initFinishedField": {
               "type": "string",
@@ -22983,11 +22987,11 @@
             },
             "asyncApi": {
               "$ref": "#/definitions/SchemaApi",
-              "description": "设置此属性后，表单提交发送保存接口后，还会继续轮训请求该接口，直到返回 finished 属性为 true 才 结束。"
+              "description": "设置此属性后，表单提交发送保存接口后，还会继续轮询请求该接口，直到返回 finished 属性为 true 才 结束。"
             },
             "checkInterval": {
               "type": "number",
-              "description": "轮训请求的时间间隔，默认为 3秒。设置 asyncApi 才有效"
+              "description": "轮询请求的时间间隔，默认为 3秒。设置 asyncApi 才有效"
             },
             "finishedField": {
               "type": "string",
@@ -23127,7 +23131,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "SubForm 子表单\n文档：https://baidu.gitee.io/amis/docs/components/form/subform"
+      "description": "SubForm 子表单 文档：https://baidu.gitee.io/amis/docs/components/form/subform"
     },
     "SchemaDefaultData": {
       "type": "object",
@@ -23230,7 +23234,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -23445,7 +23449,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Switch\n文档：https://baidu.gitee.io/amis/docs/components/form/switch"
+      "description": "Switch 文档：https://baidu.gitee.io/amis/docs/components/form/switch"
     },
     "StaticControlSchema": {
       "anyOf": [
@@ -23542,7 +23546,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -23895,7 +23899,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -24120,7 +24124,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Static\n文档：https://baidu.gitee.io/amis/docs/components/form/static"
+      "description": "Static 文档：https://baidu.gitee.io/amis/docs/components/form/static"
     },
     "TableControlSchema": {
       "type": "object",
@@ -24304,7 +24308,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -24683,7 +24687,7 @@
                 "md",
                 "lg"
               ],
-              "description": "结合表格的 footable 一起使用。\n填写 *、xs、sm、md、lg指定 footable 的触发条件，可以填写多个用空格隔开"
+              "description": "结合表格的 footable 一起使用。 填写 *、xs、sm、md、lg指定 footable 的触发条件，可以填写多个用空格隔开"
             },
             "remark": {
               "$ref": "#/definitions/SchemaRemark",
@@ -24763,7 +24767,7 @@
             "md",
             "lg"
           ],
-          "description": "结合表格的 footable 一起使用。\n填写 *、xs、sm、md、lg指定 footable 的触发条件，可以填写多个用空格隔开"
+          "description": "结合表格的 footable 一起使用。 填写 *、xs、sm、md、lg指定 footable 的触发条件，可以填写多个用空格隔开"
         },
         "remark": {
           "$ref": "#/definitions/SchemaRemark",
@@ -24900,7 +24904,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -25112,7 +25116,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Tabs\n文档：https://baidu.gitee.io/amis/docs/components/form/tabs"
+      "description": "Tabs 文档：https://baidu.gitee.io/amis/docs/components/form/tabs"
     },
     "TabControlSchema": {
       "type": "object",
@@ -25290,7 +25294,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -25535,7 +25539,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -25641,7 +25645,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "TabsTransfer\n文档：https://baidu.gitee.io/amis/docs/components/form/tabs-transfer"
+      "description": "TabsTransfer 文档：https://baidu.gitee.io/amis/docs/components/form/tabs-transfer"
     },
     "TagControlSchema": {
       "type": "object",
@@ -25736,7 +25740,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -25981,7 +25985,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -26069,7 +26073,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Tag 输入框\n文档：https://baidu.gitee.io/amis/docs/components/form/tag"
+      "description": "Tag 输入框 文档：https://baidu.gitee.io/amis/docs/components/form/tag"
     },
     "TextControlSchema": {
       "type": "object",
@@ -26169,7 +26173,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -26414,7 +26418,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -27132,7 +27136,7 @@
                 },
                 "dialog": {
                   "$ref": "#/definitions/DialogSchemaBase",
-                  "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+                  "description": "弹框详情 文档：https://baidu.gitee.io/amis/docs/components/dialog"
                 },
                 "nextCondition": {
                   "$ref": "#/definitions/SchemaExpression",
@@ -27303,7 +27307,7 @@
                 },
                 "drawer": {
                   "$ref": "#/definitions/DrawerSchemaBase",
-                  "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+                  "description": "抽出式弹框详情 文档：https://baidu.gitee.io/amis/docs/components/drawer"
                 },
                 "nextCondition": {
                   "$ref": "#/definitions/SchemaExpression",
@@ -27969,14 +27973,14 @@
         },
         "autoComplete": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "自动完成 API，当输入部分文字的时候，会将这些文字通过 ${term} 可以取到，发送给接口。\n接口可以返回匹配到的选项，帮助用户输入。"
+          "description": "自动完成 API，当输入部分文字的时候，会将这些文字通过 ${term} 可以取到，发送给接口。 接口可以返回匹配到的选项，帮助用户输入。"
         }
       },
       "required": [
         "type"
       ],
       "additionalProperties": false,
-      "description": "Text 文本输入框。\n文档：https://baidu.gitee.io/amis/docs/components/form/text"
+      "description": "Text 文本输入框。 文档：https://baidu.gitee.io/amis/docs/components/form/text"
     },
     "TextareaControlSchema": {
       "type": "object",
@@ -28071,7 +28075,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -28284,7 +28288,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "TextArea 多行文本输入框。\n文档：https://baidu.gitee.io/amis/docs/components/form/textarea"
+      "description": "TextArea 多行文本输入框。 文档：https://baidu.gitee.io/amis/docs/components/form/textarea"
     },
     "TransferControlSchema": {
       "type": "object",
@@ -28379,7 +28383,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -28624,7 +28628,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -28771,7 +28775,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Transfer\n文档：https://baidu.gitee.io/amis/docs/components/form/transfer"
+      "description": "Transfer 文档：https://baidu.gitee.io/amis/docs/components/form/transfer"
     },
     "TreeControlSchema": {
       "type": "object",
@@ -28866,7 +28870,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -29111,7 +29115,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -29222,7 +29226,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Tree 下拉选择框。\n文档：https://baidu.gitee.io/amis/docs/components/form/tree"
+      "description": "Tree 下拉选择框。 文档：https://baidu.gitee.io/amis/docs/components/form/tree"
     },
     "TreeSelectControlSchema": {
       "type": "object",
@@ -29317,7 +29321,7 @@
         },
         "validateOnChange": {
           "type": "boolean",
-          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+          "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
         },
         "description": {
           "type": "string",
@@ -29562,7 +29566,7 @@
         },
         "joinValues": {
           "type": "boolean",
-          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。\n多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
+          "description": "单选模式：当用户选中某个选项时，选项中的 value 将被作为该表单项的值提交，否则，整个选项对象都会作为该表单项的值提交。 多选模式：选中的多个选项的 `value` 会通过 `delimiter` 连接起来，否则直接将以数组的形式提交值。"
         },
         "delimiter": {
           "type": "string",
@@ -29673,7 +29677,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Tree 下拉选择框。\n文档：https://baidu.gitee.io/amis/docs/components/form/tree"
+      "description": "Tree 下拉选择框。 文档：https://baidu.gitee.io/amis/docs/components/form/tree"
     },
     "DividerSchema": {
       "type": "object",
@@ -29725,7 +29729,7 @@
       "required": [
         "type"
       ],
-      "description": "Divider 分割线渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/divider"
+      "description": "Divider 分割线渲染器。 文档：https://baidu.gitee.io/amis/docs/components/divider"
     },
     "CardsSchema": {
       "type": "object",
@@ -29965,7 +29969,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Cards 卡片集合渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/card"
+      "description": "Cards 卡片集合渲染器。 文档：https://baidu.gitee.io/amis/docs/components/card"
     },
     "CarouselSchema": {
       "type": "object",
@@ -30074,7 +30078,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Carousel 轮播图渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/carousel"
+      "description": "Carousel 轮播图渲染器。 文档：https://baidu.gitee.io/amis/docs/components/carousel"
     },
     "ChartSchema": {
       "type": "object",
@@ -30173,7 +30177,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Chart 图表渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/carousel"
+      "description": "Chart 图表渲染器。 文档：https://baidu.gitee.io/amis/docs/components/carousel"
     },
     "SchemaFunction": {
       "anyOf": [
@@ -30189,7 +30193,7 @@
             },
             "arguments": {},
             "caller": {
-              "$ref": "#/definitions/interface-731470504-9814-11278-731470504-0-210430"
+              "$ref": "#/definitions/interface-731470504-9814-11278-731470504-0-211035"
             }
           },
           "required": [
@@ -30202,7 +30206,7 @@
         }
       ]
     },
-    "interface-731470504-9814-11278-731470504-0-210430": {
+    "interface-731470504-9814-11278-731470504-0-211035": {
       "type": "object",
       "properties": {
         "prototype": {},
@@ -30211,7 +30215,7 @@
         },
         "arguments": {},
         "caller": {
-          "$ref": "#/definitions/interface-731470504-9814-11278-731470504-0-210430"
+          "$ref": "#/definitions/interface-731470504-9814-11278-731470504-0-211035"
         }
       },
       "required": [
@@ -30316,7 +30320,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Collapse 折叠渲染器，格式说明。\n文档：https://baidu.gitee.io/amis/docs/components/collapse"
+      "description": "Collapse 折叠渲染器，格式说明。 文档：https://baidu.gitee.io/amis/docs/components/collapse"
     },
     "ColorSchema": {
       "type": "object",
@@ -30371,7 +30375,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Color 显示渲染器，格式说明。\n文档：https://baidu.gitee.io/amis/docs/components/color"
+      "description": "Color 显示渲染器，格式说明。 文档：https://baidu.gitee.io/amis/docs/components/color"
     },
     "ContainerSchema": {
       "type": "object",
@@ -30427,7 +30431,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Container 容器渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/container"
+      "description": "Container 容器渲染器。 文档：https://baidu.gitee.io/amis/docs/components/container"
     },
     "CRUDSchema": {
       "anyOf": [
@@ -30441,7 +30445,7 @@
           "$ref": "#/definitions/CRUDTableSchem"
         }
       ],
-      "description": "CRUD 增删改查渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/crud"
+      "description": "CRUD 增删改查渲染器。 文档：https://baidu.gitee.io/amis/docs/components/crud"
     },
     "CRUDCardsSchema": {
       "type": "object",
@@ -32188,7 +32192,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Date 展示渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/date"
+      "description": "Date 展示渲染器。 文档：https://baidu.gitee.io/amis/docs/components/date"
     },
     "DialogSchema": {
       "type": "object",
@@ -32293,7 +32297,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Dialog 弹框渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+      "description": "Dialog 弹框渲染器。 文档：https://baidu.gitee.io/amis/docs/components/dialog"
     },
     "DrawerSchema": {
       "type": "object",
@@ -32410,7 +32414,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Drawer 抽出式弹框。\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+      "description": "Drawer 抽出式弹框。 文档：https://baidu.gitee.io/amis/docs/components/drawer"
     },
     "DropdownButtonSchema": {
       "type": "object",
@@ -32529,7 +32533,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "下拉按钮渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/dropdown-button"
+      "description": "下拉按钮渲染器。 文档：https://baidu.gitee.io/amis/docs/components/dropdown-button"
     },
     "EachSchema": {
       "type": "object",
@@ -32586,7 +32590,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Each 循环功能渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/each"
+      "description": "Each 循环功能渲染器。 文档：https://baidu.gitee.io/amis/docs/components/each"
     },
     "GridSchema": {
       "type": "object",
@@ -32640,7 +32644,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Grid 格子布局渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/grid"
+      "description": "Grid 格子布局渲染器。 文档：https://baidu.gitee.io/amis/docs/components/grid"
     },
     "GridColumn": {
       "allOf": [
@@ -32798,7 +32802,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Hbox 水平布局渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/hbox"
+      "description": "Hbox 水平布局渲染器。 文档：https://baidu.gitee.io/amis/docs/components/hbox"
     },
     "HBoxColumn": {
       "allOf": [
@@ -32894,7 +32898,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Icon 图表渲染器\n文档：https://baidu.gitee.io/amis/docs/components/icon"
+      "description": "Icon 图表渲染器 文档：https://baidu.gitee.io/amis/docs/components/icon"
     },
     "IFrameSchema": {
       "type": "object",
@@ -32964,7 +32968,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "IFrame 渲染器\n文档：https://baidu.gitee.io/amis/docs/components/iframe"
+      "description": "IFrame 渲染器 文档：https://baidu.gitee.io/amis/docs/components/iframe"
     },
     "ImageSchema": {
       "type": "object",
@@ -33074,7 +33078,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "图片展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/image"
+      "description": "图片展示控件。 文档：https://baidu.gitee.io/amis/docs/components/image"
     },
     "ImagesSchema": {
       "type": "object",
@@ -33183,7 +33187,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "图片集展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/images"
+      "description": "图片集展示控件。 文档：https://baidu.gitee.io/amis/docs/components/images"
     },
     "JsonSchema": {
       "type": "object",
@@ -33245,7 +33249,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "JSON 数据展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/json"
+      "description": "JSON 数据展示控件。 文档：https://baidu.gitee.io/amis/docs/components/json"
     },
     "LinkSchema": {
       "type": "object",
@@ -33300,7 +33304,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Link 链接展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/link"
+      "description": "Link 链接展示控件。 文档：https://baidu.gitee.io/amis/docs/components/link"
     },
     "ListSchema": {
       "type": "object",
@@ -33422,7 +33426,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "List 列表展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/card"
+      "description": "List 列表展示控件。 文档：https://baidu.gitee.io/amis/docs/components/card"
     },
     "MappingSchema": {
       "type": "object",
@@ -33487,7 +33491,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Mapping 映射展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/mapping"
+      "description": "Mapping 映射展示控件。 文档：https://baidu.gitee.io/amis/docs/components/mapping"
     },
     "NavSchema": {
       "type": "object",
@@ -33549,7 +33553,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Nav 导航渲染器\n文档：https://baidu.gitee.io/amis/docs/components/nav"
+      "description": "Nav 导航渲染器 文档：https://baidu.gitee.io/amis/docs/components/nav"
     },
     "NavItemSchema": {
       "type": "object",
@@ -33662,7 +33666,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "操作栏渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/operation"
+      "description": "操作栏渲染器。 文档：https://baidu.gitee.io/amis/docs/components/operation"
     },
     "PanelSchema": {
       "type": "object",
@@ -33760,7 +33764,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Panel渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/panel"
+      "description": "Panel渲染器。 文档：https://baidu.gitee.io/amis/docs/components/panel"
     },
     "PlainSchema": {
       "type": "object",
@@ -33824,7 +33828,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Plain 纯文本渲染器\n文档：https://baidu.gitee.io/amis/docs/components/plain"
+      "description": "Plain 纯文本渲染器 文档：https://baidu.gitee.io/amis/docs/components/plain"
     },
     "ProgressSchema": {
       "type": "object",
@@ -33897,7 +33901,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "进度展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/progress"
+      "description": "进度展示控件。 文档：https://baidu.gitee.io/amis/docs/components/progress"
     },
     "QRCodeSchema": {
       "type": "object",
@@ -33981,7 +33985,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "二维码展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/qrcode"
+      "description": "二维码展示控件。 文档：https://baidu.gitee.io/amis/docs/components/qrcode"
     },
     "SearchBoxSchema": {
       "type": "object",
@@ -34136,7 +34140,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Service 服务类控件。\n文档：https://baidu.gitee.io/amis/docs/components/service"
+      "description": "Service 服务类控件。 文档：https://baidu.gitee.io/amis/docs/components/service"
     },
     "StatusSchema": {
       "type": "object",
@@ -34201,7 +34205,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "状态展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/status"
+      "description": "状态展示控件。 文档：https://baidu.gitee.io/amis/docs/components/status"
     },
     "SwitchSchema": {
       "type": "object",
@@ -34267,7 +34271,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "开关展示控件。\n文档：https://baidu.gitee.io/amis/docs/components/switch"
+      "description": "开关展示控件。 文档：https://baidu.gitee.io/amis/docs/components/switch"
     },
     "TableSchema": {
       "type": "object",
@@ -34406,7 +34410,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Table 表格渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/table"
+      "description": "Table 表格渲染器。 文档：https://baidu.gitee.io/amis/docs/components/table"
     },
     "TabsSchema": {
       "type": "object",
@@ -34490,7 +34494,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "选项卡控件。\n文档：https://baidu.gitee.io/amis/docs/components/tabs"
+      "description": "选项卡控件。 文档：https://baidu.gitee.io/amis/docs/components/tabs"
     },
     "TabSchema": {
       "type": "object",
@@ -34649,7 +34653,7 @@
                   4,
                   5
                 ],
-                "description": "任务状态：\n0: 初始状态，不可操作。\n1: 就绪，可操作状态。\n2: 进行中，还没有结束。\n3：有错误，不可重试。\n4: 已正常结束。\n5：有错误，且可以重试。"
+                "description": "任务状态： 0: 初始状态，不可操作。 1: 就绪，可操作状态。 2: 进行中，还没有结束。 3：有错误，不可重试。 4: 已正常结束。 5：有错误，且可以重试。"
               }
             },
             "additionalProperties": false
@@ -34739,7 +34743,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Tasks 渲染器，格式说明\n文档：https://baidu.gitee.io/amis/docs/components/tasks"
+      "description": "Tasks 渲染器，格式说明 文档：https://baidu.gitee.io/amis/docs/components/tasks"
     },
     "VBoxSchema": {
       "type": "object",
@@ -34792,7 +34796,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "垂直布局控件\n文档：https://baidu.gitee.io/amis/docs/components/vbox"
+      "description": "垂直布局控件 文档：https://baidu.gitee.io/amis/docs/components/vbox"
     },
     "HboxRow": {
       "allOf": [
@@ -34869,7 +34873,7 @@
           "additionalProperties": {
             "type": "string"
           },
-          "description": "设置后，可以显示切帧.点击帧的时候会将视频跳到对应时间。\n\nframes: {\n  '01:22': 'http://domain/xxx.jpg'\n}"
+          "description": "设置后，可以显示切帧.点击帧的时候会将视频跳到对应时间。\n\nframes: {  '01:22': 'http://domain/xxx.jpg' }"
         },
         "framesClassName": {
           "$ref": "#/definitions/SchemaClassName",
@@ -34933,7 +34937,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "视频播放器\n文档：https://baidu.gitee.io/amis/docs/components/video"
+      "description": "视频播放器 文档：https://baidu.gitee.io/amis/docs/components/video"
     },
     "WizardSchema": {
       "type": "object",
@@ -34997,7 +35001,7 @@
         },
         "api": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "Wizard 用来保存数据的 api。\n[详情](https://baidu.github.io/amis/docs/api#wizard)"
+          "description": "Wizard 用来保存数据的 api。 [详情](https://baidu.github.io/amis/docs/api#wizard)"
         },
         "bulkSubmit": {
           "type": "boolean",
@@ -35057,7 +35061,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "表单向导\n文档：https://baidu.gitee.io/amis/docs/components/wizard"
+      "description": "表单向导 文档：https://baidu.gitee.io/amis/docs/components/wizard"
     },
     "WizardStepSchema": {
       "type": "object",
@@ -35069,7 +35073,7 @@
         },
         "asyncApi": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "设置此属性后，表单提交发送保存接口后，还会继续轮训请求该接口，直到返回 finished 属性为 true 才 结束。"
+          "description": "设置此属性后，表单提交发送保存接口后，还会继续轮询请求该接口，直到返回 finished 属性为 true 才 结束。"
         },
         "initApi": {
           "$ref": "#/definitions/SchemaApi",
@@ -35125,7 +35129,7 @@
         },
         "initAsyncApi": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "Form 用来获取初始数据的 api,与initApi不同的是，会一直轮训请求该接口，直到返回 finished 属性为 true 才 结束。"
+          "description": "Form 用来获取初始数据的 api,与initApi不同的是，会一直轮询请求该接口，直到返回 finished 属性为 true 才 结束。"
         },
         "initFinishedField": {
           "type": "string",
@@ -35165,7 +35169,7 @@
         },
         "checkInterval": {
           "type": "number",
-          "description": "轮训请求的时间间隔，默认为 3秒。设置 asyncApi 才有效"
+          "description": "轮询请求的时间间隔，默认为 3秒。设置 asyncApi 才有效"
         },
         "finishedField": {
           "type": "string",
@@ -35348,7 +35352,7 @@
         "type"
       ],
       "additionalProperties": false,
-      "description": "Wrapper 容器渲染器。\n文档：https://baidu.gitee.io/amis/docs/components/wrapper"
+      "description": "Wrapper 容器渲染器。 文档：https://baidu.gitee.io/amis/docs/components/wrapper"
     },
     "FormSchema": {
       "type": "object",
@@ -35423,7 +35427,7 @@
         },
         "initAsyncApi": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "Form 用来获取初始数据的 api,与initApi不同的是，会一直轮训请求该接口，直到返回 finished 属性为 true 才 结束。"
+          "description": "Form 用来获取初始数据的 api,与initApi不同的是，会一直轮询请求该接口，直到返回 finished 属性为 true 才 结束。"
         },
         "initFinishedField": {
           "type": "string",
@@ -35467,11 +35471,11 @@
         },
         "asyncApi": {
           "$ref": "#/definitions/SchemaApi",
-          "description": "设置此属性后，表单提交发送保存接口后，还会继续轮训请求该接口，直到返回 finished 属性为 true 才 结束。"
+          "description": "设置此属性后，表单提交发送保存接口后，还会继续轮询请求该接口，直到返回 finished 属性为 true 才 结束。"
         },
         "checkInterval": {
           "type": "number",
-          "description": "轮训请求的时间间隔，默认为 3秒。设置 asyncApi 才有效"
+          "description": "轮询请求的时间间隔，默认为 3秒。设置 asyncApi 才有效"
         },
         "finishedField": {
           "type": "string",
@@ -36014,7 +36018,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -36409,7 +36413,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -36799,7 +36803,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -37185,7 +37189,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -37470,7 +37474,7 @@
             },
             "dialog": {
               "$ref": "#/definitions/DialogSchemaBase",
-              "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+              "description": "弹框详情 文档：https://baidu.gitee.io/amis/docs/components/dialog"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -37581,7 +37585,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -37866,7 +37870,7 @@
             },
             "drawer": {
               "$ref": "#/definitions/DrawerSchemaBase",
-              "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+              "description": "抽出式弹框详情 文档：https://baidu.gitee.io/amis/docs/components/drawer"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -37977,7 +37981,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -38363,7 +38367,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -38743,7 +38747,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -39132,7 +39136,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -39474,7 +39478,7 @@
           "$ref": "#/definitions/CityControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|extractValue|joinValues|delimiter|allowCity|allowDistrict|allowStreet|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|extractValue|joinValues|delimiter|allowCity|allowDistrict|allowStreet|searchable|unique|columnClassName)$": {}
           }
         },
         {
@@ -39905,7 +39909,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -40300,7 +40304,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -40690,7 +40694,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -41076,7 +41080,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -41361,7 +41365,7 @@
             },
             "dialog": {
               "$ref": "#/definitions/DialogSchemaBase",
-              "description": "弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/dialog"
+              "description": "弹框详情 文档：https://baidu.gitee.io/amis/docs/components/dialog"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -41472,7 +41476,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -41757,7 +41761,7 @@
             },
             "drawer": {
               "$ref": "#/definitions/DrawerSchemaBase",
-              "description": "抽出式弹框详情\n文档：https://baidu.gitee.io/amis/docs/components/drawer"
+              "description": "抽出式弹框详情 文档：https://baidu.gitee.io/amis/docs/components/drawer"
             },
             "nextCondition": {
               "$ref": "#/definitions/SchemaExpression",
@@ -41868,7 +41872,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -42254,7 +42258,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -42634,7 +42638,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -43023,7 +43027,7 @@
             },
             "validateOnChange": {
               "type": "boolean",
-              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证，\n如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
+              "description": "不设置时，当表单提交过后表单项每次修改都会触发重新验证， 如果设置了，则由此配置项来决定要不要每次修改都触发验证。"
             },
             "description": {
               "type": "string",
@@ -43365,7 +43369,7 @@
           "$ref": "#/definitions/CityControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|extractValue|joinValues|delimiter|allowCity|allowDistrict|allowStreet|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|extractValue|joinValues|delimiter|allowCity|allowDistrict|allowStreet|searchable|columnClassName|columnRatio)$": {}
           }
         },
         {
