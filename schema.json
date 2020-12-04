@@ -1728,6 +1728,10 @@
           "type": "boolean",
           "description": "点击外部的时候是否关闭弹框。"
         },
+        "showErrorMsg": {
+          "type": "boolean",
+          "description": "是否显示错误信息"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -32408,6 +32412,10 @@
         "closeOnOutside": {
           "type": "boolean",
           "description": "点击外部的时候是否关闭弹框。"
+        },
+        "showErrorMsg": {
+          "type": "boolean",
+          "description": "是否显示错误信息"
         }
       },
       "required": [
@@ -35712,7 +35720,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43840,7 +43848,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|tpl|text|popOver|quickEdit|copyable|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|tpl|text|popOver|quickEdit|copyable|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44186,7 +44194,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44532,7 +44540,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44878,7 +44886,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45224,7 +45232,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45570,7 +45578,7 @@
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|rowClassName|cellClassName)$": {}
           }
         },
         {
