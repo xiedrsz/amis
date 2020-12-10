@@ -9,17 +9,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />      
-    <link rel="stylesheet" type="text/css" href="/amis/pkg/npm_c91a575.css" />
-    <link rel="stylesheet" title="default" href="/amis/scss/themes/default_59acf59.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />          
+    <link rel="stylesheet" href="/amis/pkg/npm_c91a575.css" />
+    <link rel="stylesheet" title="default" href="/amis/scss/themes/default_c859a50.css" />
     <link
       rel="stylesheet"
       title="cxd"
-      disabled href="/amis/scss/themes/cxd_68aea19.css" />
+      disabled href="/amis/scss/themes/cxd_bf4368e.css" />
     <link
       rel="stylesheet"
       title="dark"
-      disabled href="/amis/scss/themes/dark_71e9b1f.css" />
+      disabled href="/amis/scss/themes/dark_895fb91.css" />
+    <link rel="stylesheet" href="/amis/pkg/style_5e4ffbd.css" />
     <style>
       .app-wrapper {
         position: relative;
@@ -32,7 +33,7 @@
   <body>
     <div id="root" class="app-wrapper"></div>  
 <script src="/amis/pkg/npm_9e09bfc.js"></script>
-<script type="text/javascript" src="/amis/pkg/examples/mobile.html_map_5f5bc9d.js"></script>
+<script type="text/javascript" src="/amis/pkg/examples/mobile.html_map_b66fefb.js"></script>
 <script type="text/javascript">
       const themes = [
         {
@@ -50,7 +51,7 @@
       ];
       const theme = themes[localStorage.getItem('themeIndex') || 0];
       // mobile 下先禁掉所有外链避免影响
-      document.querySelectorAll('link').forEach(item => {
+      document.querySelectorAll('link[title]').forEach(item => {
         item.disabled = true;
       });
       document.querySelector(`link[title=${theme.value}]`).disabled = false;
