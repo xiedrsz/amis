@@ -2,7 +2,7 @@ amis.require.resourceMap({
   "res": {
     "b961301": {
       "type": "js",
-      "pkg": "p8"
+      "pkg": "p9"
     },
     "node_modules/papaparse/papaparse.min": {
       "type": "js",
@@ -5236,10 +5236,530 @@ amis.require.resourceMap({
     "node_modules/hls.js/dist/hls": {
       "url": "/amis/n/hls.js/dist/hls_a1c9175.js",
       "type": "js"
+    },
+    "docs/index.md": {
+      "url": "/amis/docs/index_eaae4f8.js",
+      "type": "js"
+    },
+    "docs/start/getting-started.md": {
+      "url": "/amis/docs/start/getting-started_a4ee4e3.js",
+      "type": "js"
+    },
+    "docs/start/custom.md": {
+      "url": "/amis/docs/start/custom_031d0df.js",
+      "type": "js"
+    },
+    "docs/start/faq.md": {
+      "url": "/amis/docs/start/faq_537350c.js",
+      "type": "js"
+    },
+    "docs/concepts/schema.md": {
+      "url": "/amis/docs/concepts/schema_ac9e378.js",
+      "type": "js"
+    },
+    "docs/concepts/datascope-and-datachain.md": {
+      "url": "/amis/docs/concepts/datascope-and-datachain_a082b0b.js",
+      "type": "js"
+    },
+    "docs/concepts/template.md": {
+      "url": "/amis/docs/concepts/template_8feae16.js",
+      "type": "js"
+    },
+    "docs/concepts/data-mapping.md": {
+      "url": "/amis/docs/concepts/data-mapping_e8fba95.js",
+      "type": "js"
+    },
+    "docs/concepts/expression.md": {
+      "url": "/amis/docs/concepts/expression_b36f996.js",
+      "type": "js"
+    },
+    "docs/concepts/linkage.md": {
+      "url": "/amis/docs/concepts/linkage_7633323.js",
+      "type": "js"
+    },
+    "docs/concepts/action.md": {
+      "url": "/amis/docs/concepts/action_107d93f.js",
+      "type": "js"
+    },
+    "docs/concepts/style.md": {
+      "url": "/amis/docs/concepts/style_5e4373c.js",
+      "type": "js"
+    },
+    "docs/types/schemanode.md": {
+      "url": "/amis/docs/types/schemanode_8d90ad8.js",
+      "type": "js"
+    },
+    "docs/types/api.md": {
+      "url": "/amis/docs/types/api_2ad629d.js",
+      "type": "js"
+    },
+    "docs/types/definitions.md": {
+      "url": "/amis/docs/types/definitions_b49f338.js",
+      "type": "js"
+    },
+    "docs/components/component.md": {
+      "url": "/amis/docs/components/component_3ae65b5.js",
+      "type": "js"
+    },
+    "docs/components/page.md": {
+      "url": "/amis/docs/components/page_2cb77b2.js",
+      "type": "js"
+    },
+    "docs/components/form/index.md": {
+      "url": "/amis/docs/components/form/index_df39bd0.js",
+      "type": "js"
+    },
+    "docs/components/form/formitem.md": {
+      "url": "/amis/docs/components/form/formitem_c6a2579.js",
+      "type": "js"
+    },
+    "docs/components/form/options.md": {
+      "url": "/amis/docs/components/form/options_8fc9976.js",
+      "type": "js"
+    },
+    "docs/components/form/array.md": {
+      "url": "/amis/docs/components/form/array_b34d554.js",
+      "type": "js"
+    },
+    "docs/components/form/button.md": {
+      "url": "/amis/docs/components/form/button_7168b1a.js",
+      "type": "js"
+    },
+    "docs/components/form/button-toolbar.md": {
+      "url": "/amis/docs/components/form/button-toolbar_de2bd3a.js",
+      "type": "js"
+    },
+    "docs/components/form/button-group.md": {
+      "url": "/amis/docs/components/form/button-group_9ddafcb.js",
+      "type": "js"
+    },
+    "docs/components/form/chain-select.md": {
+      "url": "/amis/docs/components/form/chain-select_c6263d9.js",
+      "type": "js"
+    },
+    "docs/components/form/checkbox.md": {
+      "url": "/amis/docs/components/form/checkbox_a569f93.js",
+      "type": "js"
+    },
+    "docs/components/form/checkboxes.md": {
+      "url": "/amis/docs/components/form/checkboxes_96b950e.js",
+      "type": "js"
+    },
+    "docs/components/form/city.md": {
+      "url": "/amis/docs/components/form/city_cd449c6.js",
+      "type": "js"
+    },
+    "docs/components/form/color.md": {
+      "url": "/amis/docs/components/form/color_aa66cf7.js",
+      "type": "js"
+    },
+    "docs/components/form/combo.md": {
+      "url": "/amis/docs/components/form/combo_ae503f9.js",
+      "type": "js"
+    },
+    "docs/components/form/date.md": {
+      "url": "/amis/docs/components/form/date_d013565.js",
+      "type": "js"
+    },
+    "docs/components/form/datetime.md": {
+      "url": "/amis/docs/components/form/datetime_551e0e7.js",
+      "type": "js"
+    },
+    "docs/components/form/month.md": {
+      "url": "/amis/docs/components/form/month_dc282e5.js",
+      "type": "js"
+    },
+    "docs/components/form/date-range.md": {
+      "url": "/amis/docs/components/form/date-range_3036d1a.js",
+      "type": "js"
+    },
+    "docs/components/form/datetime-range.md": {
+      "url": "/amis/docs/components/form/datetime-range_5c623ce.js",
+      "type": "js"
+    },
+    "docs/components/form/diff-editor.md": {
+      "url": "/amis/docs/components/form/diff-editor_2ae20b9.js",
+      "type": "js"
+    },
+    "docs/components/form/editor.md": {
+      "url": "/amis/docs/components/form/editor_c0dee6d.js",
+      "type": "js"
+    },
+    "docs/components/form/fieldset.md": {
+      "url": "/amis/docs/components/form/fieldset_c0ee98a.js",
+      "type": "js"
+    },
+    "docs/components/form/file.md": {
+      "url": "/amis/docs/components/form/file_36d2902.js",
+      "type": "js"
+    },
+    "docs/components/form/formula.md": {
+      "url": "/amis/docs/components/form/formula_3843e65.js",
+      "type": "js"
+    },
+    "docs/components/form/grid.md": {
+      "url": "/amis/docs/components/form/grid_d8bd858.js",
+      "type": "js"
+    },
+    "docs/components/form/group.md": {
+      "url": "/amis/docs/components/form/group_aae67ca.js",
+      "type": "js"
+    },
+    "docs/components/form/hbox.md": {
+      "url": "/amis/docs/components/form/hbox_6761cc2.js",
+      "type": "js"
+    },
+    "docs/components/form/hidden.md": {
+      "url": "/amis/docs/components/form/hidden_6931f40.js",
+      "type": "js"
+    },
+    "docs/components/form/image.md": {
+      "url": "/amis/docs/components/form/image_76a9b5e.js",
+      "type": "js"
+    },
+    "docs/components/form/input-group.md": {
+      "url": "/amis/docs/components/form/input-group_dfb11de.js",
+      "type": "js"
+    },
+    "docs/components/form/list.md": {
+      "url": "/amis/docs/components/form/list_1870936.js",
+      "type": "js"
+    },
+    "docs/components/form/matrix.md": {
+      "url": "/amis/docs/components/form/matrix_65471ad.js",
+      "type": "js"
+    },
+    "docs/components/form/nestedselect.md": {
+      "url": "/amis/docs/components/form/nestedselect_89db24d.js",
+      "type": "js"
+    },
+    "docs/components/form/number.md": {
+      "url": "/amis/docs/components/form/number_62e0cee.js",
+      "type": "js"
+    },
+    "docs/components/form/panel.md": {
+      "url": "/amis/docs/components/form/panel_91c8c57.js",
+      "type": "js"
+    },
+    "docs/components/form/picker.md": {
+      "url": "/amis/docs/components/form/picker_23b1d0d.js",
+      "type": "js"
+    },
+    "docs/components/form/radios.md": {
+      "url": "/amis/docs/components/form/radios_7b3b018.js",
+      "type": "js"
+    },
+    "docs/components/form/rating.md": {
+      "url": "/amis/docs/components/form/rating_9db8326.js",
+      "type": "js"
+    },
+    "docs/components/form/range.md": {
+      "url": "/amis/docs/components/form/range_4d89039.js",
+      "type": "js"
+    },
+    "docs/components/form/repeat.md": {
+      "url": "/amis/docs/components/form/repeat_1cc0ed5.js",
+      "type": "js"
+    },
+    "docs/components/form/rich-text.md": {
+      "url": "/amis/docs/components/form/rich-text_d10632d.js",
+      "type": "js"
+    },
+    "docs/components/form/select.md": {
+      "url": "/amis/docs/components/form/select_422f2f3.js",
+      "type": "js"
+    },
+    "docs/components/form/service.md": {
+      "url": "/amis/docs/components/form/service_4b3be70.js",
+      "type": "js"
+    },
+    "docs/components/form/subform.md": {
+      "url": "/amis/docs/components/form/subform_3588868.js",
+      "type": "js"
+    },
+    "docs/components/form/switch.md": {
+      "url": "/amis/docs/components/form/switch_933b593.js",
+      "type": "js"
+    },
+    "docs/components/form/static.md": {
+      "url": "/amis/docs/components/form/static_86db808.js",
+      "type": "js"
+    },
+    "docs/components/form/tabs.md": {
+      "url": "/amis/docs/components/form/tabs_af1854e.js",
+      "type": "js"
+    },
+    "docs/components/form/table.md": {
+      "url": "/amis/docs/components/form/table_85a10a7.js",
+      "type": "js"
+    },
+    "docs/components/form/tag.md": {
+      "url": "/amis/docs/components/form/tag_d956084.js",
+      "type": "js"
+    },
+    "docs/components/form/text.md": {
+      "url": "/amis/docs/components/form/text_42fd12f.js",
+      "type": "js"
+    },
+    "docs/components/form/textarea.md": {
+      "url": "/amis/docs/components/form/textarea_25a5af5.js",
+      "type": "js"
+    },
+    "docs/components/form/time.md": {
+      "url": "/amis/docs/components/form/time_d5ab51e.js",
+      "type": "js"
+    },
+    "docs/components/form/transfer.md": {
+      "url": "/amis/docs/components/form/transfer_b370170.js",
+      "type": "js"
+    },
+    "docs/components/form/tabs-transfer.md": {
+      "url": "/amis/docs/components/form/tabs-transfer_56b715a.js",
+      "type": "js"
+    },
+    "docs/components/form/tree.md": {
+      "url": "/amis/docs/components/form/tree_3572d76.js",
+      "type": "js"
+    },
+    "docs/components/form/treeselect.md": {
+      "url": "/amis/docs/components/form/treeselect_99f3708.js",
+      "type": "js"
+    },
+    "docs/components/crud.md": {
+      "url": "/amis/docs/components/crud_043983e.js",
+      "type": "js"
+    },
+    "docs/components/table.md": {
+      "url": "/amis/docs/components/table_d9b6b45.js",
+      "type": "js"
+    },
+    "docs/components/action.md": {
+      "url": "/amis/docs/components/action_730ba35.js",
+      "type": "js"
+    },
+    "docs/components/alert.md": {
+      "url": "/amis/docs/components/alert_6563cc7.js",
+      "type": "js"
+    },
+    "docs/components/audio.md": {
+      "url": "/amis/docs/components/audio_6782e00.js",
+      "type": "js"
+    },
+    "docs/components/button.md": {
+      "url": "/amis/docs/components/button_b9339f0.js",
+      "type": "js"
+    },
+    "docs/components/button-group.md": {
+      "url": "/amis/docs/components/button-group_3631dcf.js",
+      "type": "js"
+    },
+    "docs/components/card.md": {
+      "url": "/amis/docs/components/card_5dc72a6.js",
+      "type": "js"
+    },
+    "docs/components/cards.md": {
+      "url": "/amis/docs/components/cards_7bcbae3.js",
+      "type": "js"
+    },
+    "docs/components/carousel.md": {
+      "url": "/amis/docs/components/carousel_c6f6645.js",
+      "type": "js"
+    },
+    "docs/components/chart.md": {
+      "url": "/amis/docs/components/chart_d4768ba.js",
+      "type": "js"
+    },
+    "docs/components/collapse.md": {
+      "url": "/amis/docs/components/collapse_3d0a874.js",
+      "type": "js"
+    },
+    "docs/components/color.md": {
+      "url": "/amis/docs/components/color_04d1bd5.js",
+      "type": "js"
+    },
+    "docs/components/container.md": {
+      "url": "/amis/docs/components/container_9472690.js",
+      "type": "js"
+    },
+    "docs/components/date.md": {
+      "url": "/amis/docs/components/date_b997da1.js",
+      "type": "js"
+    },
+    "docs/components/dialog.md": {
+      "url": "/amis/docs/components/dialog_4ee8387.js",
+      "type": "js"
+    },
+    "docs/components/divider.md": {
+      "url": "/amis/docs/components/divider_5eed44e.js",
+      "type": "js"
+    },
+    "docs/components/drawer.md": {
+      "url": "/amis/docs/components/drawer_425d2dd.js",
+      "type": "js"
+    },
+    "docs/components/dropdown-button.md": {
+      "url": "/amis/docs/components/dropdown-button_2279278.js",
+      "type": "js"
+    },
+    "docs/components/each.md": {
+      "url": "/amis/docs/components/each_2ee0f5b.js",
+      "type": "js"
+    },
+    "docs/components/grid.md": {
+      "url": "/amis/docs/components/grid_99375d2.js",
+      "type": "js"
+    },
+    "docs/components/hbox.md": {
+      "url": "/amis/docs/components/hbox_f235007.js",
+      "type": "js"
+    },
+    "docs/components/html.md": {
+      "url": "/amis/docs/components/html_1b81725.js",
+      "type": "js"
+    },
+    "docs/components/icon.md": {
+      "url": "/amis/docs/components/icon_06dbecc.js",
+      "type": "js"
+    },
+    "docs/components/iframe.md": {
+      "url": "/amis/docs/components/iframe_9cc082e.js",
+      "type": "js"
+    },
+    "docs/components/image.md": {
+      "url": "/amis/docs/components/image_1504505.js",
+      "type": "js"
+    },
+    "docs/components/images.md": {
+      "url": "/amis/docs/components/images_597b142.js",
+      "type": "js"
+    },
+    "docs/components/json.md": {
+      "url": "/amis/docs/components/json_5d90115.js",
+      "type": "js"
+    },
+    "docs/components/link.md": {
+      "url": "/amis/docs/components/link_b1c8dd1.js",
+      "type": "js"
+    },
+    "docs/components/list.md": {
+      "url": "/amis/docs/components/list_dedd31e.js",
+      "type": "js"
+    },
+    "docs/components/mapping.md": {
+      "url": "/amis/docs/components/mapping_f821932.js",
+      "type": "js"
+    },
+    "docs/components/nav.md": {
+      "url": "/amis/docs/components/nav_d31f597.js",
+      "type": "js"
+    },
+    "docs/components/panel.md": {
+      "url": "/amis/docs/components/panel_08649b1.js",
+      "type": "js"
+    },
+    "docs/components/progress.md": {
+      "url": "/amis/docs/components/progress_bfd7d41.js",
+      "type": "js"
+    },
+    "docs/components/qrcode.md": {
+      "url": "/amis/docs/components/qrcode_bfe7ae5.js",
+      "type": "js"
+    },
+    "docs/components/remark.md": {
+      "url": "/amis/docs/components/remark_b5e937e.js",
+      "type": "js"
+    },
+    "docs/components/service.md": {
+      "url": "/amis/docs/components/service_bc36783.js",
+      "type": "js"
+    },
+    "docs/components/sparkline.md": {
+      "url": "/amis/docs/components/sparkline_789e11f.js",
+      "type": "js"
+    },
+    "docs/components/spinner.md": {
+      "url": "/amis/docs/components/spinner_e649a7d.js",
+      "type": "js"
+    },
+    "docs/components/status.md": {
+      "url": "/amis/docs/components/status_fee202b.js",
+      "type": "js"
+    },
+    "docs/components/switch.md": {
+      "url": "/amis/docs/components/switch_aa7d1f3.js",
+      "type": "js"
+    },
+    "docs/components/tabs.md": {
+      "url": "/amis/docs/components/tabs_3d4a496.js",
+      "type": "js"
+    },
+    "docs/components/tasks.md": {
+      "url": "/amis/docs/components/tasks_dcf99cb.js",
+      "type": "js"
+    },
+    "docs/components/tpl.md": {
+      "url": "/amis/docs/components/tpl_1baacd4.js",
+      "type": "js"
+    },
+    "docs/components/video.md": {
+      "url": "/amis/docs/components/video_72c107b.js",
+      "type": "js"
+    },
+    "docs/components/wrapper.md": {
+      "url": "/amis/docs/components/wrapper_f84f444.js",
+      "type": "js"
+    },
+    "docs/components/wizard.md": {
+      "url": "/amis/docs/components/wizard_19219ca.js",
+      "type": "js"
+    },
+    "f669756": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "3d59161": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "513c7dd": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "def9c51": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "4ac2682": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "2d2b045": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "3b4b163": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "321a637": {
+      "type": "js",
+      "pkg": "p8"
+    },
+    "docs/css-utilities/index.md": {
+      "url": "/amis/docs/css-utilities/index_8205ba9.js",
+      "type": "js"
+    },
+    "docs/css-utilities/responsive-design.md": {
+      "url": "/amis/docs/css-utilities/responsive-design_03a97bd.js",
+      "type": "js"
+    },
+    "docs/css-utilities/state.md": {
+      "url": "/amis/docs/css-utilities/state_cf0a897.js",
+      "type": "js"
     }
   },
   "pkg": {
-    "p8": {
+    "p9": {
       "url": "/amis/pkg/rest_1727cf4.js",
       "type": "js"
     },
@@ -5257,6 +5777,10 @@ amis.require.resourceMap({
     },
     "p3": {
       "url": "/amis/pkg/charts_b80236e.js",
+      "type": "js"
+    },
+    "p8": {
+      "url": "/amis/pkg/echarts-editor_6d7a32b.js",
       "type": "js"
     }
   }

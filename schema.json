@@ -13929,6 +13929,14 @@
           ],
           "description": "控件大小"
         },
+        "mountOnEnter": {
+          "type": "boolean",
+          "description": "点开时才加载内容"
+        },
+        "unmountOnExit": {
+          "type": "boolean",
+          "description": "卡片隐藏就销毁内容。"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -30331,6 +30339,14 @@
             "base"
           ],
           "description": "控件大小"
+        },
+        "mountOnEnter": {
+          "type": "boolean",
+          "description": "点开时才加载内容"
+        },
+        "unmountOnExit": {
+          "type": "boolean",
+          "description": "卡片隐藏就销毁内容。"
         }
       },
       "required": [
@@ -35786,7 +35802,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -39688,7 +39704,7 @@
           "$ref": "#/definitions/FieldSetControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(titlePosition|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|unique|columnClassName)$": {}
+            "^(titlePosition|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|unique|columnClassName)$": {}
           }
         },
         {
@@ -43579,7 +43595,7 @@
           "$ref": "#/definitions/FieldSetControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(titlePosition|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|columnClassName|columnRatio)$": {}
+            "^(titlePosition|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|controls|body|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -43921,7 +43937,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|tpl|text|popOver|quickEdit|copyable|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|tpl|text|popOver|quickEdit|copyable|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44274,7 +44290,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44627,7 +44643,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44980,7 +44996,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45333,7 +45349,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45686,7 +45702,7 @@
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|rowClassName|cellClassName)$": {}
           }
         },
         {
