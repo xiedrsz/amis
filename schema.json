@@ -380,6 +380,9 @@
           "$ref": "#/definitions/ServiceSchema"
         },
         {
+          "$ref": "#/definitions/SparkLineSchema"
+        },
+        {
           "$ref": "#/definitions/StatusSchema"
         },
         {
@@ -34162,6 +34165,94 @@
       "additionalProperties": false,
       "description": "Service 服务类控件。 文档：https://baidu.gitee.io/amis/docs/components/service"
     },
+    "SparkLineSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "sparkline"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "name": {
+          "type": "string",
+          "description": "关联数据变量。"
+        },
+        "width": {
+          "type": "number",
+          "description": "宽度",
+          "default": 100
+        },
+        "height": {
+          "type": "number",
+          "description": "高度",
+          "default": 50
+        },
+        "clickAction": {
+          "$ref": "#/definitions/ActionSchema",
+          "description": "点击行为"
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false
+    },
     "StatusSchema": {
       "type": "object",
       "properties": {
@@ -35881,6 +35972,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|body|fetchOn|initFetch|initFetchOn|schemaApi|initFetchSchema|initFetchSchemaOn|interval|silentPolling|stopAutoRefreshWhen|messages|name|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44012,6 +44110,13 @@
           }
         },
         {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/StatusSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -44355,6 +44460,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|body|fetchOn|initFetch|initFetchOn|schemaApi|initFetchSchema|initFetchSchemaOn|interval|silentPolling|stopAutoRefreshWhen|messages|name|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44704,6 +44816,13 @@
           }
         },
         {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|label|labelClassName|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/StatusSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -45047,6 +45166,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|body|fetchOn|initFetch|initFetchOn|schemaApi|initFetchSchema|initFetchSchemaOn|interval|silentPolling|stopAutoRefreshWhen|messages|name|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45396,6 +45522,13 @@
           }
         },
         {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|columnClassName|style)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/StatusSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -45739,6 +45872,13 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|body|fetchOn|initFetch|initFetchOn|schemaApi|initFetchSchema|initFetchSchemaOn|interval|silentPolling|stopAutoRefreshWhen|messages|name|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/SparkLineSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|rowClassName|cellClassName)$": {}
           }
         },
         {

@@ -5673,6 +5673,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/components/service_bc36783.js",
       "type": "js"
     },
+    "docs/components/sparkline.md": {
+      "url": "/amis/docs/components/sparkline_789e11f.js",
+      "type": "js"
+    },
     "docs/components/spinner.md": {
       "url": "/amis/docs/components/spinner_e649a7d.js",
       "type": "js"
