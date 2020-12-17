@@ -30164,6 +30164,10 @@
         "source": {
           "$ref": "#/definitions/SchemaTokenizeableString"
         },
+        "disableDataMapping": {
+          "type": "boolean",
+          "description": "默认开启 Config 中的数据映射，如果想关闭，请开启此功能。"
+        },
         "clickAction": {
           "$ref": "#/definitions/ActionSchema",
           "description": "点击行为配置，可以用来满足下钻操作等。"
@@ -35668,7 +35672,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -43796,7 +43800,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44142,7 +44146,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44488,7 +44492,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44834,7 +44838,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45180,7 +45184,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|columnClassName)$": {}
           }
         },
         {
@@ -45526,7 +45530,7 @@
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|clickAction|replaceChartOption|unMountOnHidden|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|initFetch|initFetchOn|config|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|rowClassName|cellClassName)$": {}
           }
         },
         {
