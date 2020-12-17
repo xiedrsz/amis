@@ -24803,7 +24803,8 @@
             "line",
             "card",
             "radio",
-            "vertical"
+            "vertical",
+            "tiled"
           ],
           "description": "展示形式"
         },
@@ -25190,6 +25191,13 @@
         "icon": {
           "$ref": "#/definitions/SchemaIcon",
           "description": "按钮图标"
+        },
+        "iconPosition": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ]
         },
         "reload": {
           "type": "boolean",
@@ -34480,7 +34488,8 @@
             "line",
             "card",
             "radio",
-            "vertical"
+            "vertical",
+            "tiled"
           ],
           "description": "展示形式"
         },
@@ -34566,6 +34575,13 @@
         "icon": {
           "$ref": "#/definitions/SchemaIcon",
           "description": "按钮图标"
+        },
+        "iconPosition": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ]
         },
         "reload": {
           "type": "boolean",
