@@ -2907,6 +2907,18 @@
           ],
           "description": "弹出位置"
         },
+        "trigger": {
+          "type": "string",
+          "enum": [
+            "click",
+            "hover"
+          ],
+          "description": "触发条件，默认是 click"
+        },
+        "showIcon": {
+          "type": "boolean",
+          "description": "是否显示查看更多的 icon，通常是放大图标。"
+        },
         "offset": {
           "type": "object",
           "properties": {
