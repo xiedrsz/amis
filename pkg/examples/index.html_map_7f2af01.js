@@ -5657,6 +5657,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/components/panel_08649b1.js",
       "type": "js"
     },
+    "docs/components/pagination-wrapper.md": {
+      "url": "/amis/docs/components/pagination-wrapper_4efda2e.js",
+      "type": "js"
+    },
     "docs/components/progress.md": {
       "url": "/amis/docs/components/progress_bfd7d41.js",
       "type": "js"

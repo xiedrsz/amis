@@ -362,6 +362,12 @@
           "$ref": "#/definitions/OperationSchema"
         },
         {
+          "$ref": "#/definitions/PaginationSchema"
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema"
+        },
+        {
           "$ref": "#/definitions/PanelSchema"
         },
         {
@@ -33723,6 +33729,141 @@
       "additionalProperties": false,
       "description": "操作栏渲染器。 文档：https://baidu.gitee.io/amis/docs/components/operation"
     },
+    "PaginationSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "pagination"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "showPageInput": {
+          "type": "boolean",
+          "description": "是否显示跳转表单"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "simple",
+            "normal"
+          ],
+          "description": "模式，默认显示多个分页数字，如果只想简单显示可以配置成 `simple`。"
+        },
+        "maxButtons": {
+          "type": "number",
+          "description": "最多显示多少个分页按钮。",
+          "default": 5
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "PaginationWrapperSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "pagination-wrapper",
+          "description": "指定为分页容器功能性渲染器"
+        },
+        "className": {
+          "$ref": "#/definitions/SchemaClassName",
+          "description": "容器 css 类名"
+        },
+        "$ref": {
+          "type": "string",
+          "description": "配合 definitions 一起使用，可以实现无限循环的渲染器。"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "是否禁用"
+        },
+        "disabledOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否禁用表达式"
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "是否隐藏"
+        },
+        "hiddenOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否隐藏表达式"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "是否显示"
+        },
+        "visibleOn": {
+          "$ref": "#/definitions/SchemaExpression",
+          "description": "是否显示表达式"
+        },
+        "inputName": {
+          "type": "string",
+          "description": "输入字段名"
+        },
+        "outputName": {
+          "type": "string",
+          "description": "输出字段名"
+        },
+        "perPage": {
+          "type": "number",
+          "description": "每页显示多条数据。",
+          "default": 10
+        },
+        "position": {
+          "type": "string",
+          "enum": [
+            "top",
+            "bottom",
+            "none"
+          ],
+          "description": "分页显示位置，如果配置为 none 则需要自己在内容区域配置 pagination 组件，否则不显示。"
+        },
+        "body": {
+          "$ref": "#/definitions/SchemaCollection",
+          "description": "内容区域"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "分页容器功能性渲染器。详情请见：https://baidu.gitee.io/amis/docs/components/pagination-wrapper"
+    },
     "PanelSchema": {
       "type": "object",
       "properties": {
@@ -35962,6 +36103,20 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|buttons|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44100,6 +44255,20 @@
           }
         },
         {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/PanelSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -44450,6 +44619,20 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|buttons|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -44806,6 +44989,20 @@
           }
         },
         {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/PanelSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -45156,6 +45353,20 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|buttons|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|horizontal|columnClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45512,6 +45723,20 @@
           }
         },
         {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|columnClassName|width|height|style)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|columnClassName|width|height|style)$": {}
+          }
+        },
+        {
           "$ref": "#/definitions/PanelSchema",
           "additionalProperties": false,
           "patternProperties": {
@@ -45862,6 +46087,20 @@
           "additionalProperties": false,
           "patternProperties": {
             "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|buttons|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|rowClassName|cellClassName)$": {}
+          }
+        },
+        {
+          "$ref": "#/definitions/PaginationWrapperSchema",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|rowClassName|cellClassName)$": {}
           }
         },
         {
