@@ -5266,7 +5266,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/concepts/data-mapping.md": {
-      "url": "/amis/docs/concepts/data-mapping_e8fba95.js",
+      "url": "/amis/docs/concepts/data-mapping_32a58df.js",
       "type": "js"
     },
     "docs/concepts/expression.md": {
