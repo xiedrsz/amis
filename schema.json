@@ -119,6 +119,9 @@
         "showErrorMsg": {
           "type": "boolean",
           "description": "是否显示错误信息，默认是显示的。"
+        },
+        "cssVars": {
+          "description": "css 变量"
         }
       },
       "required": [
@@ -35882,7 +35885,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -44031,7 +44034,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44398,7 +44401,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint)$": {}
           }
         },
         {
@@ -44765,7 +44768,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -45132,7 +45135,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45499,7 +45502,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -45866,7 +45869,7 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|rowClassName|cellClassName)$": {}
           }
         },
         {
