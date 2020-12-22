@@ -5530,7 +5530,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/table.md": {
-      "url": "/amis/docs/components/table_94c550b.js",
+      "url": "/amis/docs/components/table_2e73e67.js",
       "type": "js"
     },
     "docs/components/action.md": {
