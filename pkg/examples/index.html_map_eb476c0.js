@@ -5402,7 +5402,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/group.md": {
-      "url": "/amis/docs/components/form/group_aae67ca.js",
+      "url": "/amis/docs/components/form/group_11ea106.js",
       "type": "js"
     },
     "docs/components/form/hbox.md": {
