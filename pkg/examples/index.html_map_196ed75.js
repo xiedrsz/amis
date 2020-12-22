@@ -5282,7 +5282,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/concepts/style.md": {
-      "url": "/amis/docs/concepts/style_5e4373c.js",
+      "url": "/amis/docs/concepts/style_bcff2ce.js",
       "type": "js"
     },
     "docs/types/schemanode.md": {
