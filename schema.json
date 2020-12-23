@@ -24327,6 +24327,20 @@
           "type": "number",
           "description": "合并单元格配置，配置数字表示从左到右的多少列自动合并单元格。"
         },
+        "prefixRow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SchemaObject"
+          },
+          "description": "顶部总结行"
+        },
+        "affixRow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SchemaObject"
+          },
+          "description": "底部总结行"
+        },
         "size": {
           "type": "string",
           "enum": [
@@ -31863,6 +31877,20 @@
           "type": "number",
           "description": "合并单元格配置，配置数字表示从左到右的多少列自动合并单元格。"
         },
+        "prefixRow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SchemaObject"
+          },
+          "description": "顶部总结行"
+        },
+        "affixRow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SchemaObject"
+          },
+          "description": "底部总结行"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -34758,6 +34786,20 @@
         "combineNum": {
           "type": "number",
           "description": "合并单元格配置，配置数字表示从左到右的多少列自动合并单元格。"
+        },
+        "prefixRow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SchemaObject"
+          },
+          "description": "顶部总结行"
+        },
+        "affixRow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SchemaObject"
+          },
+          "description": "底部总结行"
         }
       },
       "required": [
@@ -36256,7 +36298,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -40133,7 +40175,7 @@
           "$ref": "#/definitions/TableControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|canAccessSuperData|unique|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|canAccessSuperData|unique|columnClassName)$": {}
           }
         },
         {
@@ -44024,7 +44066,7 @@
           "$ref": "#/definitions/TableControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|canAccessSuperData|columnClassName|columnRatio)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|addable|draggable|addApi|addBtnLabel|addBtnIcon|showAddBtn|removable|deleteApi|editable|updateBtnLabel|updateBtnIcon|confirmBtnLabel|confirmBtnIcon|cancelBtnLabel|cancelBtnIcon|deleteBtnLabel|deleteBtnIcon|updateApi|scaffold|deleteConfirmText|valueField|needConfirm|canAccessSuperData|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -44405,7 +44447,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -44772,7 +44814,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -45139,7 +45181,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -45506,7 +45548,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -45873,7 +45915,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -46240,7 +46282,7 @@
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|rowClassName|cellClassName)$": {}
           }
         },
         {
