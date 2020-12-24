@@ -2881,6 +2881,10 @@
           "type": "string",
           "description": "类名"
         },
+        "popOverClassName": {
+          "type": "string",
+          "description": "弹框外层类名"
+        },
         "mode": {
           "type": "string",
           "enum": [
