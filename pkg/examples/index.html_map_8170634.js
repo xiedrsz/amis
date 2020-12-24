@@ -5242,11 +5242,11 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/start/getting-started.md": {
-      "url": "/amis/docs/start/getting-started_acbb200.js",
+      "url": "/amis/docs/start/getting-started_eda0263.js",
       "type": "js"
     },
     "docs/start/custom.md": {
-      "url": "/amis/docs/start/custom_ad42234.js",
+      "url": "/amis/docs/start/custom_3ab0992.js",
       "type": "js"
     },
     "docs/start/faq.md": {
@@ -5527,6 +5527,10 @@ amis.require.resourceMap({
     },
     "docs/components/crud.md": {
       "url": "/amis/docs/components/crud_043983e.js",
+      "type": "js"
+    },
+    "docs/components/custom.md": {
+      "url": "/amis/docs/components/custom_a617f64.js",
       "type": "js"
     },
     "docs/components/table.md": {

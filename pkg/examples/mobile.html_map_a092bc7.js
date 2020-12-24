@@ -1574,6 +1574,14 @@ amis.require.resourceMap({
       ],
       "pkg": "p7"
     },
+    "34e1226": {
+      "type": "js",
+      "deps": [
+        "0f9ebdf",
+        "9a80175"
+      ],
+      "pkg": "p7"
+    },
     "29e1f6a": {
       "type": "js",
       "deps": [
@@ -2702,6 +2710,7 @@ amis.require.resourceMap({
         "4fd96cf",
         "0afb30b",
         "8ee3b98",
+        "34e1226",
         "29e1f6a",
         "e299c64",
         "5cdd617",
@@ -8712,7 +8721,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_d27be54.js",
+      "url": "/amis/pkg/app_a946b9e.js",
       "type": "js"
     },
     "p1": {
