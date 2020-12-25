@@ -5768,6 +5768,234 @@ amis.require.resourceMap({
     "docs/style/state.md": {
       "url": "/amis/docs/style/state_063de5f.js",
       "type": "js"
+    },
+    "scss/helper/layout/_box-sizing.scss": {
+      "url": "/amis/scss/helper/layout/_box-sizing_e1b7c38.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_display.scss": {
+      "url": "/amis/scss/helper/layout/_display_09f185b.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_float.scss": {
+      "url": "/amis/scss/helper/layout/_float_23f5e89.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_clear.scss": {
+      "url": "/amis/scss/helper/layout/_clear_1e00a68.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_overflow.scss": {
+      "url": "/amis/scss/helper/layout/_overflow_75c2529.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_position.scss": {
+      "url": "/amis/scss/helper/layout/_position_5b70a45.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_top-right-bottom-left.scss": {
+      "url": "/amis/scss/helper/layout/_top-right-bottom-left_6761fd1.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_visibility.scss": {
+      "url": "/amis/scss/helper/layout/_visibility_c57ae93.js",
+      "type": "js"
+    },
+    "scss/helper/layout/_z-index.scss": {
+      "url": "/amis/scss/helper/layout/_z-index_c2a53d3.js",
+      "type": "js"
+    },
+    "scss/helper/flex/_direction.scss": {
+      "url": "/amis/scss/helper/flex/_direction_878e1cf.js",
+      "type": "js"
+    },
+    "scss/helper/flex/_wrap.scss": {
+      "url": "/amis/scss/helper/flex/_wrap_9177535.js",
+      "type": "js"
+    },
+    "scss/helper/flex/_flex.scss": {
+      "url": "/amis/scss/helper/flex/_flex_914790b.js",
+      "type": "js"
+    },
+    "scss/helper/flex/_grow.scss": {
+      "url": "/amis/scss/helper/flex/_grow_eccb6d7.js",
+      "type": "js"
+    },
+    "scss/helper/flex/_shrink.scss": {
+      "url": "/amis/scss/helper/flex/_shrink_2cccfb5.js",
+      "type": "js"
+    },
+    "scss/helper/flex/_order.scss": {
+      "url": "/amis/scss/helper/flex/_order_9f49024.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_columns.scss": {
+      "url": "/amis/scss/helper/grid/_columns_710bd97.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_column-start-end.scss": {
+      "url": "/amis/scss/helper/grid/_column-start-end_62dd792.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_rows.scss": {
+      "url": "/amis/scss/helper/grid/_rows_4591987.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_row-start-end.scss": {
+      "url": "/amis/scss/helper/grid/_row-start-end_1a9cffb.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_auto-flow.scss": {
+      "url": "/amis/scss/helper/grid/_auto-flow_27fcc54.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_auto-columns.scss": {
+      "url": "/amis/scss/helper/grid/_auto-columns_95b2522.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_auto-rows.scss": {
+      "url": "/amis/scss/helper/grid/_auto-rows_4aeab82.js",
+      "type": "js"
+    },
+    "scss/helper/grid/_gap.scss": {
+      "url": "/amis/scss/helper/grid/_gap_d448860.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_justify-content.scss": {
+      "url": "/amis/scss/helper/box-alignment/_justify-content_8053ed0.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_justify-items.scss": {
+      "url": "/amis/scss/helper/box-alignment/_justify-items_d241999.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_justify-self.scss": {
+      "url": "/amis/scss/helper/box-alignment/_justify-self_8d673d3.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_align-content.scss": {
+      "url": "/amis/scss/helper/box-alignment/_align-content_7a43cb9.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_align-items.scss": {
+      "url": "/amis/scss/helper/box-alignment/_align-items_dcda7de.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_align-self.scss": {
+      "url": "/amis/scss/helper/box-alignment/_align-self_34b1b8f.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_place-content.scss": {
+      "url": "/amis/scss/helper/box-alignment/_place-content_c30ebfe.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_place-items.scss": {
+      "url": "/amis/scss/helper/box-alignment/_place-items_febd303.js",
+      "type": "js"
+    },
+    "scss/helper/box-alignment/_place-self.scss": {
+      "url": "/amis/scss/helper/box-alignment/_place-self_7e40b44.js",
+      "type": "js"
+    },
+    "scss/helper/spacing/_padding.scss": {
+      "url": "/amis/scss/helper/spacing/_padding_9f1bfe9.js",
+      "type": "js"
+    },
+    "scss/helper/spacing/_margin.scss": {
+      "url": "/amis/scss/helper/spacing/_margin_a0c0e4a.js",
+      "type": "js"
+    },
+    "scss/helper/spacing/_space-between.scss": {
+      "url": "/amis/scss/helper/spacing/_space-between_20ab42f.js",
+      "type": "js"
+    },
+    "scss/helper/sizing/_width.scss": {
+      "url": "/amis/scss/helper/sizing/_width_e13869e.js",
+      "type": "js"
+    },
+    "scss/helper/sizing/_height.scss": {
+      "url": "/amis/scss/helper/sizing/_height_343eda8.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_font-size.scss": {
+      "url": "/amis/scss/helper/typography/_font-size_e7fc89a.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_font-style.scss": {
+      "url": "/amis/scss/helper/typography/_font-style_0da0c7b.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_font-weight.scss": {
+      "url": "/amis/scss/helper/typography/_font-weight_19e6202.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_letter-spacing.scss": {
+      "url": "/amis/scss/helper/typography/_letter-spacing_36f868c.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_line-height.scss": {
+      "url": "/amis/scss/helper/typography/_line-height_355f491.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_list-style-type.scss": {
+      "url": "/amis/scss/helper/typography/_list-style-type_61dbf4c.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_text-align.scss": {
+      "url": "/amis/scss/helper/typography/_text-align_9053e8a.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_text-color.scss": {
+      "url": "/amis/scss/helper/typography/_text-color_3550ad3.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_text-decoration.scss": {
+      "url": "/amis/scss/helper/typography/_text-decoration_b0f3154.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_text-transform.scss": {
+      "url": "/amis/scss/helper/typography/_text-transform_cb9be85.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_vertical-align.scss": {
+      "url": "/amis/scss/helper/typography/_vertical-align_35112d4.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_whitespace.scss": {
+      "url": "/amis/scss/helper/typography/_whitespace_7f04691.js",
+      "type": "js"
+    },
+    "scss/helper/typography/_word-break.scss": {
+      "url": "/amis/scss/helper/typography/_word-break_945b902.js",
+      "type": "js"
+    },
+    "scss/helper/background/_background-color.scss": {
+      "url": "/amis/scss/helper/background/_background-color_471c922.js",
+      "type": "js"
+    },
+    "scss/helper/border/_border-radius.scss": {
+      "url": "/amis/scss/helper/border/_border-radius_e4fe1a1.js",
+      "type": "js"
+    },
+    "scss/helper/border/_border-width.scss": {
+      "url": "/amis/scss/helper/border/_border-width_d03b3af.js",
+      "type": "js"
+    },
+    "scss/helper/border/_border-color.scss": {
+      "url": "/amis/scss/helper/border/_border-color_4c1a8e6.js",
+      "type": "js"
+    },
+    "scss/helper/border/_border-style.scss": {
+      "url": "/amis/scss/helper/border/_border-style_70aeae8.js",
+      "type": "js"
+    },
+    "scss/helper/effect/_box-shadow.scss": {
+      "url": "/amis/scss/helper/effect/_box-shadow_d062abc.js",
+      "type": "js"
+    },
+    "scss/helper/effect/_opacity.scss": {
+      "url": "/amis/scss/helper/effect/_opacity_3db3bd1.js",
+      "type": "js"
     }
   },
   "pkg": {
