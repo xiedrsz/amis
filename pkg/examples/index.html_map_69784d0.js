@@ -5425,6 +5425,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/components/form/list_1870936.js",
       "type": "js"
     },
+    "docs/components/form/uuid.md": {
+      "url": "/amis/docs/components/form/uuid_94c00a4.js",
+      "type": "js"
+    },
     "docs/components/form/matrix.md": {
       "url": "/amis/docs/components/form/matrix_65471ad.js",
       "type": "js"
