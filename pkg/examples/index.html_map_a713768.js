@@ -5246,7 +5246,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/start/custom.md": {
-      "url": "/amis/docs/start/custom_3ab0992.js",
+      "url": "/amis/docs/start/custom_66a3377.js",
       "type": "js"
     },
     "docs/start/faq.md": {
@@ -5762,7 +5762,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/style/css-vars.md": {
-      "url": "/amis/docs/style/css-vars_04bb385.js",
+      "url": "/amis/docs/style/css-vars_0a2df18.js",
       "type": "js"
     },
     "docs/style/responsive-design.md": {
