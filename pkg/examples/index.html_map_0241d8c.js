@@ -5322,7 +5322,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/index.md": {
-      "url": "/amis/docs/components/form/index_df39bd0.js",
+      "url": "/amis/docs/components/form/index_535e4fe.js",
       "type": "js"
     },
     "docs/components/form/formitem.md": {
