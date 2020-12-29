@@ -8727,11 +8727,11 @@ amis.require.resourceMap({
   },
   "pkg": {
     "p9": {
-      "url": "/amis/pkg/rest_51797d9.js",
+      "url": "/amis/pkg/rest_79d6320.js",
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_e3f0b0d.js",
+      "url": "/amis/pkg/app_d8c8f44.js",
       "type": "js"
     },
     "p1": {

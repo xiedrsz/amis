@@ -1550,6 +1550,10 @@ amis.define("node_modules/core-js/internals/check-correctness-of-iteration",func
 amis.define("node_modules/core-js/modules/es.array.from",function(e){var r=e("node_modules/core-js/internals/export"),o=e("node_modules/core-js/internals/array-from"),n=e("node_modules/core-js/internals/check-correctness-of-iteration"),s=!n(function(e){Array.from(e)});r({target:"Array",stat:!0,forced:s},{from:o})});
 ;/*!node_modules/core-js/es/array/from.js*/
 amis.define("node_modules/core-js/es/array/from",function(e,o,r){e("node_modules/core-js/modules/es.string.iterator"),e("node_modules/core-js/modules/es.array.from");var s=e("node_modules/core-js/internals/path");r.exports=s.Array.from});
+;/*!node_modules/core-js/modules/es.array.includes.js*/
+amis.define("node_modules/core-js/modules/es.array.includes",function(e){"use strict";var s=e("node_modules/core-js/internals/export"),n=e("node_modules/core-js/internals/array-includes").includes,o=e("node_modules/core-js/internals/add-to-unscopables"),r=e("node_modules/core-js/internals/array-method-uses-to-length"),d=r("indexOf",{ACCESSORS:!0,1:0});s({target:"Array",proto:!0,forced:!d},{includes:function(e){return n(this,e,arguments.length>1?arguments[1]:void 0)}}),o("includes")});
+;/*!node_modules/core-js/es/array/includes.js*/
+amis.define("node_modules/core-js/es/array/includes",function(e,s,n){e("node_modules/core-js/modules/es.array.includes");var r=e("node_modules/core-js/internals/entry-unbind");n.exports=r("Array","includes")});
 ;/*!node_modules/core-js/modules/es.array.find-index.js*/
 amis.define("node_modules/core-js/modules/es.array.find-index",function(e){"use strict";var n=e("node_modules/core-js/internals/export"),r=e("node_modules/core-js/internals/array-iteration").findIndex,o=e("node_modules/core-js/internals/add-to-unscopables"),s=e("node_modules/core-js/internals/array-method-uses-to-length"),d="findIndex",t=!0,a=s(d);d in[]&&Array(1)[d](function(){t=!1}),n({target:"Array",proto:!0,forced:t||!a},{findIndex:function(e){return r(this,e,arguments.length>1?arguments[1]:void 0)}}),o(d)});
 ;/*!node_modules/core-js/es/array/find-index.js*/
