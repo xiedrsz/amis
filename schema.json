@@ -2237,7 +2237,9 @@
             "close",
             "submit",
             "confirm",
-            "add"
+            "add",
+            "reset",
+            "reset-and-submit"
           ]
         }
       },
@@ -6796,7 +6798,9 @@
                 "close",
                 "submit",
                 "confirm",
-                "add"
+                "add",
+                "reset",
+                "reset-and-submit"
               ]
             }
           },
@@ -28249,7 +28253,9 @@
                     "close",
                     "submit",
                     "confirm",
-                    "add"
+                    "add",
+                    "reset",
+                    "reset-and-submit"
                   ]
                 },
                 "position": {
@@ -39806,7 +39812,9 @@
                 "close",
                 "submit",
                 "confirm",
-                "add"
+                "add",
+                "reset",
+                "reset-and-submit"
               ]
             }
           },
@@ -43704,7 +43712,9 @@
                 "close",
                 "submit",
                 "confirm",
-                "add"
+                "add",
+                "reset",
+                "reset-and-submit"
               ]
             }
           },
