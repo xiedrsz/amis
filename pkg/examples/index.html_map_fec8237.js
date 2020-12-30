@@ -6265,6 +6265,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/components/form/treeselect_99f3708.js",
       "type": "js"
     },
+    "docs/components/form/year.md": {
+      "url": "/amis/docs/components/form/year_cf7ce15.js",
+      "type": "js"
+    },
     "docs/components/crud.md": {
       "url": "/amis/docs/components/crud_043983e.js",
       "type": "js"
