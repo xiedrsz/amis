@@ -5262,7 +5262,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/concepts/data-mapping.md": {
-      "url": "/amis/docs/concepts/data-mapping_32a58df.js",
+      "url": "/amis/docs/concepts/data-mapping_22ecd80.js",
       "type": "js"
     },
     "docs/concepts/expression.md": {
