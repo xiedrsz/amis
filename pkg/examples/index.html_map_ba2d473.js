@@ -6398,7 +6398,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/nav.md": {
-      "url": "/amis/docs/components/nav_d31f597.js",
+      "url": "/amis/docs/components/nav_8eee6a9.js",
       "type": "js"
     },
     "docs/components/panel.md": {
