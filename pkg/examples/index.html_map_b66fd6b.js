@@ -6502,7 +6502,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/style/css-vars.md": {
-      "url": "/amis/docs/style/css-vars_0a2df18.js",
+      "url": "/amis/docs/style/css-vars_4d3d5ee.js",
       "type": "js"
     },
     "docs/style/responsive-design.md": {
