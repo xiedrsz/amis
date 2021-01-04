@@ -5958,7 +5958,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/index.md": {
-      "url": "/amis/docs/zh-CN/index_8ecbb1d.js",
+      "url": "/amis/docs/zh-CN/index_e6baf56.js",
       "type": "js"
     },
     "docs/zh-CN/start/getting-started.md": {
@@ -6001,26 +6001,6 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/concepts/style_6c2dfcb.js",
       "type": "js"
     },
-    "docs/zh-CN/extend/internal.md": {
-      "url": "/amis/docs/zh-CN/extend/internal_1c0a1bf.js",
-      "type": "js"
-    },
-    "docs/zh-CN/extend/custom-sdk.md": {
-      "url": "/amis/docs/zh-CN/extend/custom-sdk_42b4fbf.js",
-      "type": "js"
-    },
-    "docs/zh-CN/extend/custom-react.md": {
-      "url": "/amis/docs/zh-CN/extend/custom-react_3c5d589.js",
-      "type": "js"
-    },
-    "docs/zh-CN/extend/addon.md": {
-      "url": "/amis/docs/zh-CN/extend/addon_ff222da.js",
-      "type": "js"
-    },
-    "docs/zh-CN/extend/i18n.md": {
-      "url": "/amis/docs/zh-CN/extend/i18n_3b7a952.js",
-      "type": "js"
-    },
     "docs/zh-CN/types/schemanode.md": {
       "url": "/amis/docs/zh-CN/types/schemanode_15cc91a.js",
       "type": "js"
@@ -6054,43 +6034,43 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/array.md": {
-      "url": "/amis/docs/zh-CN/components/form/array_b203c6e.js",
+      "url": "/amis/docs/zh-CN/components/form/array_59596e5.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/button.md": {
-      "url": "/amis/docs/zh-CN/components/form/button_feb61ea.js",
+      "url": "/amis/docs/zh-CN/components/form/button_a0c153f.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/button-toolbar.md": {
-      "url": "/amis/docs/zh-CN/components/form/button-toolbar_82c7cab.js",
+      "url": "/amis/docs/zh-CN/components/form/button-toolbar_aab7cf8.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/button-group.md": {
-      "url": "/amis/docs/zh-CN/components/form/button-group_5179aeb.js",
+      "url": "/amis/docs/zh-CN/components/form/button-group_d80468a.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/chain-select.md": {
-      "url": "/amis/docs/zh-CN/components/form/chain-select_c864e81.js",
+      "url": "/amis/docs/zh-CN/components/form/chain-select_3199a0b.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/checkbox.md": {
-      "url": "/amis/docs/zh-CN/components/form/checkbox_3cd0369.js",
+      "url": "/amis/docs/zh-CN/components/form/checkbox_8f17d34.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/checkboxes.md": {
-      "url": "/amis/docs/zh-CN/components/form/checkboxes_80dff80.js",
+      "url": "/amis/docs/zh-CN/components/form/checkboxes_ee80b59.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/city.md": {
-      "url": "/amis/docs/zh-CN/components/form/city_a35ce39.js",
+      "url": "/amis/docs/zh-CN/components/form/city_c1a299e.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/color.md": {
-      "url": "/amis/docs/zh-CN/components/form/color_195013f.js",
+      "url": "/amis/docs/zh-CN/components/form/color_b8612d5.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/combo.md": {
-      "url": "/amis/docs/zh-CN/components/form/combo_ce84b7e.js",
+      "url": "/amis/docs/zh-CN/components/form/combo_de437e8.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/date.md": {
@@ -6465,6 +6445,26 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/wizard_463b083.js",
       "type": "js"
     },
+    "docs/zh-CN/extend/internal.md": {
+      "url": "/amis/docs/zh-CN/extend/internal_1c0a1bf.js",
+      "type": "js"
+    },
+    "docs/zh-CN/extend/custom-sdk.md": {
+      "url": "/amis/docs/zh-CN/extend/custom-sdk_42b4fbf.js",
+      "type": "js"
+    },
+    "docs/zh-CN/extend/custom-react.md": {
+      "url": "/amis/docs/zh-CN/extend/custom-react_3c5d589.js",
+      "type": "js"
+    },
+    "docs/zh-CN/extend/addon.md": {
+      "url": "/amis/docs/zh-CN/extend/addon_ff222da.js",
+      "type": "js"
+    },
+    "docs/zh-CN/extend/i18n.md": {
+      "url": "/amis/docs/zh-CN/extend/i18n_3b7a952.js",
+      "type": "js"
+    },
     "f669756": {
       "type": "js",
       "pkg": "p8"
@@ -6744,7 +6744,7 @@ amis.require.resourceMap({
   },
   "pkg": {
     "p9": {
-      "url": "/amis/pkg/rest_7cbead7.js",
+      "url": "/amis/pkg/rest_f31eb69.js",
       "type": "js"
     },
     "p4": {
