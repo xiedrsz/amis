@@ -23513,6 +23513,14 @@
               "type": "boolean",
               "description": "是否固定底下的按钮在底部。"
             },
+            "promptPageLeave": {
+              "type": "boolean",
+              "description": "页面离开提示，为了防止页面不小心跳转而导致表单没有保存。"
+            },
+            "promptPageLeaveMessage": {
+              "type": "string",
+              "description": "具体的提示信息，选填。"
+            },
             "className": {
               "$ref": "#/definitions/SchemaClassName",
               "description": "容器 css 类名"
@@ -36015,6 +36023,14 @@
           "type": "boolean",
           "description": "是否固定底下的按钮在底部。"
         },
+        "promptPageLeave": {
+          "type": "boolean",
+          "description": "页面离开提示，为了防止页面不小心跳转而导致表单没有保存。"
+        },
+        "promptPageLeaveMessage": {
+          "type": "string",
+          "description": "具体的提示信息，选填。"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -36330,6 +36346,14 @@
         "affixFooter": {
           "type": "boolean",
           "description": "是否固定底下的按钮在底部。"
+        },
+        "promptPageLeave": {
+          "type": "boolean",
+          "description": "页面离开提示，为了防止页面不小心跳转而导致表单没有保存。"
+        },
+        "promptPageLeaveMessage": {
+          "type": "string",
+          "description": "具体的提示信息，选填。"
         }
       },
       "required": [
@@ -36700,7 +36724,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         }
       ]
@@ -44867,7 +44891,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|readOnly|validateOnChange|description|desc|descriptionClassName|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|readOnly|validateOnChange|description|desc|descriptionClassName|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         }
       ]
@@ -45234,7 +45258,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         }
       ]
@@ -45601,7 +45625,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         }
       ]
@@ -45968,7 +45992,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|columnClassName)$": {}
           }
         }
       ]
@@ -46335,7 +46359,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|columnClassName|width|height|style)$": {}
           }
         }
       ]
@@ -46702,7 +46726,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rowClassName|cellClassName)$": {}
           }
         }
       ]

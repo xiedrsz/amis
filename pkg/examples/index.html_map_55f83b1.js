@@ -5962,7 +5962,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/start/getting-started.md": {
-      "url": "/amis/docs/start/getting-started_deb339f.js",
+      "url": "/amis/docs/start/getting-started_fdc95e1.js",
       "type": "js"
     },
     "docs/start/faq.md": {
@@ -6042,7 +6042,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/components/form/index.md": {
-      "url": "/amis/docs/components/form/index_535e4fe.js",
+      "url": "/amis/docs/components/form/index_e9b8dc5.js",
       "type": "js"
     },
     "docs/components/form/formitem.md": {
