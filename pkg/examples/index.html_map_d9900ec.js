@@ -6142,7 +6142,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/uuid.md": {
-      "url": "/amis/docs/zh-CN/components/form/uuid_7f6051d.js",
+      "url": "/amis/docs/zh-CN/components/form/uuid_becf54a.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/matrix.md": {
