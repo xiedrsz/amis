@@ -6338,7 +6338,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/grid-2d.md": {
-      "url": "/amis/docs/zh-CN/components/grid-2d_97a0750.js",
+      "url": "/amis/docs/zh-CN/components/grid-2d_b073b8a.js",
       "type": "js"
     },
     "docs/zh-CN/components/hbox.md": {

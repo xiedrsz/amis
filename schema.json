@@ -33373,7 +33373,7 @@
         {
           "$ref": "#/definitions/SchemaObjectGrid",
           "patternProperties": {
-            "^(x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -33420,7 +33420,7 @@
               ],
               "description": "水平展示方式，用于内容宽度比 grid 小的情况，默认是 auto 自动撑满"
             },
-            "vAlign": {
+            "valign": {
               "type": "string",
               "enum": [
                 "top",
@@ -46216,21 +46216,21 @@
           "$ref": "#/definitions/PageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|subTitle|remark|body|bodyClassName|aside|asideClassName|data|headerClassName|initApi|initFetch|initFetchOn|messages|name|toolbar|toolbarClassName|definitions|interval|silentPolling|stopAutoRefreshWhen|showErrorMsg|cssVars|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/TplSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|html|text|raw|inline|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/RemarkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|tooltipClassName|trigger|title|content|placement|rootClose|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|label|icon|tooltipClassName|trigger|title|content|placement|rootClose|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -46240,77 +46240,77 @@
           "$ref": "#/definitions/AlertSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|level|showCloseButton|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|level|showCloseButton|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/AudioSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inline|src|loop|autoPlay|rates|controls|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inline|src|loop|autoPlay|rates|controls|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ButtonGroupSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|btnClassName|btnActiveClassName|buttons|btnLevel|btnActiveLevel|vertical|size|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|btnClassName|btnActiveClassName|buttons|btnLevel|btnActiveLevel|vertical|size|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ButtonToolbarSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|buttons|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|buttons|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/CardSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|header|body|actions|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|header|body|actions|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/CardsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|card|headerClassName|footerClassName|itemClassName|placeholder|showFooter|showHeader|source|title|hideCheckToggler|affixHeader|header|footer|itemCheckableOn|itemDraggableOn|checkOnItemClick|masonryLayout|valueField|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|card|headerClassName|footerClassName|itemClassName|placeholder|showFooter|showHeader|source|title|hideCheckToggler|affixHeader|header|footer|itemCheckableOn|itemDraggableOn|checkOnItemClick|masonryLayout|valueField|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/CarouselSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|auto|interval|duration|width|height|controlsTheme|placeholder|controls|animation|itemSchema|name|options|x|y|w|h|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|auto|interval|duration|width|height|controlsTheme|placeholder|controls|animation|itemSchema|name|options|x|y|w|h|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ChartSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|chartTheme|api|initFetch|initFetchOn|config|trackExpression|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|x|y|w|h|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|chartTheme|api|initFetch|initFetchOn|config|trackExpression|width|height|interval|name|style|dataFilter|source|disableDataMapping|clickAction|replaceChartOption|unMountOnHidden|x|y|w|h|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/CollapseSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|titlePosition|body|bodyClassName|collapsable|collapsed|headingClassName|title|collapseTitle|size|mountOnEnter|unmountOnExit|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ColorSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultColor|showValue|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultColor|showValue|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -46320,266 +46320,266 @@
           "$ref": "#/definitions/DateSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|format|placeholder|valueFormat|fromNow|updateFrequency|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|format|placeholder|valueFormat|fromNow|updateFrequency|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/DialogSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|header|headerClassName|footer|confirm|showCloseButton|showErrorMsg|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/DividerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|lineStyle|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/DrawerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|body|bodyClassName|closeOnEsc|name|size|title|position|header|footer|confirm|resizable|overlay|closeOnOutside|showErrorMsg|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/DropdownButtonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|x|y|w|h|width|height|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|block|btnClassName|buttons|label|level|closeOnOutside|closeOnClick|size|align|iconOnly|x|y|w|h|width|height|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/EachSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|items|placeholder|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|items|placeholder|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/GridSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|columns|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|columns|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/Grid2DSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|cols|width|gap|gapRow|rowHeight|grids|x|y|w|h|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|cols|width|gap|gapRow|rowHeight|grids|x|y|w|h|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/HBoxSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|columns|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|columns|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/IconSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|vendor|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|icon|vendor|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/IFrameSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|src|events|width|height|x|y|w|h|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|src|events|width|height|x|y|w|h|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImageSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|title|name|imageCaption|src|originalSrc|enlargeAble|showDimensions|alt|imageClassName|caption|thumbMode|thumbRatio|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ImagesSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|defaultImage|placeholder|delimiter|thumbMode|thumbRatio|name|value|source|src|originalSrc|enlargeAble|showDimensions|listClassName|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/JsonSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|levelExpand|hideRoot|source|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/LinkSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|blank|body|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|blank|body|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ListSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|footer|footerClassName|header|headerClassName|listItem|source|showFooter|showHeader|placeholder|hideCheckToggler|affixHeader|itemCheckableOn|itemDraggableOn|checkOnItemClick|valueField|size|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|footer|footerClassName|header|headerClassName|listItem|source|showFooter|showHeader|placeholder|hideCheckToggler|affixHeader|itemCheckableOn|itemDraggableOn|checkOnItemClick|valueField|size|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/MappingSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|map|placeholder|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|map|placeholder|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/NavSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|source|stacked|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|links|source|stacked|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/OperationSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|buttons|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|buttons|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/PaginationSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|showPageInput|mode|maxButtons|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/PaginationWrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|inputName|outputName|perPage|position|body|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/PanelSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|actionsClassName|body|bodyClassName|footer|footerClassName|footerWrapClassName|header|headerClassName|title|affixFooter|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actions|actionsClassName|body|bodyClassName|footer|footerClassName|footerWrapClassName|header|headerClassName|title|affixFooter|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/PlainSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|text|inline|placeholder|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tpl|text|inline|placeholder|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/QRCodeSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|qrcodeClassName|codeSize|backgroundColor|foregroundColor|level|placeholder|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/SearchBoxSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|mini|searchImediately|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/ServiceSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|body|fetchOn|initFetch|initFetchOn|schemaApi|initFetchSchema|initFetchSchemaOn|interval|silentPolling|stopAutoRefreshWhen|messages|name|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|api|body|fetchOn|initFetch|initFetchOn|schemaApi|initFetchSchema|initFetchSchemaOn|interval|silentPolling|stopAutoRefreshWhen|messages|name|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/SparkLineSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|x|y|w|h|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|width|height|clickAction|value|x|y|w|h|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/StatusSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|map|labelMap|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|map|labelMap|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/SwitchSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|placeholder|trueValue|falseValue|readOnly|saveImmediately|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/TableSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|affixHeader|columns|columnsTogglable|footable|footerClassName|headerClassName|placeholder|showFooter|showHeader|source|tableClassName|title|toolbarClassName|combineNum|prefixRow|affixRow|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/TasksSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|btnClassName|btnText|checkApi|interval|items|name|operationLabel|reSubmitApi|remarkLabel|retryBtnClassName|retryBtnText|statusLabel|statusLabelMap|statusTextMap|submitApi|tableClassName|taskNameLabel|initialStatusCode|readyStatusCode|loadingStatusCode|canRetryStatusCode|finishStatusCode|errorStatusCode|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|btnClassName|btnText|checkApi|interval|items|name|operationLabel|reSubmitApi|remarkLabel|retryBtnClassName|retryBtnText|statusLabel|statusLabelMap|statusTextMap|submitApi|tableClassName|taskNameLabel|initialStatusCode|readyStatusCode|loadingStatusCode|canRetryStatusCode|finishStatusCode|errorStatusCode|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/VBoxSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|rows|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|rows|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/VideoSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|autoPlay|columnsCount|frames|framesClassName|isLive|jumpFrame|muted|playerClassName|poster|splitPoster|src|videoType|aspectRatio|rates|jumpBufferDuration|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|autoPlay|columnsCount|frames|framesClassName|isLive|jumpFrame|muted|playerClassName|poster|splitPoster|src|videoType|aspectRatio|rates|jumpBufferDuration|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/WizardSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actionClassName|actionFinishLabel|actionNextLabel|actionNextSaveLabel|actionPrevLabel|api|bulkSubmit|initApi|mode|name|readOnly|redirect|reload|target|affixFooter|steps|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|actionClassName|actionFinishLabel|actionNextLabel|actionNextSaveLabel|actionPrevLabel|api|bulkSubmit|initApi|mode|name|readOnly|redirect|reload|target|affixFooter|steps|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/WrapperSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|size|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|size|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|x|y|w|h|width|height|align|vAlign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         }
       ]
