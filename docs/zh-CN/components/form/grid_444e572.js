@@ -1,7 +1,7 @@
 amis.define('docs/zh-CN/components/form/grid.md', function(require, exports, module, define) {
 
   module.exports = {
-    "title": "Grid 网格",
+    "title": "Grid 水平布局",
     "description": null,
     "type": 0,
     "group": null,

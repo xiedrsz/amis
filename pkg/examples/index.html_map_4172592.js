@@ -6114,7 +6114,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/grid.md": {
-      "url": "/amis/docs/zh-CN/components/form/grid_ceb2766.js",
+      "url": "/amis/docs/zh-CN/components/form/grid_444e572.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/group.md": {
@@ -6334,7 +6334,11 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/grid.md": {
-      "url": "/amis/docs/zh-CN/components/grid_78c1eef.js",
+      "url": "/amis/docs/zh-CN/components/grid_7127e41.js",
+      "type": "js"
+    },
+    "docs/zh-CN/components/grid-2d.md": {
+      "url": "/amis/docs/zh-CN/components/grid-2d_28131f8.js",
       "type": "js"
     },
     "docs/zh-CN/components/hbox.md": {
