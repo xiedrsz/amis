@@ -6070,7 +6070,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/combo.md": {
-      "url": "/amis/docs/zh-CN/components/form/combo_b3e8f7a.js",
+      "url": "/amis/docs/zh-CN/components/form/combo_886c88c.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/date.md": {
