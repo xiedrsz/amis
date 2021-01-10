@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <title>amis - 低代码前端框架</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link type="image/x-icon" rel="shortcut icon" href="/amis/static/favicon_b3b0647.png" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />            <link rel="stylesheet" href="/amis/pkg/style_d8bb911.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>amis - 低代码前端框架</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="image/x-icon" rel="shortcut icon" href="/amis/static/favicon_b3b0647.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />        <link rel="stylesheet" href="/amis/pkg/style_d8bb911.css" />
     <link rel="stylesheet" href="/amis/pkg/npm_c91a575.css" />
-    <link rel="stylesheet" href="/amis/scss/helper_ac622e3.css" />
     <style>
-      .app-wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-        <script type="text/javascript">var theme = localStorage.getItem('theme') || 'default';
+    .app-wrapper,
+    .schema-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+    <script type="text/javascript">var theme = localStorage.getItem('theme') || 'default';
 // 非 IE 模式
 if (window.navigator.userAgent.indexOf('Trident') === -1) {
-    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default_5fa5077.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd_c588289.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark_26bef2c.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default_88a8813.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd_6d2c508.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark_0c105fb.css' + "\" />");
 }
 else {
-    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default-ie11_28508b6.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd-ie11_4a960da.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark-ie11_6662ff6.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default-ie11_6f0b506.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd-ie11_5b96523.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark-ie11_01ff7f3.css' + "\" />");
 }
 </script>
-    
-  </head>
+  
+<link rel="stylesheet" href="/amis/scss/helper_ac622e3.css" /></head>
 
-  <body>
-    <div id="root" class="app-wrapper"></div>  
-<script src="/amis/pkg/npm_7b13466.js"></script>
-<script type="text/javascript" src="/amis/pkg/examples/index.html_map_84a47d4.js"></script>
-<script type="text/javascript" src="/amis/pkg/app_db6f04e.js"></script>
+<body>
+  <div id="root" class="app-wrapper"></div>
+<script src="/amis/pkg/npm_6c55588.js"></script>
+<script type="text/javascript" src="/amis/pkg/examples/index.html_map_61ae151.js"></script>
+<script type="text/javascript" src="/amis/pkg/app_056d755.js"></script>
 <script type="text/javascript" src="/amis/pkg/rich-text_5b6e508.js"></script>
-<script type="text/javascript" src="/amis/pkg/rest_dfadb77.js"></script>
+<script type="text/javascript" src="/amis/pkg/rest_cb0905c.js"></script>
 <script type="text/javascript">
-      var _hmt = _hmt || [];
+    var _hmt = _hmt || [];
 
-      // 百度统计
-      (function () {
-        var hm = document.createElement('script');
-        hm.src = 'https://hm.baidu.com/hm.js?1f80f2c9dbe21dc3af239cf9eee90f1f';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
+    // 百度统计
+    (function () {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?1f80f2c9dbe21dc3af239cf9eee90f1f';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
 
-      /* @require examples/index.jsx 标记为同步依赖，提前加载 */
-      amis.require(['ca626e1'], function (app) {
-        var initialState = {};
-        app.bootstrap(document.getElementById('root'), initialState);
-      });
-    </script>
+    /* @require examples/index.jsx 标记为同步依赖，提前加载 */
+    amis.require(['ca626e1'], function (app) {
+      var initialState = {};
+      app.bootstrap(document.getElementById('root'), initialState);
+    });
+  </script>
 </body>
+
 </html>
