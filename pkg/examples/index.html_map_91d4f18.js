@@ -6250,7 +6250,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/crud.md": {
-      "url": "/amis/docs/zh-CN/components/crud_504b6b5.js",
+      "url": "/amis/docs/zh-CN/components/crud_b9036de.js",
       "type": "js"
     },
     "docs/zh-CN/components/custom.md": {
