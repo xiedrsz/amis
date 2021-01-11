@@ -6026,7 +6026,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/formitem.md": {
-      "url": "/amis/docs/zh-CN/components/form/formitem_e1ab30e.js",
+      "url": "/amis/docs/zh-CN/components/form/formitem_012b3cc.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/options.md": {
@@ -6466,7 +6466,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/extend/addon.md": {
-      "url": "/amis/docs/zh-CN/extend/addon_00bb06f.js",
+      "url": "/amis/docs/zh-CN/extend/addon_87f04f0.js",
       "type": "js"
     },
     "docs/zh-CN/extend/mobile.md": {
@@ -6768,7 +6768,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "p2": {
-      "url": "/amis/pkg/tinymce_b65f96f.js",
+      "url": "/amis/pkg/tinymce_c822ce2.js",
       "type": "js"
     },
     "p3": {

@@ -5972,7 +5972,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "p2": {
-      "url": "/amis/pkg/tinymce_b65f96f.js",
+      "url": "/amis/pkg/tinymce_c822ce2.js",
       "type": "js"
     },
     "p3": {
