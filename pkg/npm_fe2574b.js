@@ -1,9 +1,11 @@
 ;/*!examples/mod.js*/
-/**
- * @file 模块加载器，改成私有化的了，慎用。
+/** @license amis v1.1.1
+ *
+ * Copyright Baidu
+ *
+ * This source code is licensed under the Apache license found in the
+ * LICENSE file in the root directory of this source tree.
  */
-/* eslint-disable */
-
 (function (global) {
   var require, define;
   var amis = window.amis || {};
