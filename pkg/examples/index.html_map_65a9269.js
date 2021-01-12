@@ -5982,7 +5982,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/data-mapping.md": {
-      "url": "/amis/docs/zh-CN/concepts/data-mapping_d568e48.js",
+      "url": "/amis/docs/zh-CN/concepts/data-mapping_5495de5.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/expression.md": {
