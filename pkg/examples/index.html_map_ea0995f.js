@@ -6141,6 +6141,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/form/list_a1e82bc.js",
       "type": "js"
     },
+    "docs/zh-CN/components/form/location.md": {
+      "url": "/amis/docs/zh-CN/components/form/location_6b87868.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/form/uuid.md": {
       "url": "/amis/docs/zh-CN/components/form/uuid_2dc8a57.js",
       "type": "js"
