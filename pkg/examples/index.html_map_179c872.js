@@ -6006,7 +6006,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/types/api.md": {
-      "url": "/amis/docs/zh-CN/types/api_bbf4381.js",
+      "url": "/amis/docs/zh-CN/types/api_3a7e2ca.js",
       "type": "js"
     },
     "docs/zh-CN/types/definitions.md": {
