@@ -11332,6 +11332,10 @@
           "$ref": "#/definitions/SchemaClassName",
           "description": "body 类名"
         },
+        "style": {
+          "type": "object",
+          "description": "自定义样式"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -31256,6 +31260,10 @@
         "bodyClassName": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "body 类名"
+        },
+        "style": {
+          "type": "object",
+          "description": "自定义样式"
         }
       },
       "required": [
@@ -36967,7 +36975,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -40822,7 +40830,7 @@
           "$ref": "#/definitions/ContainerControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|bodyClassName|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|body|controls|tabs|fieldSet|unique|columnClassName)$": {}
+            "^(type|bodyClassName|style|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|body|controls|tabs|fieldSet|unique|columnClassName)$": {}
           }
         },
         {
@@ -44729,7 +44737,7 @@
           "$ref": "#/definitions/ContainerControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|bodyClassName|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|body|controls|tabs|fieldSet|columnClassName|columnRatio)$": {}
+            "^(type|bodyClassName|style|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|body|controls|tabs|fieldSet|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -45155,7 +45163,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value)$": {}
           }
         },
         {
@@ -45529,7 +45537,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -45903,7 +45911,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -46277,7 +46285,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -46651,7 +46659,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -47025,7 +47033,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|columnClassName|width|height)$": {}
           }
         },
         {
@@ -47399,7 +47407,7 @@
           "$ref": "#/definitions/ContainerSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|body|bodyClassName|style|rowClassName|cellClassName)$": {}
           }
         },
         {
