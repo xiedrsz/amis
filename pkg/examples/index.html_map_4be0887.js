@@ -6074,15 +6074,15 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/date.md": {
-      "url": "/amis/docs/zh-CN/components/form/date_fbc68e9.js",
+      "url": "/amis/docs/zh-CN/components/form/date_86559f2.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/datetime.md": {
-      "url": "/amis/docs/zh-CN/components/form/datetime_cffbca1.js",
+      "url": "/amis/docs/zh-CN/components/form/datetime_7fb1c32.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/month.md": {
-      "url": "/amis/docs/zh-CN/components/form/month_b7b30a6.js",
+      "url": "/amis/docs/zh-CN/components/form/month_9f0546e.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/date-range.md": {
@@ -6106,7 +6106,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/file.md": {
-      "url": "/amis/docs/zh-CN/components/form/file_cf4e405.js",
+      "url": "/amis/docs/zh-CN/components/form/file_126c519.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/formula.md": {
@@ -6130,7 +6130,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/image.md": {
-      "url": "/amis/docs/zh-CN/components/form/image_132f28a.js",
+      "url": "/amis/docs/zh-CN/components/form/image_52ed5a0.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/input-group.md": {
@@ -6234,7 +6234,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/time.md": {
-      "url": "/amis/docs/zh-CN/components/form/time_3079c81.js",
+      "url": "/amis/docs/zh-CN/components/form/time_ddc4e75.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/transfer.md": {
@@ -6270,7 +6270,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/action.md": {
-      "url": "/amis/docs/zh-CN/components/action_1740747.js",
+      "url": "/amis/docs/zh-CN/components/action_06e196b.js",
       "type": "js"
     },
     "docs/zh-CN/components/alert.md": {
@@ -6482,7 +6482,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/extend/i18n.md": {
-      "url": "/amis/docs/zh-CN/extend/i18n_0d8df20.js",
+      "url": "/amis/docs/zh-CN/extend/i18n_2f872c2.js",
       "type": "js"
     },
     "f669756": {
