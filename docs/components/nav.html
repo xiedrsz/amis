@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>amis - 低代码前端框架</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link type="image/x-icon" rel="shortcut icon" href="/amis/static/favicon_b3b0647.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />        <link rel="stylesheet" href="/amis/pkg/style_d8bb911.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>amis - 低代码前端框架</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="image/x-icon" rel="shortcut icon" href="/amis/static/favicon_b3b0647.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />            <link rel="stylesheet" href="/amis/pkg/style_3442bc8.css" />
     <link rel="stylesheet" href="/amis/pkg/npm_f2ab4e2.css" />
     <style>
-    .app-wrapper,
-    .schema-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-    <script type="text/javascript">var theme = localStorage.getItem('theme') || 'default';
+      .app-wrapper,
+      .schema-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+        <script type="text/javascript">var theme = localStorage.getItem('theme') || 'default';
 // 非 IE 模式
 if (window.navigator.userAgent.indexOf('Trident') === -1) {
-    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default_a68ddae.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd_43466a7.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark_72f312e.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default_1e07f36.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd_a2b92e9.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark_77737e7.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"antd\" " + (theme !== 'antd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/antd_b5dd1e9.css' + "\" />");
 }
 else {
-    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default-ie11_c7d7aaf.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd-ie11_ffec93f.css' + "\" />");
-    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark-ie11_0906d59.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"default\" " + (theme !== 'default' ? 'disabled' : '') + "  href=\"" + '/amis/scss/themes/default-ie11_28f3937.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"cxd\" " + (theme !== 'cxd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/cxd-ie11_1e4295e.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"dark\" " + (theme !== 'dark' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/dark-ie11_dff6094.css' + "\" />");
+    document.write("<link rel=\"stylesheet\" title=\"antd\" " + (theme !== 'antd' ? 'disabled' : '') + " href=\"" + '/amis/scss/themes/antd-ie11_da2f4b7.css' + "\" />");
 }
 </script>
-  
-<link rel="stylesheet" href="/amis/scss/helper_0a99687.css" /></head>
+    
+<link rel="stylesheet" href="/amis/scss/helper_0a99687.css" />  </head>
 
-<body>
-  <div id="root" class="app-wrapper"></div>
-<script src="/amis/pkg/npm_39a79f3.js"></script>
+  <body>
+    <div id="root" class="app-wrapper"></div>  
+<script src="/amis/pkg/npm_63ba509.js"></script>
 <script type="text/javascript" src="/amis/pkg/examples/index.html_map_4be0887.js"></script>
-<script type="text/javascript" src="/amis/pkg/app_ac59a8d.js"></script>
+<script type="text/javascript" src="/amis/pkg/app_b6d42b7.js"></script>
 <script type="text/javascript" src="/amis/pkg/rich-text_5b6e508.js"></script>
 <script type="text/javascript" src="/amis/pkg/rest_4af9383.js"></script>
 <script type="text/javascript">
-    var _hmt = _hmt || [];
+      if (location.hostname !== 'localhost') {
+        var _hmt = _hmt || [];
 
-    // 百度统计
-    (function () {
-      var hm = document.createElement('script');
-      hm.src = 'https://hm.baidu.com/hm.js?1f80f2c9dbe21dc3af239cf9eee90f1f';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
+        // 百度统计
+        (function () {
+          var hm = document.createElement('script');
+          hm.src =
+            'https://hm.baidu.com/hm.js?1f80f2c9dbe21dc3af239cf9eee90f1f';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
 
-    /* @require examples/index.jsx 标记为同步依赖，提前加载 */
-    amis.require(['ca626e1'], function (app) {
-      var initialState = {};
-      app.bootstrap(document.getElementById('root'), initialState);
-    });
-  </script>
+      /* @require examples/index.jsx 标记为同步依赖，提前加载 */
+      amis.require(['ca626e1'], function (app) {
+        var initialState = {};
+        app.bootstrap(document.getElementById('root'), initialState);
+      });
+    </script>
 </body>
-
 </html>
