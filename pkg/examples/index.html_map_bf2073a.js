@@ -6006,7 +6006,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/types/api.md": {
-      "url": "/amis/docs/zh-CN/types/api_d76c9f5.js",
+      "url": "/amis/docs/zh-CN/types/api_0cccae3.js",
       "type": "js"
     },
     "docs/zh-CN/types/definitions.md": {
@@ -6142,7 +6142,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/location.md": {
-      "url": "/amis/docs/zh-CN/components/form/location_1738d11.js",
+      "url": "/amis/docs/zh-CN/components/form/location_92aeb5d.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/uuid.md": {
