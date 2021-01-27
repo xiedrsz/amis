@@ -6106,7 +6106,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/file.md": {
-      "url": "/amis/docs/zh-CN/components/form/file_126c519.js",
+      "url": "/amis/docs/zh-CN/components/form/file_521623c.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/formula.md": {
@@ -6130,7 +6130,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/image.md": {
-      "url": "/amis/docs/zh-CN/components/form/image_52ed5a0.js",
+      "url": "/amis/docs/zh-CN/components/form/image_3d4e0ba.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/input-group.md": {
@@ -6190,7 +6190,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/rich-text.md": {
-      "url": "/amis/docs/zh-CN/components/form/rich-text_50f702c.js",
+      "url": "/amis/docs/zh-CN/components/form/rich-text_09a29ed.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/select.md": {
@@ -6358,7 +6358,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/icon.md": {
-      "url": "/amis/docs/zh-CN/components/icon_122fa92.js",
+      "url": "/amis/docs/zh-CN/components/icon_8cebd48.js",
       "type": "js"
     },
     "docs/zh-CN/components/iframe.md": {
