@@ -6434,7 +6434,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/tabs.md": {
-      "url": "/amis/docs/zh-CN/components/tabs_1325c84.js",
+      "url": "/amis/docs/zh-CN/components/tabs_b8a77e6.js",
       "type": "js"
     },
     "docs/zh-CN/components/tasks.md": {
