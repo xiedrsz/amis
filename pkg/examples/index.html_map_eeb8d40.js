@@ -6018,11 +6018,11 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/page.md": {
-      "url": "/amis/docs/zh-CN/components/page_70face2.js",
+      "url": "/amis/docs/zh-CN/components/page_d93870d.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/index.md": {
-      "url": "/amis/docs/zh-CN/components/form/index_eebbdbe.js",
+      "url": "/amis/docs/zh-CN/components/form/index_bad648b.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/formitem.md": {
@@ -6030,7 +6030,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/options.md": {
-      "url": "/amis/docs/zh-CN/components/form/options_3461bb1.js",
+      "url": "/amis/docs/zh-CN/components/form/options_e4b12a7.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/array.md": {
@@ -6086,7 +6086,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/date-range.md": {
-      "url": "/amis/docs/zh-CN/components/form/date-range_8a067e8.js",
+      "url": "/amis/docs/zh-CN/components/form/date-range_e308de6.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/datetime-range.md": {
@@ -6258,7 +6258,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/crud.md": {
-      "url": "/amis/docs/zh-CN/components/crud_206280f.js",
+      "url": "/amis/docs/zh-CN/components/crud_d32f460.js",
       "type": "js"
     },
     "docs/zh-CN/components/custom.md": {
@@ -6302,7 +6302,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/chart.md": {
-      "url": "/amis/docs/zh-CN/components/chart_95fad89.js",
+      "url": "/amis/docs/zh-CN/components/chart_754b4fd.js",
       "type": "js"
     },
     "docs/zh-CN/components/collapse.md": {
@@ -6402,7 +6402,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/progress.md": {
-      "url": "/amis/docs/zh-CN/components/progress_1fcefee.js",
+      "url": "/amis/docs/zh-CN/components/progress_492feb6.js",
       "type": "js"
     },
     "docs/zh-CN/components/qrcode.md": {
@@ -6414,7 +6414,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/service.md": {
-      "url": "/amis/docs/zh-CN/components/service_9ad2cc7.js",
+      "url": "/amis/docs/zh-CN/components/service_e4d309a.js",
       "type": "js"
     },
     "docs/zh-CN/components/sparkline.md": {

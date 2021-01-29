@@ -13695,6 +13695,14 @@
           "type": "string",
           "description": "最小日期限制，支持变量 $xxx 来取值，或者用相对值如：* `-2mins` 2分钟前\\n * `+2days` 2天后\\n* `-10week` 十周前\\n可用单位： `min`、`hour`、`day`、`week`、`month`、`year`。所有单位支持复数形式。"
         },
+        "maxDuration": {
+          "type": "string",
+          "description": "最大跨度，比如 2days"
+        },
+        "minDuration": {
+          "type": "string",
+          "description": "最小跨度，比如 2days"
+        },
         "embed": {
           "type": "boolean",
           "description": "开启后变成非弹出模式，即内联模式。"
@@ -24079,6 +24087,26 @@
               "type": "string",
               "description": "具体的提示信息，选填。"
             },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule": {
+                    "type": "string"
+                  },
+                  "message": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "rule",
+                  "message"
+                ],
+                "additionalProperties": false
+              },
+              "description": "组合校验规则，选填"
+            },
             "className": {
               "$ref": "#/definitions/SchemaClassName",
               "description": "容器 css 类名"
@@ -24112,6 +24140,9 @@
               "description": "是否显示表达式"
             }
           },
+          "required": [
+            "rules"
+          ],
           "additionalProperties": false,
           "description": "子表单详情"
         }
@@ -35331,6 +35362,14 @@
         "placeholder": {
           "type": "string",
           "description": "占位符"
+        },
+        "stripe": {
+          "type": "boolean",
+          "description": "是否显示背景间隔"
+        },
+        "animate": {
+          "type": "boolean",
+          "description": "是否显示动画（只有在开启的时候才能看出来）"
         }
       },
       "required": [
@@ -36816,6 +36855,26 @@
           "type": "string",
           "description": "具体的提示信息，选填。"
         },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rule": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "rule",
+              "message"
+            ],
+            "additionalProperties": false
+          },
+          "description": "组合校验规则，选填"
+        },
         "className": {
           "$ref": "#/definitions/SchemaClassName",
           "description": "容器 css 类名"
@@ -36848,7 +36907,10 @@
           "$ref": "#/definitions/SchemaExpression",
           "description": "是否显示表达式"
         }
-      }
+      },
+      "required": [
+        "rules"
+      ]
     },
     "WrapperSchema": {
       "type": "object",
@@ -37143,9 +37205,30 @@
         "promptPageLeaveMessage": {
           "type": "string",
           "description": "具体的提示信息，选填。"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rule": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "rule",
+              "message"
+            ],
+            "additionalProperties": false
+          },
+          "description": "组合校验规则，选填"
         }
       },
       "required": [
+        "rules",
         "type"
       ],
       "additionalProperties": false,
@@ -37422,7 +37505,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -37520,7 +37603,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         }
       ]
@@ -41184,7 +41267,7 @@
           "$ref": "#/definitions/DateRangeControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|delimiter|format|inputFormat|joinValues|maxDate|minDate|embed|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|delimiter|format|inputFormat|joinValues|maxDate|minDate|maxDuration|minDuration|embed|unique|columnClassName)$": {}
           }
         },
         {
@@ -45127,7 +45210,7 @@
           "$ref": "#/definitions/DateRangeControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|delimiter|format|inputFormat|joinValues|maxDate|minDate|embed|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|delimiter|format|inputFormat|joinValues|maxDate|minDate|maxDuration|minDuration|embed|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -45682,7 +45765,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
         },
         {
@@ -45780,7 +45863,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|readOnly|validateOnChange|description|desc|descriptionClassName|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|remark|labelRemark|hint|readOnly|validateOnChange|description|desc|descriptionClassName|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
         }
       ]
@@ -46056,7 +46139,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -46154,7 +46237,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|label|fixed|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         }
       ]
@@ -46430,7 +46513,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -46528,7 +46611,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|label|labelClassName|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|label|labelClassName|popOver|quickEdit|copyable)$": {}
           }
         }
       ]
@@ -46804,7 +46887,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -46902,7 +46985,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|columnClassName)$": {}
           }
         }
       ]
@@ -47178,7 +47261,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -47276,7 +47359,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         }
       ]
@@ -47552,7 +47635,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -47650,7 +47733,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|columnClassName|width|height|style)$": {}
           }
         }
       ]
@@ -47926,7 +48009,7 @@
           "$ref": "#/definitions/ProgressSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|name|progressClassName|progressBarClassName|map|showLabel|placeholder|stripe|animate|rowClassName|cellClassName)$": {}
           }
         },
         {
@@ -48024,7 +48107,7 @@
           "$ref": "#/definitions/FormSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|title|actions|controls|tabs|fieldSet|data|debug|initApi|initAsyncApi|initFinishedField|initCheckInterval|initFetch|initFetchOn|interval|silentPolling|stopAutoRefreshWhen|persistData|clearPersistDataAfterSubmit|api|feedback|asyncApi|checkInterval|finishedField|resetAfterSubmit|mode|horizontal|autoFocus|messages|name|panelClassName|primaryField|redirect|reload|submitOnChange|submitOnInit|submitText|target|wrapWithPanel|body|affixFooter|promptPageLeave|promptPageLeaveMessage|rules|rowClassName|cellClassName)$": {}
           }
         }
       ]
