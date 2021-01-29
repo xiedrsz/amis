@@ -5958,15 +5958,15 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/index.md": {
-      "url": "/amis/docs/zh-CN/index_79dbcf7.js",
+      "url": "/amis/docs/zh-CN/index_3b9061d.js",
       "type": "js"
     },
     "docs/zh-CN/start/getting-started.md": {
-      "url": "/amis/docs/zh-CN/start/getting-started_2f00667.js",
+      "url": "/amis/docs/zh-CN/start/getting-started_1c758b2.js",
       "type": "js"
     },
     "docs/zh-CN/start/faq.md": {
-      "url": "/amis/docs/zh-CN/start/faq_3441696.js",
+      "url": "/amis/docs/zh-CN/start/faq_dd39a5f.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/schema.md": {
@@ -6358,7 +6358,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/icon.md": {
-      "url": "/amis/docs/zh-CN/components/icon_ef1c66b.js",
+      "url": "/amis/docs/zh-CN/components/icon_2835601.js",
       "type": "js"
     },
     "docs/zh-CN/components/iframe.md": {
