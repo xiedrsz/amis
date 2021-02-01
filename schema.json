@@ -26073,6 +26073,24 @@
               "description": "列宽度"
             },
             "filterable": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "source": {
+                      "type": "string"
+                    },
+                    "options": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              ],
               "description": "todo"
             },
             "breakpoint": {
@@ -26153,6 +26171,24 @@
           "description": "列宽度"
         },
         "filterable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "type": "string"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "additionalProperties": false
+            }
+          ],
           "description": "todo"
         },
         "breakpoint": {
@@ -26184,6 +26220,10 @@
           "type": "string",
           "const": "tabs",
           "description": "表单项类型"
+        },
+        "source": {
+          "type": "string",
+          "description": "关联已有数据，选项卡直接根据目标数据重复。"
         },
         "tabsClassName": {
           "$ref": "#/definitions/SchemaClassName",
@@ -36383,7 +36423,12 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/TabSchema"
-          }
+          },
+          "description": "选项卡成员。当配置了 source 时，选项卡成员，将会根据目标数据进行重复。"
+        },
+        "source": {
+          "type": "string",
+          "description": "关联已有数据，选项卡直接根据目标数据重复。"
         },
         "tabsClassName": {
           "$ref": "#/definitions/SchemaClassName",
@@ -37912,7 +37957,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -41848,7 +41893,7 @@
           "$ref": "#/definitions/TabsControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|tabs|unique|columnClassName)$": {}
+            "^(type|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|tabs|unique|columnClassName)$": {}
           }
         },
         {
@@ -45798,7 +45843,7 @@
           "$ref": "#/definitions/TabsControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|tabs|columnClassName|columnRatio)$": {}
+            "^(type|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|tabs|columnClassName|columnRatio)$": {}
           }
         },
         {
@@ -46186,7 +46231,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|tpl|text|popOver|quickEdit|copyable|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden)$": {}
           }
         },
         {
@@ -46560,7 +46605,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|label|fixed|name|popOver|quickEdit|quickEditOnUpdate|copyable|sortable|searchable|toggled|width|filterable|breakpoint|remark)$": {}
           }
         },
         {
@@ -46934,7 +46979,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|label|labelClassName|name|popOver|quickEdit|copyable)$": {}
           }
         },
         {
@@ -47308,7 +47353,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|xs|xsHidden|xsOffset|xsPull|xsPush|sm|smHidden|smOffset|smPull|smPush|md|mdHidden|mdOffset|mdPull|mdPush|lg|lgHidden|lgOffset|lgPull|lgPush|mode|horizontal|columnClassName)$": {}
           }
         },
         {
@@ -47682,7 +47727,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|x|y|w|h|width|height|align|valign|gridClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|x|y|w|h|width|height|align|valign|gridClassName)$": {}
           }
         },
         {
@@ -48056,7 +48101,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|columnClassName|width|height|style)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|columnClassName|width|height|style)$": {}
           }
         },
         {
@@ -48430,7 +48475,7 @@
           "$ref": "#/definitions/TabsSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|rowClassName|cellClassName)$": {}
+            "^(type|className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|tabs|source|tabsClassName|tabsMode|contentClassName|mountOnEnter|unmountOnExit|toolbar|rowClassName|cellClassName)$": {}
           }
         },
         {
