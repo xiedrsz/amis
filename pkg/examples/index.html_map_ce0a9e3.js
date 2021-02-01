@@ -6093,6 +6093,10 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/components/form/datetime-range_5760cd1.js",
       "type": "js"
     },
+    "docs/zh-CN/components/form/month-range.md": {
+      "url": "/amis/docs/zh-CN/components/form/month-range_4b45c8b.js",
+      "type": "js"
+    },
     "docs/zh-CN/components/form/diff-editor.md": {
       "url": "/amis/docs/zh-CN/components/form/diff-editor_83a6997.js",
       "type": "js"
