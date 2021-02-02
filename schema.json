@@ -24487,9 +24487,6 @@
               "description": "是否显示表达式"
             }
           },
-          "required": [
-            "rules"
-          ],
           "additionalProperties": false,
           "description": "子表单详情"
         }
@@ -37303,10 +37300,7 @@
           "$ref": "#/definitions/SchemaExpression",
           "description": "是否显示表达式"
         }
-      },
-      "required": [
-        "rules"
-      ]
+      }
     },
     "WrapperSchema": {
       "type": "object",
@@ -37624,7 +37618,6 @@
         }
       },
       "required": [
-        "rules",
         "type"
       ],
       "additionalProperties": false,
