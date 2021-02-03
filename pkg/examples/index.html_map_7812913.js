@@ -6390,7 +6390,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/form/index.md": {
-      "url": "/amis/docs/zh-CN/components/form/index_4a895ad.js",
+      "url": "/amis/docs/zh-CN/components/form/index_4e1d6a5.js",
       "type": "js"
     },
     "docs/zh-CN/components/form/formitem.md": {

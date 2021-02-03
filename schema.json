@@ -772,6 +772,9 @@
         },
         "redirect": {
           "type": "string"
+        },
+        "ignoreConfirm": {
+          "type": "boolean"
         }
       },
       "required": [
@@ -4119,6 +4122,9 @@
             },
             "redirect": {
               "type": "string"
+            },
+            "ignoreConfirm": {
+              "type": "boolean"
             }
           },
           "required": [
@@ -28121,6 +28127,9 @@
                 "redirect": {
                   "type": "string"
                 },
+                "ignoreConfirm": {
+                  "type": "boolean"
+                },
                 "position": {
                   "type": "string",
                   "enum": [
@@ -38387,6 +38396,9 @@
             },
             "redirect": {
               "type": "string"
+            },
+            "ignoreConfirm": {
+              "type": "boolean"
             }
           },
           "required": [
@@ -38395,7 +38407,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|api|feedback|reload|redirect|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|api|feedback|reload|redirect|ignoreConfirm|unique|columnClassName)$": {}
           }
         },
         {
@@ -42337,6 +42349,9 @@
             },
             "redirect": {
               "type": "string"
+            },
+            "ignoreConfirm": {
+              "type": "boolean"
             }
           },
           "required": [
@@ -42345,7 +42360,7 @@
             "type"
           ],
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|api|feedback|reload|redirect|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|block|disabledTip|icon|iconClassName|level|primary|tooltip|tooltipPlacement|confirmText|activeLevel|activeClassName|close|requireSelected|mergeData|target|actionType|api|feedback|reload|redirect|ignoreConfirm|columnClassName|columnRatio)$": {}
           }
         },
         {
