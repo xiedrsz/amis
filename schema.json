@@ -865,7 +865,10 @@
         "headers": {
           "type": "object",
           "additionalProperties": {
-            "type": "string"
+            "type": [
+              "string",
+              "number"
+            ]
           },
           "description": "携带 headers，用法和 data 一样，可以用变量。"
         },
