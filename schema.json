@@ -23529,6 +23529,10 @@
         "searchable": {
           "type": "boolean",
           "description": "是否可以搜索值"
+        },
+        "menuTpl": {
+          "type": "string",
+          "description": "可以自定义菜单展示。"
         }
       },
       "required": [
@@ -32553,6 +32557,10 @@
           },
           "additionalProperties": false,
           "description": "如果时内嵌模式，可以通过这个来配置默认的展开选项。"
+        },
+        "alwaysShowPagination": {
+          "type": "boolean",
+          "description": "默认只有当分页数大于 1 是才显示，如果总是想显示请配置。"
         }
       },
       "required": [
@@ -33026,6 +33034,10 @@
           },
           "additionalProperties": false,
           "description": "如果时内嵌模式，可以通过这个来配置默认的展开选项。"
+        },
+        "alwaysShowPagination": {
+          "type": "boolean",
+          "description": "默认只有当分页数大于 1 是才显示，如果总是想显示请配置。"
         }
       },
       "required": [
@@ -33073,6 +33085,14 @@
           "items": {
             "$ref": "#/definitions/ActionSchema"
           }
+        },
+        "actionsPosition": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ],
+          "description": "操作位置，默认在右侧，可以设置成左侧。"
         },
         "avatar": {
           "$ref": "#/definitions/SchemaUrlPath",
@@ -33663,6 +33683,10 @@
           },
           "additionalProperties": false,
           "description": "如果时内嵌模式，可以通过这个来配置默认的展开选项。"
+        },
+        "alwaysShowPagination": {
+          "type": "boolean",
+          "description": "默认只有当分页数大于 1 是才显示，如果总是想显示请配置。"
         }
       },
       "required": [
@@ -41860,7 +41884,7 @@
           "$ref": "#/definitions/SelectControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|autoComplete|searchable|unique|columnClassName)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|autoComplete|searchable|menuTpl|unique|columnClassName)$": {}
           }
         },
         {
@@ -45813,7 +45837,7 @@
           "$ref": "#/definitions/SelectControlSchema",
           "additionalProperties": false,
           "patternProperties": {
-            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|autoComplete|searchable|columnClassName|columnRatio)$": {}
+            "^(className|$ref|disabled|disabledOn|hidden|hiddenOn|visible|visibleOn|type|size|label|labelClassName|name|remark|labelRemark|hint|submitOnChange|readOnly|validateOnChange|description|desc|descriptionClassName|mode|horizontal|inline|inputClassName|placeholder|required|validationErrors|validations|value|clearValueOnHidden|options|source|selectFirst|initFetchOn|initFetch|multiple|joinValues|delimiter|extractValue|clearable|resetValue|deferApi|addApi|addControls|creatable|createBtnLabel|editable|editApi|editControls|removable|deleteApi|deleteConfirmText|autoFill|autoComplete|searchable|menuTpl|columnClassName|columnRatio)$": {}
           }
         },
         {

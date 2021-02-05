@@ -1483,6 +1483,7 @@ amis.require.resourceMap({
         "1953fc1",
         "4c26fd3",
         "0f9ebdf",
+        "919cbd9",
         "df7b849",
         "1caead1",
         "9a80175",
@@ -9666,11 +9667,11 @@ amis.require.resourceMap({
   },
   "pkg": {
     "p9": {
-      "url": "/amis/pkg/rest_2579109.js",
+      "url": "/amis/pkg/rest_31a4acd.js",
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_09384eb.js",
+      "url": "/amis/pkg/app_5adee28.js",
       "type": "js"
     },
     "p1": {
