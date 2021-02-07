@@ -5962,7 +5962,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/start/getting-started.md": {
-      "url": "/amis/docs/zh-CN/start/getting-started_8bbeefa.js",
+      "url": "/amis/docs/zh-CN/start/getting-started_c7e5d89.js",
       "type": "js"
     },
     "docs/zh-CN/start/faq.md": {
@@ -5990,11 +5990,11 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/linkage.md": {
-      "url": "/amis/docs/zh-CN/concepts/linkage_443ac01.js",
+      "url": "/amis/docs/zh-CN/concepts/linkage_59409bf.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/action.md": {
-      "url": "/amis/docs/zh-CN/concepts/action_1ed5e65.js",
+      "url": "/amis/docs/zh-CN/concepts/action_f33c2f8.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/style.md": {
@@ -6002,7 +6002,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/types/schemanode.md": {
-      "url": "/amis/docs/zh-CN/types/schemanode_706463e.js",
+      "url": "/amis/docs/zh-CN/types/schemanode_e0019e7.js",
       "type": "js"
     },
     "docs/zh-CN/types/api.md": {
@@ -6018,11 +6018,11 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/extend/custom-sdk.md": {
-      "url": "/amis/docs/zh-CN/extend/custom-sdk_3d23098.js",
+      "url": "/amis/docs/zh-CN/extend/custom-sdk_a8cbbf3.js",
       "type": "js"
     },
     "docs/zh-CN/extend/custom-react.md": {
-      "url": "/amis/docs/zh-CN/extend/custom-react_dff6034.js",
+      "url": "/amis/docs/zh-CN/extend/custom-react_febe5a0.js",
       "type": "js"
     },
     "docs/zh-CN/extend/addon.md": {
