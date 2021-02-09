@@ -5986,7 +5986,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/concepts/expression.md": {
-      "url": "/amis/docs/zh-CN/concepts/expression_8c08c36.js",
+      "url": "/amis/docs/zh-CN/concepts/expression_1132a93.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/linkage.md": {
@@ -6003,6 +6003,10 @@ amis.require.resourceMap({
     },
     "docs/zh-CN/types/schemanode.md": {
       "url": "/amis/docs/zh-CN/types/schemanode_e0019e7.js",
+      "type": "js"
+    },
+    "docs/zh-CN/types/classname.md": {
+      "url": "/amis/docs/zh-CN/types/classname_f5fd239.js",
       "type": "js"
     },
     "docs/zh-CN/types/api.md": {
@@ -6378,7 +6382,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/dropdown-button.md": {
-      "url": "/amis/docs/zh-CN/components/dropdown-button_c7b8ca8.js",
+      "url": "/amis/docs/zh-CN/components/dropdown-button_6b7cb56.js",
       "type": "js"
     },
     "docs/zh-CN/components/service.md": {
