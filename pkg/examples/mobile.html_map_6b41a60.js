@@ -1052,6 +1052,10 @@ amis.require.resourceMap({
       ],
       "pkg": "p7"
     },
+    "7475d37": {
+      "type": "js",
+      "pkg": "p7"
+    },
     "0f9ebdf": {
       "type": "js",
       "deps": [
@@ -1066,7 +1070,8 @@ amis.require.resourceMap({
         "bfe4ee0",
         "5ab4e9d",
         "7ee4603",
-        "f6d2fc9"
+        "f6d2fc9",
+        "7475d37"
       ],
       "pkg": "p7"
     },
@@ -1104,6 +1109,25 @@ amis.require.resourceMap({
       ],
       "pkg": "p7"
     },
+    "814ea91": {
+      "type": "js",
+      "pkg": "p7"
+    },
+    "7b35d42": {
+      "type": "js",
+      "pkg": "p7"
+    },
+    "64b4135": {
+      "type": "js",
+      "deps": [
+        "7b35d42",
+        "7475d37",
+        "1caead1",
+        "f2e345e",
+        "d57879c"
+      ],
+      "pkg": "p7"
+    },
     "d57879c": {
       "type": "js",
       "deps": [
@@ -1117,7 +1141,9 @@ amis.require.resourceMap({
         "0a43d97",
         "4ee46ff",
         "5ab4e9d",
-        "acad559"
+        "acad559",
+        "814ea91",
+        "64b4135"
       ],
       "pkg": "p7"
     },
@@ -1435,27 +1461,6 @@ amis.require.resourceMap({
     },
     "1b51c22": {
       "type": "js",
-      "pkg": "p7"
-    },
-    "100b8cb": {
-      "type": "js",
-      "deps": [
-        "0f9ebdf",
-        "57d76d7",
-        "6a2dbb7",
-        "9a80175",
-        "919cbd9",
-        "15e4197",
-        "1caead1",
-        "1953fc1"
-      ],
-      "pkg": "p7"
-    },
-    "814ea91": {
-      "type": "js",
-      "deps": [
-        "100b8cb"
-      ],
       "pkg": "p7"
     },
     "4b7dfbe": {
@@ -2595,6 +2600,20 @@ amis.require.resourceMap({
       "type": "js",
       "deps": [
         "0f9ebdf"
+      ],
+      "pkg": "p7"
+    },
+    "100b8cb": {
+      "type": "js",
+      "deps": [
+        "0f9ebdf",
+        "57d76d7",
+        "6a2dbb7",
+        "9a80175",
+        "919cbd9",
+        "15e4197",
+        "1caead1",
+        "1953fc1"
       ],
       "pkg": "p7"
     },
@@ -9672,7 +9691,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "p7": {
-      "url": "/amis/pkg/app_ca937d7.js",
+      "url": "/amis/pkg/app_e63e6e0.js",
       "type": "js"
     },
     "p1": {

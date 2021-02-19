@@ -1,7 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$ref": "#/definitions/PageSchema",
+  "$ref": "#/definitions/RootSchema",
   "definitions": {
+    "RootSchema": {
+      "$ref": "#/definitions/PageSchema"
+    },
     "PageSchema": {
       "type": "object",
       "properties": {
@@ -11034,6 +11037,12 @@
             },
             "minimum": {
               "type": "number"
+            },
+            "step": {
+              "type": "number"
+            },
+            "precision": {
+              "type": "number"
             }
           },
           "required": [
@@ -11262,6 +11271,12 @@
             "options": {
               "type": "array",
               "items": {}
+            },
+            "source": {
+              "$ref": "#/definitions/SchemaApi"
+            },
+            "searchable": {
+              "type": "boolean"
             }
           },
           "required": [
