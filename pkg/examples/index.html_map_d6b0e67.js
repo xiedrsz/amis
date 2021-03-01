@@ -5958,15 +5958,15 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/index.md": {
-      "url": "/amis/docs/zh-CN/index_1321682.js",
+      "url": "/amis/docs/zh-CN/index_03411cd.js",
       "type": "js"
     },
     "docs/zh-CN/start/getting-started.md": {
-      "url": "/amis/docs/zh-CN/start/getting-started_615e7c1.js",
+      "url": "/amis/docs/zh-CN/start/getting-started_a3b6802.js",
       "type": "js"
     },
     "docs/zh-CN/start/faq.md": {
-      "url": "/amis/docs/zh-CN/start/faq_b4df795.js",
+      "url": "/amis/docs/zh-CN/start/faq_cdb9914.js",
       "type": "js"
     },
     "docs/zh-CN/concepts/schema.md": {
@@ -6029,8 +6029,12 @@ amis.require.resourceMap({
       "url": "/amis/docs/zh-CN/extend/custom-react_febe5a0.js",
       "type": "js"
     },
+    "docs/zh-CN/extend/ui-library.md": {
+      "url": "/amis/docs/zh-CN/extend/ui-library_fc28447.js",
+      "type": "js"
+    },
     "docs/zh-CN/extend/addon.md": {
-      "url": "/amis/docs/zh-CN/extend/addon_be967d5.js",
+      "url": "/amis/docs/zh-CN/extend/addon_f38096a.js",
       "type": "js"
     },
     "docs/zh-CN/extend/mobile.md": {
@@ -6074,7 +6078,7 @@ amis.require.resourceMap({
       "pkg": "p8"
     },
     "docs/zh-CN/style/index.md": {
-      "url": "/amis/docs/zh-CN/style/index_95af3a3.js",
+      "url": "/amis/docs/zh-CN/style/index_117ebae.js",
       "type": "js"
     },
     "docs/zh-CN/style/css-vars.md": {
@@ -6322,7 +6326,7 @@ amis.require.resourceMap({
       "type": "js"
     },
     "docs/zh-CN/components/container.md": {
-      "url": "/amis/docs/zh-CN/components/container_905b360.js",
+      "url": "/amis/docs/zh-CN/components/container_e16c603.js",
       "type": "js"
     },
     "docs/zh-CN/components/collapse.md": {
