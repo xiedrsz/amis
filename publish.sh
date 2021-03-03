@@ -12,11 +12,10 @@ cp -rf docs npm
 cp -rf examples npm
 cp -rf sdk npm
 
-cd npm
+# cd npm
 
-sed -i '' -e 's/\"name\": \"amis\"/\"name\": \"@fex\/amis\"/g' ./package.json
+# sed -i '' -e 's/\"name\": \"amis\"/\"name\": \"@fex\/amis\"/g' ./package.json
 
 # npm publish --registry=http://registry.npm.baidu-int.com
 
-cd ..
-# rm -rf npm
+# cd ..
