@@ -53,6 +53,8 @@ import { SearchBoxSchema } from './renderers/SearchBox';
 import { SparkLineSchema } from './renderers/SparkLine';
 import { PaginationWrapperSchema } from './renderers/PaginationWrapper';
 import { PaginationSchema } from './renderers/Pagination';
+import { AmFlexSchema } from './renderers/AntdMobile/Flex';
+import { AmFlexItemSchema } from './renderers/AntdMobile/FlexItem';
 
 // 每加个类型，这补充一下。
 export type SchemaType =
@@ -131,7 +133,9 @@ export type SchemaType =
   | 'video'
   | 'wizard'
   | 'wrapper'
-  | 'my-demo';
+  | 'my-demo' // 演示
+  | 'am-flex'
+  | 'am-flex-item'; // 蚂蚁
 
 export type SchemaObject =
   | PageSchema
@@ -188,7 +192,9 @@ export type SchemaObject =
   | WizardSchema
   | WrapperSchema
   | MyDemoSchema
-  | FormSchema;
+  | FormSchema
+  | AmFlexSchema
+  | AmFlexItemSchema; // 蚂蚁
 
 export type SchemaCollection =
   | SchemaObject
