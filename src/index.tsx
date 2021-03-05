@@ -162,6 +162,7 @@ import './renderers/Icon';
 import './renderers/Carousel';
 import './renderers/AntdMobile/Flex'; // 蚂蚁
 import './renderers/AntdMobile/FlexItem';
+import './renderers/AntdMobile/NavBar';
 import Scoped, { ScopedContext } from './Scoped';
 
 import { FormItem, registerFormItem } from './renderers/Form/Item';

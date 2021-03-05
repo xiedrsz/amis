@@ -55,6 +55,7 @@ import { PaginationWrapperSchema } from './renderers/PaginationWrapper';
 import { PaginationSchema } from './renderers/Pagination';
 import { AmFlexSchema } from './renderers/AntdMobile/Flex';
 import { AmFlexItemSchema } from './renderers/AntdMobile/FlexItem';
+import { AmNavBarSchema } from './renderers/AntdMobile/NavBar';
 
 // 每加个类型，这补充一下。
 export type SchemaType =
@@ -134,8 +135,9 @@ export type SchemaType =
   | 'wizard'
   | 'wrapper'
   | 'my-demo' // 演示
-  | 'am-flex'
-  | 'am-flex-item'; // 蚂蚁
+  | 'am-flex' // 蚂蚁
+  | 'am-flex-item'
+  | 'am-nav-bar';
 
 export type SchemaObject =
   | PageSchema
@@ -193,8 +195,9 @@ export type SchemaObject =
   | WrapperSchema
   | MyDemoSchema
   | FormSchema
-  | AmFlexSchema
-  | AmFlexItemSchema; // 蚂蚁
+  | AmFlexSchema // 蚂蚁
+  | AmFlexItemSchema
+  | AmNavBarSchema;
 
 export type SchemaCollection =
   | SchemaObject
