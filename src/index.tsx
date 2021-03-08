@@ -67,6 +67,8 @@ import './renderers/Form/index';
 import './renderers/Form/Control';
 import './renderers/Form/Hidden';
 import './renderers/Form/Text';
+// antd-mobile
+import './renderers/Form/AmInputItem';
 import './renderers/Form/Tag';
 import './renderers/Form/Number';
 import './renderers/Form/Textarea';
