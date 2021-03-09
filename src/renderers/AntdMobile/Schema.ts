@@ -4,6 +4,7 @@ import { AmNavBarSchema } from './NavBar'
 import { AmInputSchema } from './InputItem'
 import { AmTextareaSchema } from './TextareaItem'
 import { AmPickerSchema } from './Picker'
+import { AmWhiteSpaceSchema } from './WhiteSpace'
 
 export type AmSchemaType =
   | 'am-flex'
@@ -11,7 +12,8 @@ export type AmSchemaType =
   | 'am-nav-bar'
   | 'am-input'
   | 'am-textarea'
-  | 'am-picker';
+  | 'am-picker'
+  | 'am-space';
 
 export type AmSchemaObject =
   | AmFlexSchema
@@ -19,4 +21,5 @@ export type AmSchemaObject =
   | AmNavBarSchema
   | AmInputSchema
   | AmTextareaSchema
-  | AmPickerSchema;
+  | AmPickerSchema
+  | AmWhiteSpaceSchema;

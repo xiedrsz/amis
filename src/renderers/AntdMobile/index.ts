@@ -4,3 +4,4 @@ import './NavBar';
 import './InputItem';
 import './TextareaItem';
 import './Picker';
+import './WhiteSpace';

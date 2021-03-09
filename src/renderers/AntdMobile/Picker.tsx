@@ -11,7 +11,7 @@ interface PickerProps {
   extra?: string;
   cols?: number;
   title?: string;
-  label?: string
+  label?: string;
 }
 
 /**
