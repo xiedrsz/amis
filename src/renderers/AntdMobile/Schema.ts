@@ -6,6 +6,7 @@ import { AmTextareaSchema } from './TextareaItem'
 import { AmPickerSchema } from './Picker'
 import { AmWhiteSpaceSchema } from './WhiteSpace'
 import { AmWingBlankSchema } from './WingBlank'
+import { AmButtonSchema } from './Button'
 
 export type AmSchemaType =
   | 'am-flex'
@@ -15,7 +16,8 @@ export type AmSchemaType =
   | 'am-textarea'
   | 'am-picker'
   | 'am-space'
-  | 'am-blank';
+  | 'am-blank'
+  | 'am-button';
 
 export type AmSchemaObject =
   | AmFlexSchema
@@ -25,4 +27,5 @@ export type AmSchemaObject =
   | AmTextareaSchema
   | AmPickerSchema
   | AmWhiteSpaceSchema
-  | AmWingBlankSchema;
+  | AmWingBlankSchema
+  | AmButtonSchema;
