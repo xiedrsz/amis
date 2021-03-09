@@ -3,20 +3,26 @@ import { autobind } from '../../utils/helper';
 import { InputItem } from 'antd-mobile';
 import { BaseSchema } from '../../Schema';
 import { Renderer, RendererProps } from '../../factory';
-import { ServiceStore, IServiceStore } from '../../store/service';
+import { IServiceStore } from '../../store/service';
+import MyIcon from '../../components/antd/MyIcon'
 
-// declare function matchSorter(items:Array<any>, input:any, options:any): Array<any>;
+// InputItem 的属性
+interface InputItemProps {
+  icon?: string;
+  placeholder?: string;
+  codeName?: string;
+  label?: string;
+}
 
 /**
  * Text 文本输入框。
  * 文档：https://baidu.gitee.io/amis/docs/components/form/text
  */
-export interface AmInputSchema extends BaseSchema {
+export interface AmInputSchema extends BaseSchema, InputItemProps {
   type: 'am-input';
 }
 
-export interface TextProps extends RendererProps {
-  placeholder?: string;
+export interface TextProps extends RendererProps, InputItemProps {
   store: IServiceStore;
 }
 
@@ -24,7 +30,6 @@ export interface TextState {
   inputValue?: string;
 }
 
-// export default class AmInput extends React.PureComponent<
 export default class AmInput extends React.Component<
   TextProps,
   TextState
@@ -56,34 +61,27 @@ export default class AmInput extends React.Component<
   // change 事件触发的回调函数
   @autobind
   handleNormalInputChange(value: string) {
-    // const { onChange } = this.props;
-    // onChange(value);
-    console.log(value)
-    let { store } = this.props
+    let { store, codeName } = this.props
     this.setState({
       inputValue: value
     });
-    store.updateData({
-      kkk: value
-    });
+    if (codeName) {
+      store.updateData({
+        [codeName]: value
+      });
+    }
   }
 
   render(): JSX.Element {
     const {
-      value,
       type,
       placeholder,
       disabled,
-      name
+      name,
+      icon,
+      label
     } = this.props;
 
-    /* value={
-      typeof value === 'undefined' || value === null
-        ? ''
-        : typeof value === 'string'
-          ? value
-          : JSON.stringify(value)
-    } */
     return (
       <InputItem
         name={name}
@@ -94,15 +92,16 @@ export default class AmInput extends React.Component<
         onBlur={this.handleBlur}
         onChange={this.handleNormalInputChange}
         value={this.state.inputValue}
-      />
+      >
+        {icon ? <MyIcon type={icon} /> : ''}
+        {label ? <span>{label}</span> : ''}
+      </InputItem>
     );
   }
 }
 
 @Renderer({
   test: /(^|\/)am-input$/,
-  name: 'am-input',
-  // storeType: ServiceStore.name,
-  // isolateScope: true
+  name: 'am-input'
 })
 export class AmInputRenderer extends AmInput { }
