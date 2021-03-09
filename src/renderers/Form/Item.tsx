@@ -17,8 +17,8 @@ import { filter } from '../../utils/tpl';
 import { SchemaRemark } from '../Remark';
 import { BaseSchema, SchemaClassName } from '../../Schema';
 import { TextControlSchema } from './Text';
-// antd-mobile
-import { AmInputSchema } from './AmInputItem';
+// antd-mobile Todo
+// import { AmInputSchema } from './AmInputItem';
 import { SelectControlSchema } from './Select';
 import { TextareaControlSchema } from './Textarea';
 import { ArrayControlSchema } from './Array';
@@ -197,10 +197,10 @@ export type FormControlType =
   | 'divider'
   | 'html'
   | 'plain'
-  | 'tpl'
+  | 'tpl';
 
-  // antd-mobile
-  | 'am-input';
+// antd-mobile
+// | 'am-input';
 
 export type FormControlSchema =
   | ArrayControlSchema
@@ -261,7 +261,7 @@ export type FormControlSchema =
   | TextControlSchema
 
   // antd-mobile
-  | AmInputSchema
+  // | AmInputSchema
   | TextareaControlSchema
   | TransferControlSchema
   | TreeControlSchema

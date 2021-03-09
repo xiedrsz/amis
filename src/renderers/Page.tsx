@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Renderer, RendererProps} from '../factory';
-import {observer} from 'mobx-react';
-import {ServiceStore, IServiceStore} from '../store/service';
+import { Renderer, RendererProps } from '../factory';
+import { observer } from 'mobx-react';
+import { ServiceStore, IServiceStore } from '../store/service';
 import {
   Api,
   SchemaNode,
@@ -11,14 +11,14 @@ import {
   ApiObject,
   FunctionPropertyNames
 } from '../types';
-import {filter, evalExpression} from '../utils/tpl';
+import { filter, evalExpression } from '../utils/tpl';
 import cx from 'classnames';
 import qs from 'qs';
-import {isVisible, autobind, bulkBindFunctions} from '../utils/helper';
-import {ScopedContext, IScopedContext} from '../Scoped';
+import { isVisible, autobind, bulkBindFunctions } from '../utils/helper';
+import { ScopedContext, IScopedContext } from '../Scoped';
 import Alert from '../components/Alert2';
-import {isApiOutdated, isEffectiveApi} from '../utils/api';
-import {Spinner} from '../components';
+import { isApiOutdated, isEffectiveApi } from '../utils/api';
+import { Spinner } from '../components';
 import {
   BaseSchema,
   SchemaCollection,
@@ -29,8 +29,8 @@ import {
   SchemaName,
   SchemaMessage
 } from '../Schema';
-import {SchemaRemark} from './Remark';
-import {onAction} from 'mobx-state-tree';
+import { SchemaRemark } from './Remark';
+import { onAction } from 'mobx-state-tree';
 
 /**
  * amis Page 渲染器。详情请见：https://baidu.gitee.io/amis/docs/components/page
@@ -148,7 +148,7 @@ export interface PageSchema extends BaseSchema {
 
 export interface PageProps
   extends RendererProps,
-    Omit<PageSchema, 'type' | 'className'> {
+  Omit<PageSchema, 'type' | 'className'> {
   data: any;
   store: IServiceStore;
   location?: Location;
@@ -187,7 +187,7 @@ export default class Page extends React.Component<PageProps> {
   ];
 
   componentWillMount() {
-    const {store, location} = this.props;
+    const { store, location } = this.props;
 
     // autobind 会让继承里面的 super 指向有问题，所以先这样！
     bulkBindFunctions<Page /*为毛 this 的类型自动识别不出来？*/>(this, [
@@ -205,7 +205,7 @@ export default class Page extends React.Component<PageProps> {
   }
 
   componentDidMount() {
-    const {initApi, initFetch, initFetchOn, store, messages} = this.props;
+    const { initApi, initFetch, initFetchOn, store, messages } = this.props;
 
     this.mounted = true;
 
@@ -258,7 +258,7 @@ export default class Page extends React.Component<PageProps> {
     throwErrors: boolean = false,
     delegate?: IScopedContext
   ) {
-    const {env, store, messages, onAction} = this.props;
+    const { env, store, messages, onAction } = this.props;
 
     if (action.actionType === 'dialog') {
       store.setCurrentAction(action);
@@ -287,7 +287,7 @@ export default class Page extends React.Component<PageProps> {
           redirect && env.jumpTo(redirect, action);
           action.reload && this.reloadTarget(action.reload, store.data);
         })
-        .catch(() => {});
+        .catch(() => { });
     } else {
       onAction(e, action, ctx, throwErrors, delegate || this.context);
     }
@@ -298,7 +298,7 @@ export default class Page extends React.Component<PageProps> {
   }
 
   handleDialogConfirm(values: object[], action: Action, ...args: Array<any>) {
-    const {store} = this.props;
+    const { store } = this.props;
 
     if (action.mergeData && values.length === 1 && values[0]) {
       store.updateData(values[0]);
@@ -317,12 +317,12 @@ export default class Page extends React.Component<PageProps> {
   }
 
   handleDialogClose() {
-    const {store} = this.props;
+    const { store } = this.props;
     store.closeDialog();
   }
 
   handleDrawerConfirm(values: object[], action: Action, ...args: Array<any>) {
-    const {store} = this.props;
+    const { store } = this.props;
 
     if (action.mergeData && values.length === 1 && values[0]) {
       store.updateData(values[0]);
@@ -341,13 +341,13 @@ export default class Page extends React.Component<PageProps> {
   }
 
   handleDrawerClose() {
-    const {store} = this.props;
+    const { store } = this.props;
     store.closeDrawer();
   }
 
   handleClick(e: any) {
     const target: HTMLElement = e.target as HTMLElement;
-    const {env} = this.props;
+    const { env } = this.props;
 
     if (env && target.tagName === 'A' && target.hasAttribute('data-link')) {
       env.jumpTo(target.getAttribute('data-link') as string);
@@ -357,7 +357,7 @@ export default class Page extends React.Component<PageProps> {
 
   openFeedback(dialog: any, ctx: any) {
     return new Promise(resolve => {
-      const {store} = this.props;
+      const { store } = this.props;
       store.setCurrentAction({
         type: 'button',
         actionType: 'dialog',
@@ -374,7 +374,7 @@ export default class Page extends React.Component<PageProps> {
       return this.receive(query);
     }
 
-    const {store, initApi} = this.props;
+    const { store, initApi } = this.props;
 
     clearTimeout(this.timer);
     isEffectiveApi(initApi, store.data) &&
@@ -386,7 +386,7 @@ export default class Page extends React.Component<PageProps> {
   }
 
   receive(values: object) {
-    const {store} = this.props;
+    const { store } = this.props;
 
     store.updateData(values);
     this.reload();
@@ -397,7 +397,7 @@ export default class Page extends React.Component<PageProps> {
   }
 
   initInterval(value: any) {
-    const {interval, silentPolling, stopAutoRefreshWhen, data} = this.props;
+    const { interval, silentPolling, stopAutoRefreshWhen, data } = this.props;
 
     interval &&
       this.mounted &&
@@ -439,14 +439,14 @@ export default class Page extends React.Component<PageProps> {
               {render('title', title, subProps)}
               {remark
                 ? render('remark', {
-                    type: 'remark',
-                    tooltip: remark,
-                    placement: remarkPlacement || 'bottom',
-                    container:
-                      env && env.getModalContainer
-                        ? env.getModalContainer
-                        : undefined
-                  })
+                  type: 'remark',
+                  tooltip: remark,
+                  placement: remarkPlacement || 'bottom',
+                  container:
+                    env && env.getModalContainer
+                      ? env.getModalContainer
+                      : undefined
+                })
                 : null}
             </h2>
           ) : null}
@@ -547,9 +547,9 @@ export default class Page extends React.Component<PageProps> {
               ...subProps,
               ...(typeof aside === 'string'
                 ? {
-                    inline: false,
-                    className: `Page-asideTplWrapper`
-                  }
+                  inline: false,
+                  className: `Page-asideTplWrapper`
+                }
                 : null)
             })}
           </div>
