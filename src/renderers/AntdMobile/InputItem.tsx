@@ -12,6 +12,7 @@ interface InputItemProps {
   placeholder?: string;
   codeName?: string;
   label?: string;
+  labelNumber?: number;
 }
 
 /**
@@ -79,7 +80,8 @@ export default class AmInput extends React.Component<
       disabled,
       name,
       icon,
-      label
+      label,
+      labelNumber
     } = this.props;
 
     return (
@@ -88,10 +90,11 @@ export default class AmInput extends React.Component<
         placeholder={placeholder}
         disabled={disabled}
         type={type}
+        labelNumber={labelNumber}
+        value={this.state.inputValue}
         onFocus={this.handleFocus}
         onBlur={this.handleBlur}
         onChange={this.handleNormalInputChange}
-        value={this.state.inputValue}
       >
         {icon ? <MyIcon type={icon} /> : ''}
         {label ? <span>{label}</span> : ''}

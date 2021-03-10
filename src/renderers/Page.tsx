@@ -144,6 +144,11 @@ export interface PageSchema extends BaseSchema {
    * css 变量
    */
   cssVars?: any;
+
+  /**
+   * 新增 移动端样式适配
+   */
+  isMobile?: boolean;
 }
 
 export interface PageProps
@@ -492,7 +497,8 @@ export default class Page extends React.Component<PageProps> {
       classnames: cx,
       header,
       showErrorMsg,
-      initApi
+      initApi,
+      isMobile
     } = this.props;
 
     const subProps = {
@@ -501,7 +507,7 @@ export default class Page extends React.Component<PageProps> {
       loading: store.loading
     };
 
-    const hasAside = aside && (!Array.isArray(aside) || aside.length);
+    const hasAside = !isMobile && aside && (!Array.isArray(aside) || aside.length);
 
     let cssVarsContent = '';
     if (cssVars) {
@@ -556,10 +562,10 @@ export default class Page extends React.Component<PageProps> {
         ) : null}
 
         <div className={cx('Page-content')}>
-          {header ? render('header', header, subProps) : null}
+          {header && !isMobile ? render('header', header, subProps) : null}
           <div className={cx('Page-main')}>
-            {this.renderHeader()}
-            <div className={cx(`Page-body`, bodyClassName)}>
+            {!isMobile && this.renderHeader()}
+            <div className={cx(!isMobile ? `Page-body` : '', bodyClassName)}>
               <Spinner size="lg" overlay key="info" show={store.loading} />
 
               {store.error && showErrorMsg !== false ? (
