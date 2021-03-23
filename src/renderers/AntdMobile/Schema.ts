@@ -7,6 +7,7 @@ import { AmPickerSchema } from './Picker'
 import { AmWhiteSpaceSchema } from './WhiteSpace'
 import { AmWingBlankSchema } from './WingBlank'
 import { AmButtonSchema } from './Button'
+import { AmDrawerSchema } from './Drawer'
 
 export type AmSchemaType =
   | 'am-flex'
@@ -17,7 +18,8 @@ export type AmSchemaType =
   | 'am-picker'
   | 'am-space'
   | 'am-blank'
-  | 'am-button';
+  | 'am-button'
+  | 'am-drawer';
 
 export type AmSchemaObject =
   | AmFlexSchema
@@ -28,4 +30,5 @@ export type AmSchemaObject =
   | AmPickerSchema
   | AmWhiteSpaceSchema
   | AmWingBlankSchema
-  | AmButtonSchema;
+  | AmButtonSchema
+  | AmDrawerSchema;

@@ -21,7 +21,7 @@ export interface AmNavBarSchema extends BaseSchema {
   /**
    * 可以返回
    */
-  canback: boolean
+  canback?: boolean
 }
 
 export interface AmNavBarProps extends RendererProps, Omit<AmNavBarSchema, 'className'> { }

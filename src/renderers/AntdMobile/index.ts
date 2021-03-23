@@ -7,3 +7,4 @@ import './Picker';
 import './WhiteSpace';
 import './WingBlank';
 import './Button';
+import './Drawer';
