@@ -8,3 +8,4 @@ import './WhiteSpace';
 import './WingBlank';
 import './Button';
 import './Drawer';
+import './AnchorTabs';

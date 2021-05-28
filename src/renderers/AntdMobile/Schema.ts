@@ -8,6 +8,7 @@ import { AmWhiteSpaceSchema } from './WhiteSpace'
 import { AmWingBlankSchema } from './WingBlank'
 import { AmButtonSchema } from './Button'
 import { AmDrawerSchema } from './Drawer'
+import { HzAnchorTabsSchema } from './AnchorTabs'
 
 export type AmSchemaType =
   | 'am-flex'
@@ -19,7 +20,9 @@ export type AmSchemaType =
   | 'am-space'
   | 'am-blank'
   | 'am-button'
-  | 'am-drawer';
+  | 'am-drawer'
+  // Todo 惠泽 带整出
+  | 'hz-anchor-tabs';
 
 export type AmSchemaObject =
   | AmFlexSchema
@@ -31,4 +34,5 @@ export type AmSchemaObject =
   | AmWhiteSpaceSchema
   | AmWingBlankSchema
   | AmButtonSchema
-  | AmDrawerSchema;
+  | AmDrawerSchema
+  | HzAnchorTabsSchema;
