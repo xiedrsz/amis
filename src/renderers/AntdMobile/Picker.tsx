@@ -1,9 +1,18 @@
 import React from 'react';
-import { autobind } from '../../utils/helper';
 import { Picker, List } from 'antd-mobile';
+import { PickerData } from 'antd-mobile/lib/picker/PropsType';
+import { autobind } from '../../utils/helper';
 import { BaseSchema } from '../../Schema';
 import { Renderer, RendererProps } from '../../factory';
 import { IServiceStore } from '../../store/service';
+
+
+// Picker 的选项的属性
+export interface AmOption {
+  value: string | number;
+  label: string;
+  children?: AmOption[];
+}
 
 // Picker 的属性
 interface PickerProps {
@@ -12,6 +21,7 @@ interface PickerProps {
   cols?: number;
   title?: string;
   label?: string;
+  options?: Array<AmOption>;
 }
 
 /**
@@ -33,7 +43,7 @@ export interface TextState {
 export default class AmPicker extends React.Component<
   TextProps,
   TextState
-  > {
+> {
   constructor(props: TextProps) {
     super(props);
     this.state = {
@@ -65,19 +75,15 @@ export default class AmPicker extends React.Component<
       extra,
       cols = 1,
       title,
-      label
+      label,
+      options
     } = this.props;
-    // Todo 可配置未实现
-    const Platform = [{
-      value: 1,
-      label: '支付宝',
-    }]
-
+    let data: PickerData[] = options || []
 
     return (
       <Picker
         extra={extra}
-        data={Platform}
+        data={data}
         cols={cols}
         title={title}
         disabled={disabled}
